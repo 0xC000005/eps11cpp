@@ -1,0 +1,229 @@
+Chapter One Test
+
+Part I  Answer each of the following questions by choosing the best answer.
+
+___1.	Which of the following is not a function performed by a computer?
+a)	accepting information
+b)	processing information
+c)	thinking like a human
+d)	providing results as new information
+
+___2.	A program is:
+a)	a series of instructions that makes the computer think.
+b)	a series of instructions written in a special language that directs the
+computer to perform certain tasks.
+c)	a series of instructions written in English that tells the computer
+what to do.
+d)	a series of instructions written in BASIC that tells the computer
+how to think.
+
+___3.	The decimal number 3 is equivalent to which binary number?
+a)	01
+b)	10
+c)	100
+d)	11
+
+___4.	Which of the following machines did ancient civilizations use to
+perform calculations?
+a)	the abacus
+b)	the adding machine
+c)	the Roman numerator
+d)	punched cards
+
+___5.	Which number system do we use today?
+a)	Roman numerals
+b)	Arabic numerals
+c)	tens numerals
+d)	alphabetic numerals
+
+___6.	The calculating machines invented by Pascal and Leibniz did not
+work because:
+a)	they were made of wood.
+b)	they were mechanically unreliable.
+c)	they did not use punched cards.
+d)	they used Roman numerals.
+
+___7.	The first machine to make use of instructions contained on punched
+cards was:
+a)	the Pascaline.
+b)	the Stepped Reckoner.
+c)	Jacquard’s loom.
+d)	the abacus.
+
+___8.	The unique binary representation of the location of data in memory is:
+a)	ASCII.
+b)	an address.
+c)	a hexadecimal number.
+d)	the mantissa.
+
+___9.	Hollerith’s electronic tabulating machine worked better than previous
+machines primarily because it used:
+a)	Arabic rather than Roman numerals.
+b)	metal rather than wooden gears.
+c)	levers rather than punched cards.
+d)	electricity rather than mechanical gears.
+
+___10.	Hollerith’s electronic tabulating machine was first used to:
+a)	run weaving looms.
+b)	produce navigational charts.
+c)	calculate the U.S. Census.
+d)	punch programming cards.
+
+___11.	To be a computer rather than a calculator a machine must be able to:
+a)	perform calculations quickly.
+b)	make decisions.
+c)	think like a person.
+d)	use punched cards.
+
+___12.	The first true computer was the:
+a)	abacus.
+b)	Pascaline.
+c)	ENIAC.
+d)	Mark I.
+
+___13.	A major advantage of using programming languages in early computers
+was that:
+a)	instructions could be changed without flipping switches or pulling wires.
+b)	instructions could be changed using transistors.
+c)	calculating speed was increased.
+d)	computers could be made inexpensively.
+
+___14.	Which of the following is not an advantage of using transistors
+instead of tubes?
+a)	increased calculating speed
+b)	reduced cost
+c)	increased reliability
+d)	decreased number of instructions needed to perform a calculation
+
+___15.	Ada Byron is credited with realizing that machines:
+a)	cannot think.
+b)	must be powered by electricity to be useful.
+c)	can play chess as well as a human.
+d)	must use punched cards.
+
+___16.	An integrated circuit, or chip, is:
+a)	a large number of transistors wired together.
+b)	a block of silicon with logic circuits etched on its surface.
+c)	a large number of tubes wired together.
+d)	a set of logical instructions needed to run a computer.
+
+___17.	Which of the following is not an advantage of using integrated circuits
+in a computer rather than transistors?
+a)	decreased cost
+b)	increased calculating speed
+c)	ability to use more programming languages
+d)	decreased size
+
+___18.	Which of the following best describes the CPU?
+a)	A chip inside the computer that contains data that can only be read.
+b)	A chip inside the computer where data can be stored.
+c)	A device which electronically controls the functions of the computer.
+d)	A device that displays or stores processed data.
+
+___19.	Which of the following computers would most likely be used by a large
+airline to keep track of its reservations?
+a)	minicomputer
+b)	mainframe computer
+c)	microcomputer
+d)	An airline would probably not use a computer.
+
+___20.	When the computer is turned off, any data stored in RAM:
+a)	is saved.
+b)	is lost.
+c)	will appear on the screen when the computer is turned on again.
+d)	is automatically printed.
+
+___21.	Which of the following is not an auxiliary storage device?
+a)	diskette
+b)	CD-ROM
+c)	hard disk
+d)	CPU
+
+___22.	Which of the following would not be considered hardware?
+a)	keyboard
+b)	diskette drive
+c)	monitor
+d)	program
+
+___23.	ROM in a computer:
+a)	contains information that cannot be changed.
+b)	solves mathematical equations.
+c)	stores numeric data.
+d)	contains instructions that are changed after a computer is turned on.
+
+___24.	The circuits on a chip have how many states?
+a)	three: + - /
+b)	two: ON or OFF
+c)	four: + - * /
+d)	three: ON, OFF, or WAIT
+
+___25.	The number system that uses only two digits used by the computer
+is called:
+a)	Arabic.
+b)	ASCII.
+c)	binary.
+d)	base.
+
+___26.	The code used by the computer to translate each character on the
+keyboard into a number is called:
+a)	Arabic.
+b)	ASCII.
+c)	binary.
+d)	base.
+
+___27.	A bit is:
+a)	a single 0 or 1 in a binary number.
+b)	eight 0s or 1s.
+c)	a person’s name stored in memory.
+d)	equal to 64K of RAM.
+
+___28.	A byte is:
+a)	a single 0 or 1 in a binary number.
+b)	eight 0s or 1s.
+c)	a person’s name stored in memory.
+d)	equal to 64K of RAM.
+
+___29.	An object-based operating system:
+a)	is Windows 95.
+b)	means each item on the screen is an object.
+c)	allows users to switch between two applications.
+d)	All of the above are correct.
+
+___30.	To multiply 5 times 4 the computer:
+a)	simply multiplies 5 times 4.
+b)	multiplies 5 times 2 twice.
+c)	adds five 4s together.
+d)	divides 5 by 210.
+
+___31.	Which of the following is not a high-level programming language?
+a)	FORTRAN
+b)	COBOL
+c)	Pascal
+d)	machine language
+
+___32.	A computer would probably perform better than a human:
+a)	when judgemental is crucial.
+b)	when performing complicated calculations.
+c)	in all situations because computers do not make errors.
+d)	There are no situations where a computer would perform better than a human.
+___33.	Which of the following societal changes contribute to the
+“information age”?
+a)	telecommunications
+b)	robots
+c)	Internet
+d)	All of the above are correct.
+
+___34.	Why have a number of laws been passed about the use of electronic data?
+a)	to help companies quickly access vast amounts of information about a person
+b)	to help keep track of where people have been, what time they were there, and
+what they did
+c)	to protect a person’s privacy and help to insure the accuracy of data stored
+by computers
+d)	to give everyone access to electronic data
+
+___35.	Which of the following are problems that are growing as computer use
+increases?
+a)	illegal copying of software
+b)	willful interference with or destruction of data
+c)	planting of a virus into software
+d)	All of the above are problems that are growing as computer use increases.
