@@ -1,0 +1,20 @@
+﻿Build started 2019-10-04 2:17:38 PM.
+     1>Project "H:\Max-Programming 12\ch4ex5\ch4ex5\ch4ex5.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\ch4ex5.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\ch4ex5.unsuccessfulbuild".
+         Touching "Debug\ch4ex5.lastbuildstate".
+     1>Done Building Project "H:\Max-Programming 12\ch4ex5\ch4ex5\ch4ex5.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07
