@@ -1,0 +1,27 @@
+﻿Build started 2019-10-11 2:20:48 PM.
+     1>Project "H:\Max-Programming 12\ch4ex9a\ch4ex9a\ch4ex9a.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\ch4ex9a.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ch4ex9a.cpp
+         ch4ex9a.cpp
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Max-Programming 12\ch4ex9a\Debug\ch4ex9a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ch4ex9a.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\Max-Programming 12\ch4ex9a\Debug\ch4ex9a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Max-Programming 12\ch4ex9a\Debug\ch4ex9a.lib" /MACHINE:X86 Debug\ch4ex9a.exe.embed.manifest.res
+         Debug\ch4ex9a.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ch4ex9a.exe.embed.manifest" /manifest Debug\ch4ex9a.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Max-Programming 12\ch4ex9a\Debug\ch4ex9a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ch4ex9a.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\Max-Programming 12\ch4ex9a\Debug\ch4ex9a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Max-Programming 12\ch4ex9a\Debug\ch4ex9a.lib" /MACHINE:X86 Debug\ch4ex9a.exe.embed.manifest.res
+         Debug\ch4ex9a.obj
+         ch4ex9a.vcxproj -> H:\Max-Programming 12\ch4ex9a\Debug\ch4ex9a.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\ch4ex9a.unsuccessfulbuild".
+         Touching "Debug\ch4ex9a.lastbuildstate".
+     1>Done Building Project "H:\Max-Programming 12\ch4ex9a\ch4ex9a\ch4ex9a.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.17
