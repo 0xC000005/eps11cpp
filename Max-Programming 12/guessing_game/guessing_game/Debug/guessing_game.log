@@ -1,0 +1,26 @@
+﻿Build started 2019-10-28 9:36:49 AM.
+     1>Project "H:\Max-Programming 12\guessing_game\guessing_game\guessing_game.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\guessing_game.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\guessing_game.exe.embed.manifest.res" Debug\guessing_game_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Max-Programming 12\guessing_game\Debug\guessing_game.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\guessing_game.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\Max-Programming 12\guessing_game\Debug\guessing_game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Max-Programming 12\guessing_game\Debug\guessing_game.lib" /MACHINE:X86 Debug\guessing_game.exe.embed.manifest.res
+         Debug\guesing_game.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\guessing_game.exe.embed.manifest" /manifest Debug\guessing_game.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\guessing_game.exe.embed.manifest.res" Debug\guessing_game_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Max-Programming 12\guessing_game\Debug\guessing_game.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\guessing_game.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\Max-Programming 12\guessing_game\Debug\guessing_game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Max-Programming 12\guessing_game\Debug\guessing_game.lib" /MACHINE:X86 Debug\guessing_game.exe.embed.manifest.res
+         Debug\guesing_game.obj
+         guessing_game.vcxproj -> H:\Max-Programming 12\guessing_game\Debug\guessing_game.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\guessing_game.unsuccessfulbuild".
+         Touching "Debug\guessing_game.lastbuildstate".
+     1>Done Building Project "H:\Max-Programming 12\guessing_game\guessing_game\guessing_game.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.94
