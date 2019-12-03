@@ -1,0 +1,11 @@
+﻿1>------ Build started: Project: ch3note, Configuration: Debug Win32 ------
+1>  ch3note.cpp
+1>h:\max-programming 12\ch3note\ch3note\ch3note.cpp(12): error C2784: 'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &)' : could not deduce template argument for 'std::basic_string<_Elem,_Traits,_Alloc> &' from 'int'
+1>          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string(479) : see declaration of 'std::getline'
+1>h:\max-programming 12\ch3note\ch3note\ch3note.cpp(12): error C2780: 'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)' : expects 3 arguments - 2 provided
+1>          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string(468) : see declaration of 'std::getline'
+1>h:\max-programming 12\ch3note\ch3note\ch3note.cpp(12): error C2784: 'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &)' : could not deduce template argument for 'std::basic_string<_Elem,_Traits,_Alloc> &' from 'int'
+1>          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string(448) : see declaration of 'std::getline'
+1>h:\max-programming 12\ch3note\ch3note\ch3note.cpp(12): error C2780: 'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)' : expects 3 arguments - 2 provided
+1>          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string(395) : see declaration of 'std::getline'
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
