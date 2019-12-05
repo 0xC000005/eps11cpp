@@ -6,26 +6,22 @@
 #include<conio.h>
 #include"Score.h"
 
-using namespace Score;
-
 class ScoreSheet
 {
-	private: 
-		ArrayList<Score> score_paper=new ArrayList();
-		string name;
-		string DESCRIPTIONS[] = {"Ones", "Twos", "Threes", "Fours", "Fives", "Sixes", "Sum", "Bonus", "Three of a Kind", "Four of a Kind", "Full House", "Small Straight", "Large Straight", "Chance", "Yahtzee", "Total Score"};
-		bool gameFinished=false;
-		int counter[6];
-        int result=0,sum=0;
 	public:
-		ScoreSheet(){}
-		{
-			init();
-		}
-    
+		vector<Score> score_paper;
+		string name;
+		string DESCRIPTIONS[16];
+		bool gameFinished;
+		int counter[6];
+        int result,sum;
+		ScoreSheet(){init();}   
     void init()
-    {
-        cin<<"Please enter your name: ";
+    {	
+		DESCRIPTIONS[16]={"Ones", "Twos", "Threes", "Fours", "Fives", "Sixes", "Sum", "Bonus", "Three of a Kind", "Four of a Kind", "Full House", "Small Straight", "Large Straight", "Chance", "Yahtzee", "Total Score"};
+		gameFinished=false;
+		result=0,sum=0;
+        cout<<"Please enter your name: ";
         cin>>name;
         bool bypass=false;
         int count=0;//use count to replace swicher(int type)
@@ -46,7 +42,7 @@ class ScoreSheet
             {
                 temp.setNum(count);
             }
-            score_paper.add(temp);
+            score_paper.push_back(temp);
             count++;
         }
         display(true);
