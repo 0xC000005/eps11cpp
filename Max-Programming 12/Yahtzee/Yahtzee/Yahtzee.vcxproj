@@ -80,6 +80,7 @@
   <ItemGroup>
     <ClInclude Include="Score.h" />
     <ClInclude Include="Scoresheet.h" />
+    <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,6 +6,7 @@
 #include<conio.h>
 #include"Score.h"
 
+using namespace std;
 class ScoreSheet
 {
 	public:
@@ -15,12 +16,35 @@ class ScoreSheet
 		bool gameFinished;
 		int counter[6];
         int result,sum;
-		ScoreSheet(){init();}   
-    void init()
+		ScoreSheet()
+		{
+			DESCRIPTIONS[1]="Ones";
+			DESCRIPTIONS[2]="Twos";
+			DESCRIPTIONS[3]="Threes";
+			DESCRIPTIONS[4]="Fours";
+			DESCRIPTIONS[5]="Fives";
+			DESCRIPTIONS[6]="Sixes";
+			DESCRIPTIONS[7]="Sum";
+			DESCRIPTIONS[8]="Bonus";
+			DESCRIPTIONS[9]="Three of a Kind";
+			DESCRIPTIONS[10]="Four of a Kind";
+			DESCRIPTIONS[11]="Full House";
+			DESCRIPTIONS[12]="Small Straight";
+			DESCRIPTIONS[13]="Large Straight";
+			DESCRIPTIONS[14]="Chance";
+			DESCRIPTIONS[15]="Yahtzee";
+			DESCRIPTIONS[16]="Total Score";
+			
+			//{"Ones", "Twos", "Threes", "Fours", "Fives", "Sixes", "Sum", "Bonus", "Three of a Kind", "Four of a Kind", "Full House", "Small Straight", "Large Straight", "Chance", "Yahtzee", "Total Score"};
+
+			gameFinished=false;
+			result=0,sum=0;
+			init();
+		}   
+
+    void ScoreSheet::init()
     {	
-		DESCRIPTIONS[16]={"Ones", "Twos", "Threes", "Fours", "Fives", "Sixes", "Sum", "Bonus", "Three of a Kind", "Four of a Kind", "Full House", "Small Straight", "Large Straight", "Chance", "Yahtzee", "Total Score"};
-		gameFinished=false;
-		result=0,sum=0;
+		
         cout<<"Please enter your name: ";
         cin>>name;
         bool bypass=false;
@@ -48,7 +72,7 @@ class ScoreSheet
         display(true);
     }
     
-    void display(bool firstTime)
+    void ScoreSheet::display(bool firstTime)
     {
         cout<<name<<"'s Score Sheet:";
         for(int i=0;i<score_paper.size();i++)
@@ -81,7 +105,7 @@ class ScoreSheet
         }
     }
     
-    bool game_finished()
+    bool ScoreSheet::game_finished()
     {
         gameFinished=true;
         for(int i; i<score_paper.size(); i++)
@@ -93,7 +117,7 @@ class ScoreSheet
         return gameFinished;
     }
     
-    void counter(int dice[],int preserve[])
+    void ScoreSheet::count(int dice[],int preserve[])
     {
         for(int i=0;i<5;++i)
         {
@@ -102,7 +126,7 @@ class ScoreSheet
         }
     }
     
-    void swicher(int type)
+    void ScoreSheet::swicher(int type)
     {
         if(0<=type&&type<=5)sum=counter[type]*(type+1);//Ones~Sixes
         else if(type==6)//Three of a kind
@@ -183,12 +207,12 @@ class ScoreSheet
         }
     }
     
-    int getSum()
+    int ScoreSheet::getSum()
     {
         return sum;
     }
     
-    void player_action()
+    void ScoreSheet::player_action()
     {
         cout<<"Enter the option you want to mark this round: ";
         string action;
@@ -203,5 +227,6 @@ class ScoreSheet
                 item.setUsed(item.getUsed()+1);
             }
         }
-    }
-}
+    
+	}
+};

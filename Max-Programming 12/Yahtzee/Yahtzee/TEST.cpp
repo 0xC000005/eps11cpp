@@ -1,90 +1,51 @@
-﻿//Max Zhang - Nov. 28
-#include<iostream>
+﻿#include<iostream>
 #include<string>
 #include<list>
 #include<vector>
 #include<iterator> 
 #include<conio.h>
+#include"Score.h"
+
 using namespace std;
-
-class Score
-{
-	private: 
-		string description;
-        int used;
-        int score;
-        int num;
-    
-	public: 
-		Score(){}
-		Score(string const  &_name)
-		{
-			setDescription(_name);
-			used=0;
-			score=0;
-		}
-    
-    void Score::setDescription(string _description)
-    {
-        description=_description;
-    }
-    string Score::getDescription()
-    {
-        return description;
-    }
-    
-    void Score::setUsed(int _used)
-    {
-        used=_used;
-    }
-    int Score::getUsed()
-    {
-        return used;
-    }
-    
-    void Score::setScore(int _score)
-    {
-        score=_score;
-    }
-    int Score::getScore()
-    {
-        return score;
-    }
-    
-    void Score::setNum(int _num)
-    {
-        num=_num;
-    }
-    int Score::getNum()
-    {
-        return num;
-    }
-};
-
 class ScoreSheet
 {
-	private: 
+	public:
 		vector<Score> score_paper;
 		string name;
-		string DESCRIPTIONS[17];
+		string DESCRIPTIONS[16];
 		bool gameFinished;
 		int counter[6];
-        int result;
-	public:
-		ScoreSheet(){}
+        int result,sum;
 		ScoreSheet()
 		{
-			DESCRIPTIONS[] = {"Ones", "Twos", "Threes", "Fours", "Fives", "Sixes", "Sum", "Bonus", "Three of a Kind", "Four of a Kind", "Full House", "Small Straight", "Large Straight", "Chance", "Yahtzee", "Total Score"};
+			DESCRIPTIONS[1]="Ones";
+			DESCRIPTIONS[2]="Twos";
+			DESCRIPTIONS[3]="Threes";
+			DESCRIPTIONS[4]="Fours";
+			DESCRIPTIONS[5]="Fives";
+			DESCRIPTIONS[6]="Sixes";
+			DESCRIPTIONS[7]="Sum";
+			DESCRIPTIONS[8]="Bonus";
+			DESCRIPTIONS[9]="Three of a Kind";
+			DESCRIPTIONS[10]="Four of a Kind";
+			DESCRIPTIONS[11]="Full House";
+			DESCRIPTIONS[12]="Small Straight";
+			DESCRIPTIONS[13]="Large Straight";
+			DESCRIPTIONS[14]="Chance";
+			DESCRIPTIONS[15]="Yahtzee";
+			DESCRIPTIONS[16]="Total Score";
+			
+			//{"Ones", "Twos", "Threes", "Fours", "Fives", "Sixes", "Sum", "Bonus", "Three of a Kind", "Four of a Kind", "Full House", "Small Straight", "Large Straight", "Chance", "Yahtzee", "Total Score"};
+
 			gameFinished=false;
-			counter[6];
 			result=0,sum=0;
 			init();
+		}   
 
-		}
-    
     void ScoreSheet::init()
-    {
-        cin<<"Please enter your name: ";
+    {	
+		
+        cout<<"Please enter your name: ";
         cin>>name;
         bool bypass=false;
         int count=0;//use count to replace swicher(int type)
@@ -105,7 +66,7 @@ class ScoreSheet
             {
                 temp.setNum(count);
             }
-            score_paper.add(temp);
+            score_paper.push_back(temp);
             count++;
         }
         display(true);
@@ -156,7 +117,7 @@ class ScoreSheet
         return gameFinished;
     }
     
-    void ScoreSheet::counter(int dice[],int preserve[])
+    void ScoreSheet::count(int dice[],int preserve[])
     {
         for(int i=0;i<5;++i)
         {
@@ -266,15 +227,6 @@ class ScoreSheet
                 item.setUsed(item.getUsed()+1);
             }
         }
-    }
-}
-
-
-int main()
-{
-	return 0;
-}
-
-
-
-
+    
+	}
+};
