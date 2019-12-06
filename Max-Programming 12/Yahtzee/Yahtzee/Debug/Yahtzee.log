@@ -1,56 +1,34 @@
-﻿Build started 2019-12-05 12:08:57 PM.
+﻿Build started 2019-12-06 2:04:04 PM.
      1>Project "H:\eps11cpp\Max-Programming 12\Yahtzee\Yahtzee\Yahtzee.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Yahtzee.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Yahtzee.cpp
-         Yahtzee.cpp
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(87): warning C4566: character represented by universal-character-name '\u2611' cannot be represented in the current code page (1252)
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(92): warning C4566: character represented by universal-character-name '\u2610' cannot be represented in the current code page (1252)
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TEST.cpp Yahtzee.cpp
+         TEST.cpp
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(90): warning C4566: character represented by universal-character-name '\u2611' cannot be represented in the current code page (1252)
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(95): warning C4566: character represented by universal-character-name '\u2610' cannot be represented in the current code page (1252)
      1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(78): warning C4018: '<' : signed/unsigned mismatch
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(111): warning C4018: '<' : signed/unsigned mismatch
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(220): warning C4018: '<' : signed/unsigned mismatch
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(20): error C2601: 'print_dice' : local function definitions are illegal
-                 h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(13): this line contains a '{' which has not yet been matched
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(32): error C2601: 'pressAnyKeyToContinue' : local function definitions are illegal
-                 h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(13): this line contains a '{' which has not yet been matched
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(39): error C2601: 'pick_out' : local function definitions are illegal
-                 h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(13): this line contains a '{' which has not yet been matched
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(65): error C2601: 'round' : local function definitions are illegal
-                 h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(13): this line contains a '{' which has not yet been matched
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(25): error C2065: 'dice' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(26): error C2065: 'dice' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(51): error C2065: 'dice' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(53): error C2065: 'preserve' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(53): error C2065: 'pickOut' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(53): error C2065: 'dice' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(54): error C2065: 'dice' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(55): error C2065: 'pickOut' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(70): error C2065: 'player' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(70): error C2228: left of '.display' must have class/struct/union
-                 type is ''unknown-type''
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(71): error C2065: 'pickOut' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(71): error C3861: 'print_dice': identifier not found
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(72): error C3861: 'pick_out': identifier not found
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(73): error C2065: 'player' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(73): error C2228: left of '.count' must have class/struct/union
-                 type is ''unknown-type''
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(73): error C2065: 'dice' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(73): error C2065: 'preserve' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(75): error C2065: 'player' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(75): error C2228: left of '.display' must have class/struct/union
-                 type is ''unknown-type''
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(83): error C2065: 'player' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(83): error C2228: left of '.player_action' must have class/struct/union
-                 type is ''unknown-type''
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(89): error C2065: 'player' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(89): error C2228: left of '.player_action' must have class/struct/union
-                 type is ''unknown-type''
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(91): error C2065: 'player' : undeclared identifier
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\yahtzee.cpp(91): error C2228: left of '.display' must have class/struct/union
-                 type is ''unknown-type''
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(120): warning C4018: '<' : signed/unsigned mismatch
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(238): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Compiling...
+         Yahtzee.cpp
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(90): warning C4566: character represented by universal-character-name '\u2611' cannot be represented in the current code page (1252)
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(95): warning C4566: character represented by universal-character-name '\u2610' cannot be represented in the current code page (1252)
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(78): warning C4018: '<' : signed/unsigned mismatch
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(120): warning C4018: '<' : signed/unsigned mismatch
+     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(238): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Yahtzee.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.lib" /MACHINE:X86 Debug\Yahtzee.exe.embed.manifest.res
+         Debug\TEST.obj
+         Debug\Yahtzee.obj
+     1>Yahtzee.obj : error LNK2005: _main already defined in TEST.obj
+     1>H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.exe : fatal error LNK1169: one or more multiply defined symbols found
      1>Done Building Project "H:\eps11cpp\Max-Programming 12\Yahtzee\Yahtzee\Yahtzee.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.80
+Time Elapsed 00:00:02.65

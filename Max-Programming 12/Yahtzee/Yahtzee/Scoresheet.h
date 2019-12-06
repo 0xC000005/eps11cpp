@@ -78,7 +78,10 @@ class ScoreSheet
         for(int i=0;i<score_paper.size();i++)
         {
 			Score item=score_paper[i];
-            if(item.getDescription()=="Total Score")cout<<item.getDescription()<<" "<<item.getScore()<<endl;
+            if(item.getDescription()=="Total Score")
+			{
+				cout<<item.getDescription()<<" "<<item.getScore()<<endl;
+			}
             else
             {
                 string marked;
@@ -90,14 +93,20 @@ class ScoreSheet
                 else
                 {
                     marked="☐";
-                    if(firstTime)cout<<marked+" "<<item.getDescription()<<" "<<item.getScore()<<endl;
+                    if(firstTime)
+					{
+						cout<<marked+" "<<item.getDescription()<<" "<<item.getScore()<<endl;					
+					}
                     else
                     {
-                        if(item.getNum()==-1)cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore();
+                        if(item.getNum()==-1)
+						{
+							cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;						
+						}
                         else
                         {
                             swicher(item.getNum());
-                            cout<<marked<<" "<<item.getDescription()<<" "<<sum;
+                            cout<<marked<<" "<<item.getDescription()<<" "<<sum<<endl;
                         }
                     }
                 }
@@ -108,10 +117,13 @@ class ScoreSheet
     bool ScoreSheet::game_finished()
     {
         gameFinished=true;
-        for(int i; i<score_paper.size(); i++)
+        for(int i=0; i<score_paper.size(); i++)
         {
 			Score item=score_paper[i];
-            if(item.getUsed()==0)gameFinished=false;
+            if(item.getUsed()==0)
+			{
+				gameFinished=false;
+			}
             break;
         }
         return gameFinished;
@@ -121,8 +133,14 @@ class ScoreSheet
     {
         for(int i=0;i<5;++i)
         {
-            if(dice[i]!=0)counter[dice[i]-1]++;
-            if(preserve[i]!=0)counter[preserve[i]-1]++;
+            if(dice[i]!=0)
+			{
+				counter[dice[i]-1]++;
+			}
+            if(preserve[i]!=0)
+			{
+				counter[preserve[i]-1]++;
+			}
         }
     }
     
