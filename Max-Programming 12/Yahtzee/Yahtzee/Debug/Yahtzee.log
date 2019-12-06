@@ -1,34 +1,13 @@
-﻿Build started 2019-12-06 2:04:04 PM.
+﻿Build started 2019-12-06 2:13:50 PM.
      1>Project "H:\eps11cpp\Max-Programming 12\Yahtzee\Yahtzee\Yahtzee.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\Yahtzee.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\Yahtzee.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TEST.cpp Yahtzee.cpp
-         TEST.cpp
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(90): warning C4566: character represented by universal-character-name '\u2611' cannot be represented in the current code page (1252)
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(95): warning C4566: character represented by universal-character-name '\u2610' cannot be represented in the current code page (1252)
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(78): warning C4018: '<' : signed/unsigned mismatch
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(120): warning C4018: '<' : signed/unsigned mismatch
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(238): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-         Compiling...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Yahtzee.cpp
          Yahtzee.cpp
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(90): warning C4566: character represented by universal-character-name '\u2611' cannot be represented in the current code page (1252)
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(95): warning C4566: character represented by universal-character-name '\u2610' cannot be represented in the current code page (1252)
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(78): warning C4018: '<' : signed/unsigned mismatch
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(120): warning C4018: '<' : signed/unsigned mismatch
-     1>h:\eps11cpp\max-programming 12\yahtzee\yahtzee\scoresheet.h(238): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-       ManifestResourceCompile:
-         All outputs are up-to-date.
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Yahtzee.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.lib" /MACHINE:X86 Debug\Yahtzee.exe.embed.manifest.res
-         Debug\TEST.obj
-         Debug\Yahtzee.obj
-     1>Yahtzee.obj : error LNK2005: _main already defined in TEST.obj
-     1>H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>c1xx : fatal error C1083: Cannot open source file: 'Yahtzee.cpp': No such file or directory
      1>Done Building Project "H:\eps11cpp\Max-Programming 12\Yahtzee\Yahtzee\Yahtzee.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.65
+Time Elapsed 00:00:00.43

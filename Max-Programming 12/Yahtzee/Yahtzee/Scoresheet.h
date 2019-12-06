@@ -75,7 +75,7 @@ class ScoreSheet
     void ScoreSheet::display(bool firstTime)
     {
         cout<<name<<"'s Score Sheet:";
-        for(int i=0;i<score_paper.size();i++)
+        for(size_t i=0;i<score_paper.size();i++)
         {
 			Score item=score_paper[i];
             if(item.getDescription()=="Total Score")
@@ -87,13 +87,15 @@ class ScoreSheet
                 string marked;
                 if(item.getUsed()==1)
                 {
-                    marked="☑";
+                    //marked="☑";
+					marked="x";
                     cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;
                 }
                 else
                 {
-                    marked="☐";
-                    if(firstTime)
+                    //marked="☐";
+                    marked="o";
+					if(firstTime)
 					{
 						cout<<marked+" "<<item.getDescription()<<" "<<item.getScore()<<endl;					
 					}
@@ -117,7 +119,7 @@ class ScoreSheet
     bool ScoreSheet::game_finished()
     {
         gameFinished=true;
-        for(int i=0; i<score_paper.size(); i++)
+        for(size_t i=0; i<score_paper.size(); i++)
         {
 			Score item=score_paper[i];
             if(item.getUsed()==0)
@@ -235,7 +237,7 @@ class ScoreSheet
         cout<<"Enter the option you want to mark this round: ";
         string action;
 		cin>>action;
-        for(int i=0; i<score_paper.size(); i++)
+        for(size_t i=0; i<score_paper.size(); i++)
         {
 			Score item=score_paper[i];
             if(action==item.getDescription())
