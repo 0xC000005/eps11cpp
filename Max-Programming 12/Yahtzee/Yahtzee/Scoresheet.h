@@ -34,9 +34,6 @@ class ScoreSheet
 			DESCRIPTIONS[14]="Chance";
 			DESCRIPTIONS[15]="Yahtzee";
 			DESCRIPTIONS[16]="Total Score";
-			
-			//{"Ones", "Twos", "Threes", "Fours", "Fives", "Sixes", "Sum", "Bonus", "Three of a Kind", "Four of a Kind", "Full House", "Small Straight", "Large Straight", "Chance", "Yahtzee", "Total Score"};
-
 			gameFinished=false;
 			result=0,sum=0;
 			init();
