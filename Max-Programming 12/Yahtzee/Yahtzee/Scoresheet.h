@@ -9,31 +9,32 @@
 using namespace std;
 class ScoreSheet
 {
-	public:
+	private:
 		vector<Score> score_paper;
 		string name;
-		string DESCRIPTIONS[16];
+		string DESCRIPTIONS[17];
 		bool gameFinished;
 		int counter[6];
         int result,sum;
+	public:
 		ScoreSheet()
 		{
-			DESCRIPTIONS[1]="Ones";
-			DESCRIPTIONS[2]="Twos";
-			DESCRIPTIONS[3]="Threes";
-			DESCRIPTIONS[4]="Fours";
-			DESCRIPTIONS[5]="Fives";
-			DESCRIPTIONS[6]="Sixes";
-			DESCRIPTIONS[7]="Sum";
-			DESCRIPTIONS[8]="Bonus";
-			DESCRIPTIONS[9]="Three of a Kind";
-			DESCRIPTIONS[10]="Four of a Kind";
-			DESCRIPTIONS[11]="Full House";
-			DESCRIPTIONS[12]="Small Straight";
-			DESCRIPTIONS[13]="Large Straight";
-			DESCRIPTIONS[14]="Chance";
-			DESCRIPTIONS[15]="Yahtzee";
-			DESCRIPTIONS[16]="Total Score";
+			DESCRIPTIONS[0]="Ones";
+			DESCRIPTIONS[1]="Twos";
+			DESCRIPTIONS[2]="Threes";
+			DESCRIPTIONS[3]="Fours";
+			DESCRIPTIONS[4]="Fives";
+			DESCRIPTIONS[5]="Sixes";
+			DESCRIPTIONS[6]="Sum";
+			DESCRIPTIONS[7]="Bonus";
+			DESCRIPTIONS[8]="Three of a Kind";
+			DESCRIPTIONS[9]="Four of a Kind";
+			DESCRIPTIONS[10]="Full House";
+			DESCRIPTIONS[11]="Small Straight";
+			DESCRIPTIONS[12]="Large Straight";
+			DESCRIPTIONS[13]="Chance";
+			DESCRIPTIONS[14]="Yahtzee";
+			DESCRIPTIONS[15]="Total Score";
 			gameFinished=false;
 			result=0,sum=0;
 			init();
@@ -41,7 +42,6 @@ class ScoreSheet
 
     void ScoreSheet::init()
     {	
-		
         cout<<"Please enter your name: ";
         cin>>name;
         bool bypass=false;
@@ -71,7 +71,10 @@ class ScoreSheet
     
     void ScoreSheet::display(bool firstTime)
     {
-        cout<<name<<"'s Score Sheet:";
+        cout<<name<<"'s Score Sheet:"<<endl;
+
+
+
         for(size_t i=0;i<score_paper.size();i++)
         {
 			Score item=score_paper[i];
@@ -94,7 +97,7 @@ class ScoreSheet
                     marked="o";
 					if(firstTime)
 					{
-						cout<<marked+" "<<item.getDescription()<<" "<<item.getScore()<<endl;					
+						cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;					
 					}
                     else
                     {

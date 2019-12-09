@@ -1,12 +1,12 @@
-#include<iostream>
+﻿#include<iostream>
 #include<string>
 #include<list>
 #include<vector>
 #include<iterator> 
 #include<conio.h>
 #include"ScoreSheet.h"
+#include<H:/lvp/RANDOM.H>
 using namespace std;
-
 
 int dice[5];
 int preserve[5];
@@ -16,11 +16,11 @@ ScoreSheet player;
 void print_dice(int number)
 {
     cout<<"Your dices:"<<endl;
+	cout<<number<<endl;
     for(int i=0;i<number;++i)
-    {
-			
+    {	
         dice[i]=rand()%6+1;
-        cout<<dice[i]+" "<<endl;
+        cout<<dice[i]<<" ";
     }
     cout<<endl;
 }
@@ -32,7 +32,7 @@ void pressAnyKeyToContinue()
 }
 
     
-void pick_out()
+void picking_out()
 {
     cout<<"Enter a number to select a dice you want to save."<<endl;
     cout<<"Enter 0 to end the pick_out operation when you finished."<<endl;
@@ -65,7 +65,7 @@ void round()
         //system("cls");//clear
         player.display(false); //display new sheet
         print_dice(5-pickOut);
-		pick_out();
+		picking_out();
         player.count(dice,preserve);
         //system("cls");
         player.display(false);
@@ -90,8 +90,7 @@ void round()
     
 int main()
 {
-   
-     while(!player.game_finished())
+    while(!player.game_finished())
     {
         round();
     }

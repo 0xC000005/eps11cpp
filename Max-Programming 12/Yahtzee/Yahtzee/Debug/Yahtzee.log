@@ -1,13 +1,29 @@
-﻿Build started 2019-12-06 2:13:50 PM.
+﻿Build started 2019-12-09 10:01:37 AM.
      1>Project "H:\eps11cpp\Max-Programming 12\Yahtzee\Yahtzee\Yahtzee.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\Yahtzee.unsuccessfulbuild".
+         Creating "Debug\Yahtzee.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Yahtzee.cpp
          Yahtzee.cpp
-     1>c1xx : fatal error C1083: Cannot open source file: 'Yahtzee.cpp': No such file or directory
-     1>Done Building Project "H:\eps11cpp\Max-Programming 12\Yahtzee\Yahtzee\Yahtzee.vcxproj" (build target(s)) -- FAILED.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Yahtzee.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.lib" /MACHINE:X86 Debug\Yahtzee.exe.embed.manifest.res
+         Debug\TEST.obj
+         Debug\Yahtzee.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Yahtzee.exe.embed.manifest" /manifest Debug\Yahtzee.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Yahtzee.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.lib" /MACHINE:X86 Debug\Yahtzee.exe.embed.manifest.res
+         Debug\TEST.obj
+         Debug\Yahtzee.obj
+         Yahtzee.vcxproj -> H:\eps11cpp\Max-Programming 12\Yahtzee\Debug\Yahtzee.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Yahtzee.unsuccessfulbuild".
+         Touching "Debug\Yahtzee.lastbuildstate".
+     1>Done Building Project "H:\eps11cpp\Max-Programming 12\Yahtzee\Yahtzee\Yahtzee.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.43
+Time Elapsed 00:00:03.18
