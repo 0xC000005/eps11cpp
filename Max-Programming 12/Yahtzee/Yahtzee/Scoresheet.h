@@ -89,7 +89,8 @@ class ScoreSheet
                 {
                     //marked="☑";
 					marked="x";
-                    cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;
+					cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;
+					cout<<" "<<item.getNum()<<" "<<item.getUsed()<<endl;
                 }
                 else
                 {
@@ -97,18 +98,21 @@ class ScoreSheet
                     marked="o";
 					if(firstTime)
 					{
-						cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;					
+						cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;	
+						cout<<" "<<item.getNum()<<" "<<item.getUsed()<<endl;
 					}
                     else
                     {
                         if(item.getNum()==-1)
 						{
-							cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;						
+							cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;	
+							cout<<" "<<item.getNum()<<" "<<item.getUsed()<<endl;
 						}
                         else
                         {
                             swicher(item.getNum());
                             cout<<marked<<" "<<item.getDescription()<<" "<<sum<<endl;
+							cout<<" "<<item.getNum()<<" "<<item.getUsed()<<endl;
                         }
                     }
                 }
@@ -144,6 +148,7 @@ class ScoreSheet
 				counter[preserve[i]-1]++;
 			}
         }
+
     }
     
     void ScoreSheet::swicher(int type)

@@ -1,4 +1,4 @@
-﻿Build started 2019-12-09 10:01:37 AM.
+﻿Build started 2019-12-09 10:15:33 AM.
      1>Project "H:\eps11cpp\Max-Programming 12\Yahtzee\Yahtzee\Yahtzee.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Yahtzee.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -26,4 +26,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.18
+Time Elapsed 00:00:03.27

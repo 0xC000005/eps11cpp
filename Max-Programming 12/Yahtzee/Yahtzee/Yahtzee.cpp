@@ -62,12 +62,12 @@ void round()
     bool finished=false;//after player_action(); return 0
     for(int i=1;i<=3;++i)//each round has 3 tern
     {
-        //system("cls");//clear
+        system("cls");//clear
         player.display(false); //display new sheet
         print_dice(5-pickOut);
 		picking_out();
         player.count(dice,preserve);
-        //system("cls");
+        system("cls");
         player.display(false);
         if(i<3)
         {
