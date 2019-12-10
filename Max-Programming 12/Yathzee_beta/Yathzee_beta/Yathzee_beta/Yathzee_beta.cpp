@@ -5,19 +5,19 @@
 #include<iterator> 
 #include<conio.h>
 #include"Score.h"
-
 using namespace std;
+
 class ScoreSheet
 {
 	private:
 		vector<Score> score_paper;
 		string name;
-		string DESCRIPTIONS[17];
+		string DESCRIPTIONS[16];
 		bool gameFinished;
 		int counter[6];
         int result,sum;
 	public:
-		ScoreSheet()
+		ScoreSheet()//init var
 		{
 			DESCRIPTIONS[0]="Ones";
 			DESCRIPTIONS[1]="Twos";
@@ -40,18 +40,63 @@ class ScoreSheet
 			init();
 		}   
 
+
+	void ScoreSheet::display(bool firstTime)
+    {
+        cout<<name<<"'s Score Sheet:"<<endl;
+		for(size_t i=0;i<score_paper.size();i++)
+        {
+			Score item=score_paper[i];
+            if(item.getDescription()=="Total Score")
+			{
+				cout<<item.getDescription()<<" "<<item.getScore()<<endl; // total score dont need markded sign
+			}
+            else
+            {
+                string marked;
+                if(item.getUsed()==1)
+                {
+                    //marked="☑";
+					marked="x";
+					cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;
+                }
+                else
+                {
+                    //marked="☐";
+                    marked="o";
+					if(firstTime)
+					{
+						cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;	
+					}
+                    else
+                    {
+                        if(item.getNum()==-1)//if ID is -1, means that is sum or total
+						{
+							cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;	
+						}
+                        else
+                        {
+                            swicher(item.getNum());
+                            cout<<marked<<" "<<item.getDescription()<<" "<<sum<<endl;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     void ScoreSheet::init()
     {	
         cout<<"Please enter your name: ";
         cin>>name;
-        bool bypass=false;
+        bool bypass=false;//use to bypass Sum and Bouns at the first time
         int count=0;//use count to replace swicher(int type)
         for(int i=0;i<16;++i)
         {
-            Score temp=Score(DESCRIPTIONS[i]);
+            Score temp=Score(DESCRIPTIONS[i]);//init temp with description 
             if(((count==6)||(count==7))&&bypass==false)//first time meet sum and bouns
             {
-                temp.setNum(-1);
+                temp.setNum(-1);//set ID=-1 for sum and bouns
             }
             else if(count==8&&bypass==false)
             {
@@ -69,56 +114,7 @@ class ScoreSheet
         display(true);
     }
     
-    void ScoreSheet::display(bool firstTime)
-    {
-        cout<<name<<"'s Score Sheet:"<<endl;
-
-
-
-        for(size_t i=0;i<score_paper.size();i++)
-        {
-			Score item=score_paper[i];
-            if(item.getDescription()=="Total Score")
-			{
-				cout<<item.getDescription()<<" "<<item.getScore()<<endl;
-			}
-            else
-            {
-                string marked;
-                if(item.getUsed()==1)
-                {
-                    //marked="☑";
-					marked="x";
-					cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;
-					cout<<" "<<item.getNum()<<" "<<item.getUsed()<<endl;
-                }
-                else
-                {
-                    //marked="☐";
-                    marked="o";
-					if(firstTime)
-					{
-						cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;	
-						cout<<" "<<item.getNum()<<" "<<item.getUsed()<<endl;
-					}
-                    else
-                    {
-                        if(item.getNum()==-1)
-						{
-							cout<<marked<<" "<<item.getDescription()<<" "<<item.getScore()<<endl;	
-							cout<<" "<<item.getNum()<<" "<<item.getUsed()<<endl;
-						}
-                        else
-                        {
-                            swicher(item.getNum());
-                            cout<<marked<<" "<<item.getDescription()<<" "<<sum<<endl;
-							cout<<" "<<item.getNum()<<" "<<item.getUsed()<<endl;
-                        }
-                    }
-                }
-            }
-        }
-    }
+   
     
     bool ScoreSheet::game_finished()
     {
@@ -135,7 +131,7 @@ class ScoreSheet
         return gameFinished;
     }
     
-    void ScoreSheet::count(int dice[],int preserve[])
+    void ScoreSheet::counting(int dice[],int preserve[]) //make dices_list -> counter
     {
         for(int i=0;i<5;++i)
         {
@@ -151,8 +147,10 @@ class ScoreSheet
 
     }
     
-    void ScoreSheet::swicher(int type)
+    void ScoreSheet::swicher(int type)//calculating the score/pantional score for SocreSheet
     {
+		sum=0;//reset sum before swicher, IDK why lol
+
         if(0<=type&&type<=5)sum=counter[type]*(type+1);//Ones~Sixes
         else if(type==6)//Three of a kind
         {
@@ -255,3 +253,9 @@ class ScoreSheet
     
 	}
 };
+
+int main()
+{
+	ScoreSheet test;
+	return 0;
+}
