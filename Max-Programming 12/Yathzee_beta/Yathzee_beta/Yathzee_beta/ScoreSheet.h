@@ -37,18 +37,26 @@ class ScoreSheet
 			DESCRIPTIONS[15]="Total Score";
 			gameFinished=false;
 			result=0,sum=0;
+			counter[0]=0;
+			counter[1]=0;
+			counter[2]=0;
+			counter[3]=0;
+			counter[4]=0;
+			counter[5]=0;
 			init();
 		}   
 
 	void ScoreSheet::display(bool firstTime)
     {
+		cout<<"TEST_MESSAGE: display."<<endl;
         cout<<name<<"'s Score Sheet:"<<endl;
 		for(size_t i=0;i<score_paper.size();i++)
         {
 			Score item=score_paper[i];
+
             if(item.getDescription()=="Total Score")
 			{
-				cout<<item.getDescription()<<" "<<item.getScore()<<endl; // total score dont need markded sign
+				cout<<item.getDescription()<<" "<<item.getScore()<<endl; // total score doesnt need markded sign
 			}
             else
             {
@@ -132,6 +140,7 @@ class ScoreSheet
     
     void ScoreSheet::counting(int dice[],int preserve[]) //make dices_list -> counter
     {
+		check_counter();
         for(int i=0;i<5;++i)
         {
             if(dice[i]!=0)
@@ -143,6 +152,7 @@ class ScoreSheet
 				counter[preserve[i]-1]++;
 			}
         }
+		check_counter();
 
     }
     
@@ -238,6 +248,24 @@ class ScoreSheet
     {
         return name;
     }
+
+	void ScoreSheet::check_counter()
+	{
+		cout<<"TEST_MESSAGE: starting test func/ check_counter."<<endl;
+		for(int i=0;i<6;i++)
+		{
+			cout<<counter[i]<<" ";
+		}
+	}
+
+	void ScoreSheet::clean_counter()
+	{
+		cout<<"TEST_MESSAGE: overwrite counter."<<endl;
+		for(int i=0;i<6;i++)
+		{
+			counter[i]=0;
+		}
+	}
     
     void ScoreSheet::player_action()
     {

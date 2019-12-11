@@ -74,7 +74,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Score.h" />
+    <ClInclude Include="ScoreSheet.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Yathzee_beta.cpp" />

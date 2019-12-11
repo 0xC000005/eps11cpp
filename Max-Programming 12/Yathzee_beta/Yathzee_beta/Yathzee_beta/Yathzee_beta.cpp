@@ -19,13 +19,45 @@ class Game
 	public: 
 		Game() //init
 		{
+			clean_dice();
+			check_dice();
 			pickOut=0;
 			init();
-			while(player.game_finished())
+			while(!player.game_finished())
 			{
 				round();
 			}
 		}
+
+	void Game::check_dice()
+	{
+		cout<<"TEST_MESSAGE: starting the test func. check_dice. "<<endl;
+		cout<<"dice: ";
+		for(int i=0;i<6;i++)
+		{
+			cout<<dice[i]<<" "; 
+		}
+		
+		cout<<"preserve: ";
+		for(int i=0;i<6;i++)
+		{
+			cout<<preserve[i]<<" "; 
+		}
+	}
+
+	void Game::clean_dice()
+	{
+		cout<<"TEST_MESSGE: overwrite the entire dice and preserve arraies. "<<endl;
+		for(int i=0;i<6;i++)
+		{
+			dice[i]=0; 
+		}
+		
+		for(int i=0;i<6;i++)
+		{
+			preserve[i]=0; 
+		}
+	}
 
 	void Game::init()
 	{
@@ -62,14 +94,24 @@ class Game
 			cin>>pick;
 			if(pick!=0)
 			{
-				for(int i=0;i<5;++i)
+				for(int i=0;i<5;i++)
 				{
-					if(dice[i]==pick)
+					if(dice[i]==pick)//find the first right dice in the dice sequence, and store into preserve sequence with index = pickOut 
 					{
 						preserve[pickOut]=dice[i];
 						dice[i]=0;
 						pickOut++;
+						/*
+							pickOut here acts as both counter for preserve and how many dice has picked out, 
+							so the none-zore size for preserve will always equals to the pickOut.
+						*/
 						break;
+
+						/*
+						
+							can also add a dice check here
+						
+						*/
 					}
 				}   
 			}
@@ -82,14 +124,17 @@ class Game
 		bool finished=false;//after player_action(); return 0
 		for(int i=1;i<=3;++i)//each round has 3 tern
 		{
-			system("cls");//clear
+			//system("cls");//clear
 			player.display(false); //display new sheet
 			cout<<"This is your "<<i<<" round."<<endl;
+			check_dice();
 			cout<<"TEST_MESSAGE: pickOut = "<<pickOut<<endl;
 			print_dice(5-pickOut);
 			picking_out();
+			check_dice();
+			
 			player.counting(dice,preserve);
-			system("cls");
+			//system("cls");
 			player.display(false);
 			if(i<3)
 			{
@@ -109,6 +154,16 @@ class Game
 			player.display(false);
 		}
 	} 
+
+	void Game::check_pickOut()
+	{
+		cout<<"pickOut = "<<pickOut<<endl;
+	}
     
 };
+
+void main()
+{
+	Game A;
+}
 
