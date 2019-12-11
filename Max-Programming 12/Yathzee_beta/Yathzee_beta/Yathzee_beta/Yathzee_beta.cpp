@@ -17,10 +17,14 @@ class Game
 		ScoreSheet player;
     
 	public: 
-		Game() //init with description 
+		Game() //init
 		{
 			pickOut=0;
-
+			init();
+			while(player.game_finished())
+			{
+				round();
+			}
 		}
 
 	void Game::init()
@@ -48,6 +52,7 @@ class Game
 
 	void Game::picking_out()
 	{
+		cout<<"TEST_MESSAGE: starting func. picking_out."<<endl;
 		cout<<"Enter a number to select a dice you want to save."<<endl;
 		cout<<"Enter 0 to end the pick_out operation when you finished."<<endl;
 		int pick=-1;
@@ -73,11 +78,14 @@ class Game
     
 	void Game::round()
 	{
+		cout<<"TEST_MESSAGE: new 'round' event start."<<endl;
 		bool finished=false;//after player_action(); return 0
 		for(int i=1;i<=3;++i)//each round has 3 tern
 		{
 			system("cls");//clear
 			player.display(false); //display new sheet
+			cout<<"This is your "<<i<<" round."<<endl;
+			cout<<"TEST_MESSAGE: pickOut = "<<pickOut<<endl;
 			print_dice(5-pickOut);
 			picking_out();
 			player.counting(dice,preserve);

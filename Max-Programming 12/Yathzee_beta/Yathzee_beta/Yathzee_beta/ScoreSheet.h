@@ -116,6 +116,7 @@ class ScoreSheet
     
     bool ScoreSheet::game_finished()
     {
+		cout<<"TEST_MASSAGE: check if event 'game' is finished or not. "<<endl;
         gameFinished=true;
         for(size_t i=0; i<score_paper.size(); i++)
         {
