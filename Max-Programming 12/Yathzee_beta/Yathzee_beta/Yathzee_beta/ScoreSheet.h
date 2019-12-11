@@ -37,12 +37,7 @@ class ScoreSheet
 			DESCRIPTIONS[15]="Total Score";
 			gameFinished=false;
 			result=0,sum=0;
-			counter[0]=0;
-			counter[1]=0;
-			counter[2]=0;
-			counter[3]=0;
-			counter[4]=0;
-			counter[5]=0;
+			clean_counter();
 			init();
 		}   
 

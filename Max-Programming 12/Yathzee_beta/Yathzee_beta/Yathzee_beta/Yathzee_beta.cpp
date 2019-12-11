@@ -37,12 +37,13 @@ class Game
 		{
 			cout<<dice[i]<<" "; 
 		}
-		
+		cout<<endl;
 		cout<<"preserve: ";
 		for(int i=0;i<6;i++)
 		{
 			cout<<preserve[i]<<" "; 
 		}
+		cout<<endl;
 	}
 
 	void Game::clean_dice()
@@ -66,8 +67,8 @@ class Game
 
     void Game::print_dice(int number)
 	{
+		check_pickOut();
 		cout<<"Your dices:"<<endl;
-		cout<<number<<endl;
 		for(int i=0;i<number;++i)
 		{	
 			dice[i]=rand()%6+1;
@@ -84,6 +85,7 @@ class Game
 
 	void Game::picking_out()
 	{
+		check_dice();
 		cout<<"TEST_MESSAGE: starting func. picking_out."<<endl;
 		cout<<"Enter a number to select a dice you want to save."<<endl;
 		cout<<"Enter 0 to end the pick_out operation when you finished."<<endl;
@@ -97,8 +99,9 @@ class Game
 				for(int i=0;i<5;i++)
 				{
 					if(dice[i]==pick)//find the first right dice in the dice sequence, and store into preserve sequence with index = pickOut 
-					{
+					{	
 						preserve[pickOut]=dice[i];
+						cout<<"TEST_MESSAGE: preserve["<<pickOut<<"]=dice["<<i<<"]"<<endl;
 						dice[i]=0;
 						pickOut++;
 						/*
@@ -116,6 +119,7 @@ class Game
 				}   
 			}
 		} 
+		check_dice();
 	}
     
 	void Game::round()
