@@ -249,8 +249,14 @@ class ScoreSheet
 		cout<<"TEST_MESSAGE: starting test func/ check_counter."<<endl;
 		for(int i=0;i<6;i++)
 		{
+			cout<<i+1<<" ";
+		}
+		cout<<endl;
+		for(int i=0;i<6;i++)
+		{
 			cout<<counter[i]<<" ";
 		}
+		cout<<endl;
 	}
 
 	void ScoreSheet::clean_counter()
