@@ -40,7 +40,6 @@ class ScoreSheet
 			init();
 		}   
 
-
 	void ScoreSheet::display(bool firstTime)
     {
         cout<<name<<"'s Score Sheet:"<<endl;
@@ -87,6 +86,7 @@ class ScoreSheet
 
     void ScoreSheet::init()
     {	
+		cout<<"TEST_MESSAGE: class 'ScoreSheet' init."<<endl;
         cout<<"Please enter your name: ";
         cin>>name;
         bool bypass=false;//use to bypass Sum and Bouns at the first time
@@ -231,6 +231,11 @@ class ScoreSheet
     int ScoreSheet::getSum()
     {
         return sum;
+    }
+
+	string ScoreSheet::getName()
+    {
+        return name;
     }
     
     void ScoreSheet::player_action()
