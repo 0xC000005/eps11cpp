@@ -5,7 +5,6 @@
 #include<iterator> 
 #include<conio.h>
 #include"ScoreSheet.h"
-#include<H:/lvp/RANDOM.H>
 using namespace std;
 
 class Game
@@ -20,7 +19,6 @@ class Game
 		Game() //init
 		{
 			clean_dice();
-			check_dice();
 			pickOut=0;
 			init();
 			while(!player.game_finished())
@@ -67,18 +65,53 @@ class Game
 
     void Game::print_dice(int number)
 	{
-		cout<<"TEST_MESSAGE: 000000000000"<<endl;
-		check_dice();
+
+
+		cout<<"1preserve: ";
+		for(int a=0;a<5;a++)
+		{
+			cout<<preserve[a]<<" "; 
+		}
+		cout<<endl;
+
+
 		cout<<"Your dices:"<<endl;
 		for(int i=0;i<number;i++)
 		{	
-			dice[i]=rand()%6+1;
+
+
+			cout<<"2preserve: ";
+			for(int b=0;b<5;b++)
+			{
+				cout<<preserve[b]<<" "; 
+			}
+			cout<<endl;
+
+
+
+			dice[i]=1;
 			cout<<dice[i]<<" ";
-			check_dice();
+
+
+
+			cout<<endl<<"3preserve: ";
+			for(int c=0;c<5;c++)
+			{
+				cout<<preserve[c]<<" "; 
+			}
+			cout<<endl;
+
+
 		}
 		cout<<endl;
-		cout<<"TEST_MESSAGE: 111111111111"<<endl;
-		check_dice();
+
+
+		cout<<"4preserve: ";
+		for(int d=0;d<5;d++)
+		{
+			cout<<preserve[d]<<" "; 
+		}
+		cout<<endl;
 	}
 
 	void Game::pressAnyKeyToContinue()
