@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 #include<string>
 #include<list>
 #include<vector>
@@ -65,51 +65,35 @@ class Game
 
     void Game::print_dice(int number)
 	{
-
-
 		cout<<"1preserve: ";
-		for(int a=0;a<5;a++)
+		for(int i=0;i<5;i++)
 		{
-			cout<<preserve[a]<<" "; 
+			cout<<preserve[i]<<" "; 
 		}
 		cout<<endl;
-
-
 		cout<<"Your dices:"<<endl;
 		for(int i=0;i<number;i++)
 		{	
-
-
 			cout<<"2preserve: ";
-			for(int b=0;b<5;b++)
+			for(int i=0;i<5;i++)
 			{
-				cout<<preserve[b]<<" "; 
+				cout<<preserve[i]<<" "; 
 			}
 			cout<<endl;
-
-
-
-			dice[i]=rand()%6;
+			dice[i]=rand()%6+1;
 			cout<<dice[i]<<" ";
-
-
-
-			cout<<endl<<"3preserve: ";
-			for(int c=0;c<5;c++)
+			cout<<"preserve: ";
+			for(int i=0;i<5;i++)
 			{
-				cout<<preserve[c]<<" "; 
+				cout<<preserve[i]<<" "; 
 			}
 			cout<<endl;
-
-
 		}
 		cout<<endl;
-
-
 		cout<<"4preserve: ";
-		for(int d=0;d<5;d++)
+		for(int i=0;i<5;i++)
 		{
-			cout<<preserve[d]<<" "; 
+			cout<<preserve[i]<<" "; 
 		}
 		cout<<endl;
 	}
