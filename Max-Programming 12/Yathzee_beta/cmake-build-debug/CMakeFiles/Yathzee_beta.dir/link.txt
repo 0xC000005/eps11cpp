@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Yathzee_beta.dir/Yathzee_beta/Yathzee_beta/Yathzee_beta.cpp.o  -o Yathzee_beta 

@@ -115,7 +115,7 @@ public:
         {
             //system("cls");//clear
             player.check_counter();
-            player.chean_counter(dice);
+            player.init_counter();
             player.check_counter();
             clean_dice();
             player.display(false); //display new sheet
