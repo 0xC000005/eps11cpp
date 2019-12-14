@@ -4,59 +4,56 @@
 #include<list>
 #include <utility>
 #include<vector>
-#include<iterator> 
+#include<iterator>
 
 using namespace std;
-class Score
-{
+
+class Score {
 private:
     string description;
     int used{};
     int score{};
     int num{};
-    
+
 public:
-    Score()= default;
-    explicit Score(string const  &_name) //init with description
+    Score() = default;
+
+    explicit Score(string const &_name) //init with description
     {
         setDescription(_name);
-        used=0;
-        score=0;
+        used = 0;
+        score = 0;
     }
 
-    void setDescription(string _description)
-    {
-        description=std::move(_description);
+    void setDescription(string _description) {
+        description = std::move(_description);
     }
-    string getDescription()
-    {
+
+    string getDescription() {
         return description;
     }
-    
-    void setUsed(int _used)
-    {
-        used=_used;
+
+    void setUsed(int _used) {
+        used = _used;
     }
-    int getUsed()
-    {
+
+    int getUsed() {
         return used;
     }
-    
-    void setScore(int _score)
-    {
-        score=_score;
+
+    void setScore(int _score) {
+        score = _score;
     }
-    int getScore()
-    {
+
+    int getScore() {
         return score;
     }
-    
-    void setNum(int _num)
-    {
-        num=_num;
+
+    void setNum(int _num) {
+        num = _num;
     }
-    int getNum()
-    {
+
+    int getNum() {
         return num;
     }
 };
