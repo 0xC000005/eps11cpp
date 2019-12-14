@@ -20,6 +20,7 @@ public:
     Game() //init
     {
         clean_dice();
+        clean_preserve();
         pickOut=0;
         init();
         while(!player.game_finished())
@@ -32,30 +33,32 @@ public:
     {
         cout<<"TEST_MESSAGE: starting the test func. check_dice. "<<endl;
         cout<<"dice: ";
-        for(int i=0;i<5;i++)
+        for(int i : dice)
         {
-            cout<<dice[i]<<" ";
+            cout<<i<<" ";
         }
         cout<<endl;
         cout<<"preserve: ";
-        for(int i=0;i<5;i++)
+        for(int i : preserve)
         {
-            cout<<preserve[i]<<" ";
+            cout<<i<<" ";
         }
         cout<<endl;
     }
 
     void clean_dice()
     {
-        cout<<"TEST_MESSAGE: overwrite the entire dice and preserve arraies. "<<endl;
-        for(int i=0;i<5;i++)
+        for(int & i : dice)
         {
-            dice[i]=0;
+            i=0;
         }
+    }
 
-        for(int i=0;i<5;i++)
+    void clean_preserve()
+    {
+        for(int & i : preserve)
         {
-            preserve[i]=0;
+            i=0;
         }
     }
 
@@ -80,7 +83,7 @@ public:
         cout<<endl;
     }
 
-    void pressAnyKeyToContinue()
+    static void pressAnyKeyToContinue()
     {
         cout<<"Press Enter key to continue..."<<endl;
         getchar();
@@ -126,6 +129,10 @@ public:
         for(int i=1;i<=3;++i)//each round has 3 tern
         {
             //system("cls");//clear
+            player.check_counter();
+            player.chean_counter(dice);
+            player.check_counter();
+            clean_dice();
             player.display(false); //display new sheet
             cout<<"This is your "<<i<<" round."<<endl;
             print_dice(5-pickOut);

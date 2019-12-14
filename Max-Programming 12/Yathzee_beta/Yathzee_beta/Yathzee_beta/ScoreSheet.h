@@ -36,7 +36,7 @@ class ScoreSheet
 			DESCRIPTIONS[15]="Total Score";
 			gameFinished=false;
 			result=0,sum=0;
-			clean_counter();
+            init_counter();
 			init();
 		}   
 
@@ -254,14 +254,23 @@ class ScoreSheet
 		cout<<endl;
 	}
 
-	void clean_counter()
+	void init_counter()
 	{
-		cout<<"TEST_MESSAGE: overwrite counter."<<endl;
-		for(int & i : counter)
-		{
-			i=0;
-		}
+		    cout<<"TEST_MESSAGE: overwrite counter."<<endl;
+		    for(int & i : counter)
+		    {
+			    i=0;
+		    }
 	}
+
+    void clean_counter(int dice[])
+    {
+        for(int i=1;i<6;i++)
+        {
+            counter[dice[i]]--;
+        }
+    }
+
     
     void player_action()
     {
