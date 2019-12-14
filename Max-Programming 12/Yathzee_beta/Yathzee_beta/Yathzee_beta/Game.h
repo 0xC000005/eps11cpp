@@ -3,15 +3,17 @@
 #include<list>
 #include<vector>
 #include<iterator>
+#include <random>
 #include"ScoreSheet.h"
 using namespace std;
 
 class Game
 {
 private:
-    int dice[4]{};
-    int preserve[4]{};
+    int dice[5]{};
+    int preserve[5]{};
     int pickOut;
+    random_device rd;  //Will be used to obtain a seed for the random number engine
     ScoreSheet player;
 
 public:
@@ -57,7 +59,7 @@ public:
         }
     }
 
-    void init()
+    static void init()
     {
         cout<<"TEST_MESSAGE: class 'Game' init."<<endl;
     }
@@ -65,50 +67,15 @@ public:
     void print_dice(int number)
     {
 
-
-        cout<<"1preserve: ";
-        for(int a=0;a<5;a++)
-        {
-            cout<<preserve[a]<<" ";
-        }
-        cout<<endl;
-
-
         cout<<"Your dices:"<<endl;
         for(int i=0;i<number;i++)
         {
 
-
-            cout<<"2preserve: ";
-            for(int b=0;b<5;b++)
-            {
-                cout<<preserve[b]<<" ";
-            }
-            cout<<endl;
-
-
-
-            dice[i]=rand()%6;
+            mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
+            uniform_int_distribution<> dis(1, 6);
+            dice[i]=dis(gen);
             cout<<dice[i]<<" ";
 
-
-
-            cout<<endl<<"3preserve: ";
-            for(int c=0;c<5;c++)
-            {
-                cout<<preserve[c]<<" ";
-            }
-            cout<<endl;
-
-
-        }
-        cout<<endl;
-
-
-        cout<<"4preserve: ";
-        for(int d=0;d<5;d++)
-        {
-            cout<<preserve[d]<<" ";
         }
         cout<<endl;
     }
@@ -136,13 +103,9 @@ public:
                     if(dice[i]==pick)//find the first right dice in the dice sequence, and store into preserve sequence with index = pickOut
                     {
                         preserve[pickOut]=dice[i];
-                        cout<<"TEST_MESSAGE: dice[i] ="<<dice[i]<<"  preserve["<<pickOut<<"] -> dice["<<i<<"]"<<endl;
+                        cout<<"TEST_MESSAGE: dice[i] ="<<dice[i]<<"  dice["<<i<<"] -> preserve["<<pickOut<<"] "<<endl;
                         dice[i]=0;
                         pickOut++;
-                        /*
-                            pickOut here acts as both counter for preserve and how many dice has picked out,
-                            so the none-zore size for preserve will always equals to the pickOut.
-                        */
                         break;
 
                         /*
@@ -166,6 +129,7 @@ public:
             player.display(false); //display new sheet
             cout<<"This is your "<<i<<" round."<<endl;
             print_dice(5-pickOut);
+            check_dice();
             picking_out();
             player.counting(dice,preserve);
             //system("cls");
@@ -173,9 +137,9 @@ public:
             if(i<3)
             {
                 cout<<"Do you want to use the score paper now? (0/1)";
-                int statment;
-                cin>>statment;
-                if(statment==1)
+                int statement = 0;
+                cin >> statement;
+                if(statement == 1)
                 {
                     player.player_action();
                     break;

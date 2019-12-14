@@ -131,7 +131,6 @@ class ScoreSheet
     
     void counting(const int dice[],const int preserve[]) //make dices_list -> counter
     {
-		check_counter();
         for(int i=0;i<5;++i)
         {
             if(dice[i]!=0)
@@ -242,7 +241,7 @@ class ScoreSheet
 
 	void check_counter()
 	{
-		cout<<"TEST_MESSAGE: starting test func/ check_counter."<<endl;
+		cout<<"TEST_MESSAGE: starting test func. check_counter."<<endl;
 		for(int i=0;i<6;i++)
 		{
 			cout<<i+1<<" ";

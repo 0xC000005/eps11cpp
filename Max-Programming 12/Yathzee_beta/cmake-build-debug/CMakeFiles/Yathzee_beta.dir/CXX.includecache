@@ -17,6 +17,8 @@ vector
 -
 iterator
 -
+random
+-
 ScoreSheet.h
 /mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/Yathzee_beta/Yathzee_beta/ScoreSheet.h
 
@@ -26,6 +28,8 @@ iostream
 string
 -
 list
+-
+utility
 -
 vector
 -
