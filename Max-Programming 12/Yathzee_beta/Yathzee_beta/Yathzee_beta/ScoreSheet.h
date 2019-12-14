@@ -2,8 +2,7 @@
 #include<string>
 #include<list>
 #include<vector>
-#include<iterator> 
-#include<conio.h>
+#include<iterator>
 #include"Score.h"
 using namespace std;
 
@@ -14,7 +13,7 @@ class ScoreSheet
 		string name;
 		string DESCRIPTIONS[16];
 		bool gameFinished;
-		int counter[6];
+		int counter[6]{};
         int result,sum;
 	public:
 		ScoreSheet()//init var
@@ -41,15 +40,13 @@ class ScoreSheet
 			init();
 		}   
 
-	void ScoreSheet::display(bool firstTime)
+	void display(bool firstTime)
     {
 		cout<<"TEST_MESSAGE: display."<<endl;
         cout<<name<<"'s Score Sheet:"<<endl;
-		for(size_t i=0;i<score_paper.size();i++)
+		for(auto item : score_paper)
         {
-			Score item=score_paper[i];
-
-            if(item.getDescription()=="Total Score")
+			if(item.getDescription()=="Total Score")
 			{
 				cout<<item.getDescription()<<" "<<item.getScore()<<endl; // total score doesnt need markded sign
 			}
@@ -87,21 +84,21 @@ class ScoreSheet
         }
     }
 
-    void ScoreSheet::init()
+    void init()
     {	
 		cout<<"TEST_MESSAGE: class 'ScoreSheet' init."<<endl;
         cout<<"Please enter your name: ";
         cin>>name;
         bool bypass=false;//use to bypass Sum and Bouns at the first time
         int count=0;//use count to replace swicher(int type)
-        for(int i=0;i<16;++i)
+        for(const auto & i : DESCRIPTIONS)
         {
-            Score temp=Score(DESCRIPTIONS[i]);//init temp with description 
-            if(((count==6)||(count==7))&&bypass==false)//first time meet sum and bouns
+            Score temp=Score(i);//init temp with description 
+            if(((count==6)||(count==7)) && !bypass)//first time meet sum and bouns
             {
                 temp.setNum(-1);//set ID=-1 for sum and bouns
             }
-            else if(count==8&&bypass==false)
+            else if(count==8 && !bypass)
             {
                 count-=2;
                 bypass=true;
@@ -117,14 +114,13 @@ class ScoreSheet
         display(true);
     }
     
-    bool ScoreSheet::game_finished()
+    bool game_finished()
     {
 		cout<<"TEST_MASSAGE: check if event 'game' is finished or not. "<<endl;
         gameFinished=true;
-        for(size_t i=0; i<score_paper.size(); i++)
+        for(auto item : score_paper)
         {
-			Score item=score_paper[i];
-            if(item.getUsed()==0)
+			if(item.getUsed()==0)
 			{
 				gameFinished=false;
 			}
@@ -133,7 +129,7 @@ class ScoreSheet
         return gameFinished;
     }
     
-    void ScoreSheet::counting(int dice[],int preserve[]) //make dices_list -> counter
+    void counting(const int dice[],const int preserve[]) //make dices_list -> counter
     {
 		check_counter();
         for(int i=0;i<5;++i)
@@ -151,9 +147,9 @@ class ScoreSheet
 
     }
     
-    void ScoreSheet::swicher(int type)//calculating the score/pantional score for SocreSheet
+    void swicher(int type)//calculating the score/pantional score for SocreSheet
     {
-		sum=0;//reset sum before swicher, IDK why lol
+		sum=0;//reset sum before swither, IDK why lol
 
         if(0<=type&&type<=5)sum=counter[type]*(type+1);//Ones~Sixes
         else if(type==6)//Three of a kind
@@ -174,14 +170,14 @@ class ScoreSheet
         {
             for(int i=0;i<5;++i)
             {
-                bool statment=false;
+                bool statement=false;
                 sum+=counter[i]*(i+1);
                 if(counter[i]==4)
                 {
-                    statment=true;
+                    statement=true;
                     break;
                 }
-                if(!statment)sum=0;
+                if(!statement)sum=0;
             }
         }
         else if(type==8)//Full house
@@ -234,17 +230,17 @@ class ScoreSheet
         }
     }
     
-    int ScoreSheet::getSum()
+    int getSum()
     {
         return sum;
     }
 
-	string ScoreSheet::getName()
+	string getName()
     {
         return name;
     }
 
-	void ScoreSheet::check_counter()
+	void check_counter()
 	{
 		cout<<"TEST_MESSAGE: starting test func/ check_counter."<<endl;
 		for(int i=0;i<6;i++)
@@ -252,31 +248,30 @@ class ScoreSheet
 			cout<<i+1<<" ";
 		}
 		cout<<endl;
-		for(int i=0;i<6;i++)
+		for(int i : counter)
 		{
-			cout<<counter[i]<<" ";
+			cout<<i<<" ";
 		}
 		cout<<endl;
 	}
 
-	void ScoreSheet::clean_counter()
+	void clean_counter()
 	{
 		cout<<"TEST_MESSAGE: overwrite counter."<<endl;
-		for(int i=0;i<6;i++)
+		for(int & i : counter)
 		{
-			counter[i]=0;
+			i=0;
 		}
 	}
     
-    void ScoreSheet::player_action()
+    void player_action()
     {
         cout<<"Enter full name of the option you want to mark this round: ";
         string action;
 		cin>>action;
-        for(size_t i=0; i<score_paper.size(); i++)
+        for(auto item : score_paper)
         {
-			Score item=score_paper[i];
-            if(action==item.getDescription())
+			if(action==item.getDescription())
             {
                 swicher(item.getNum());
                 item.setScore(sum);

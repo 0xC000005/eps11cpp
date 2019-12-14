@@ -2,66 +2,60 @@
 #include<iostream>
 #include<string>
 #include<list>
+#include <utility>
 #include<vector>
 #include<iterator> 
-#include<conio.h>
+
 using namespace std;
 class Score
 {
-	private: 
-		//name/description
+	private:
 		string description;
-
-		//markded
-        int used;
-
-		//score/pational score
-        int score;
-
-		//ID
-        int num;
+        int used{};
+        int score{};
+        int num{};
     
 	public: 
-		Score(){}
-		Score(string const  &_name) //init with description 
+		Score()= default;
+		explicit Score(string const  &_name) //init with description
 		{
 			setDescription(_name);
 			used=0;
 			score=0;
 		}
     
-    void Score::setDescription(string _description)
+    void setDescription(string _description)
     {
-        description=_description;
+        description=std::move(_description);
     }
-    string Score::getDescription()
+    string getDescription()
     {
         return description;
     }
     
-    void Score::setUsed(int _used)
+    void setUsed(int _used)
     {
         used=_used;
     }
-    int Score::getUsed()
+    int getUsed()
     {
         return used;
     }
     
-    void Score::setScore(int _score)
+    void setScore(int _score)
     {
         score=_score;
     }
-    int Score::getScore()
+    int getScore()
     {
         return score;
     }
     
-    void Score::setNum(int _num)
+    void setNum(int _num)
     {
         num=_num;
     }
-    int Score::getNum()
+    int getNum()
     {
         return num;
     }
