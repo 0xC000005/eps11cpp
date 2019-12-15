@@ -49,12 +49,11 @@ public:
             } else {
                 string marked;
                 if (item.getUsed() == 1) {
-                    //marked="☑";
+                    marked="☑";
                     marked = "x";
                     cout << marked << " " << item.getDescription() << " " << item.getScore() << endl;
                 } else {
-                    //marked="☐";
-                    marked = "o";
+                    marked="☐";
                     if (firstTime) {
                         cout << marked << " " << item.getDescription() << " " << item.getScore() << endl;
                     } else {

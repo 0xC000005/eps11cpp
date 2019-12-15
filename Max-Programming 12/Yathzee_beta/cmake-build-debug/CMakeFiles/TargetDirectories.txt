@@ -1,0 +1,3 @@
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/cmake-build-debug/CMakeFiles/Yathzee_beta.dir
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/cmake-build-debug/CMakeFiles/edit_cache.dir

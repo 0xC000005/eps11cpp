@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/Yathzee_beta/Yathzee_beta/Game.h
+iostream
+-
+string
+-
+list
+-
+vector
+-
+iterator
+-
+random
+-
+ScoreSheet.h
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/Yathzee_beta/Yathzee_beta/ScoreSheet.h
+
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/Yathzee_beta/Yathzee_beta/Score.h
+iostream
+-
+string
+-
+list
+-
+utility
+-
+vector
+-
+iterator
+-
+
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/Yathzee_beta/Yathzee_beta/ScoreSheet.h
+iostream
+-
+string
+-
+list
+-
+vector
+-
+iterator
+-
+Score.h
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/Yathzee_beta/Yathzee_beta/Score.h
+
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/Yathzee_beta/Yathzee_beta/Yathzee_beta.cpp
+Game.h
+/mnt/c/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yathzee_beta/Yathzee_beta/Yathzee_beta/Game.h
+
