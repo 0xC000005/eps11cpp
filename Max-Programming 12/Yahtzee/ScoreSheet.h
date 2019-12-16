@@ -92,9 +92,8 @@ public:
         for (const auto &i : DESCRIPTIONS) {
             Score temp = Score(i);//init temp with description
             if (((count == 6) || (count == 7)) && !bypass)//first time meet sum and bouns
-            {
                 temp.setID(-1);//set ID=-1 for sum and bouns
-            } else if (count == 8 && !bypass) {
+            else if (count == 8 && !bypass) {
                 count -= 2;
                 bypass = true;
                 temp.setID(count);

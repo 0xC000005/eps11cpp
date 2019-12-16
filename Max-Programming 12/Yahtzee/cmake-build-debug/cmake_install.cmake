@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/heckn/CLionProjects/Yahtzee
+# Install script for directory: C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/heckn/CLionProjects/Yahtzee/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

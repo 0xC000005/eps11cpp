@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/heckn/CLionProjects/Yahtzee/Game.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Game.h
 iostream
 -
 string
@@ -20,9 +20,9 @@ iterator
 random
 -
 ScoreSheet.h
-C:/Users/heckn/CLionProjects/Yahtzee/ScoreSheet.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/ScoreSheet.h
 
-C:/Users/heckn/CLionProjects/Yahtzee/Score.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Score.h
 iostream
 -
 string
@@ -36,7 +36,7 @@ vector
 iterator
 -
 
-C:/Users/heckn/CLionProjects/Yahtzee/ScoreSheet.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/ScoreSheet.h
 iostream
 -
 string
@@ -48,9 +48,9 @@ vector
 iterator
 -
 Score.h
-C:/Users/heckn/CLionProjects/Yahtzee/Score.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Score.h
 
-C:/Users/heckn/CLionProjects/Yahtzee/main.cpp
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/main.cpp
 Game.h
-C:/Users/heckn/CLionProjects/Yahtzee/Game.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Game.h
 

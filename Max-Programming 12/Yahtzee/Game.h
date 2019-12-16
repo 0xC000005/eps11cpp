@@ -30,6 +30,7 @@ public:
             pickOut = 0;
             round();
         }
+        //game over
         player.display();
     }
 

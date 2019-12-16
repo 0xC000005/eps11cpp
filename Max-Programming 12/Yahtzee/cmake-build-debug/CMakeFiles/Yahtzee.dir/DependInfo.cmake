@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/heckn/CLionProjects/Yahtzee/main.cpp" "C:/Users/heckn/CLionProjects/Yahtzee/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj"
+  "C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/main.cpp" "C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
