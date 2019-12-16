@@ -51,12 +51,21 @@ public:
             cout << "Please select the player to operate:" << endl;
             int play = 0;
             cin >> play;
-            if(statues[play])
+            /*if (play < player_num || play > player_num)//error check
             {
-                cout<<"WARNING: The player you selected has already played in this round, you can only choose players who have not played."<<endl<<endl;
+                cout << "WARNING: The number you inputed is not within the range retry." << endl;
+                pressAnyKeyToContinue();
+                goto table;
+            }*/
+            if (statues[play])//redundant
+            {
+                cout
+                        << "WARNING: The player you selected has already played in this round, you can only choose players who have not played."
+                        << endl << endl;
                 pressAnyKeyToContinue();
                 goto table;
             }
+
             pickOut = 0;
             playerList[play].applyCustom_command();
             round(playerList[play]);
@@ -66,17 +75,15 @@ public:
             }
         }
         //game over
-        cout<< "NOTICE: GAME FINISHED" << endl;
-        cout<< "PLAYER | SCORE" << endl;
-        for(int i=0;i<player_num;i++)
-        {
+        cout << "NOTICE: GAME FINISHED" << endl;
+        cout << "PLAYER | SCORE" << endl;
+        for (int i = 0; i < player_num; i++) {
             cout << " " << i << " | " << playerList[i].getTotalScore() << endl;
         }
-        cout<<endl;
-        for(auto item : playerList)
-        {
+        cout << endl;
+        for (auto item : playerList) {
             item.display();
-            cout<<endl;
+            cout << endl;
         }
     }
 
@@ -84,14 +91,14 @@ public:
         system("cls");
         cout << "Welcome to Yahtzee!" << endl;
         cout << endl;
-        cout << "Loading features and Rex";
+        cout << "Loading features and Plugins";
         for (int i = 0; i < 6; i++) {
             cout << ".";
             sleep(1);
 
         }
         cout << endl;
-        cout << "Feature 'Color friend and foe discrimination system' now supports 5 players" << endl;
+        cout << "Feature 'Friend or foe identification system' now supports 7 players" << endl;
         cout << endl;
         cout << "Choose your Mode:" << endl;
         cout << "--------------------" << endl;
@@ -107,20 +114,30 @@ public:
         string action;
         getline(cin, action);
         if (action.empty())getline(cin, action);
+        bool success = false;
         //Here is the only hard code in the entire program!
         if (action == "Single player mode") {
             player_num = 1;
+            success = true;
         }
         if (action == "Double player mode") {
             player_num = 2;
+            success = true;
         }
-        if (action == "Custom player mode") {
+        if (action == "Custom player number") {
             system("cls");
             cout << "input your custom player number: ";
             cin >> player_num;
+            success = true;
         }
         if (action == "Load custom command set") {
             setCustom_command();
+            success = true;
+        }
+        if (!success) {
+            cout << "ERROR: Can't find your action '" << action << "', please check and retry." << endl;
+            pressAnyKeyToContinue();
+            init_playerList();
         }
 
         for (int i = 0; i < player_num; i++) {
@@ -138,6 +155,7 @@ public:
         cin >> command;
         if (command == "help") {
             system("help");
+            pressAnyKeyToContinue();
             setCustom_command();
         } else {
             system("systeminfo");

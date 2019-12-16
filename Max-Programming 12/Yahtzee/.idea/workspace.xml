@@ -115,7 +115,7 @@
       <workItem from="1576385592344" duration="140000" />
       <workItem from="1576428757117" duration="23834000" />
       <workItem from="1576471638271" duration="9869000" />
-      <workItem from="1576513955750" duration="1708000" />
+      <workItem from="1576513955750" duration="4898000" />
     </task>
     <servers />
   </component>
@@ -171,10 +171,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="370" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1576510882524" />
-    <state x="430" y="22" key="SettingsEditor" timestamp="1576502028119">
+    <state x="430" y="22" key="SettingsEditor" timestamp="1576516393671">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="430" y="22" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1576502028119" />
+    <state x="430" y="22" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1576516393671" />
     <state x="524" y="276" key="cloudConfig.SelfSettingsDialog" timestamp="1576471668002">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -191,10 +191,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="510" y="75" key="refactoring.ChangeSignatureDialog/0.0.1536.864@0.0.1536.864" timestamp="1576503972263" />
-    <state x="425" y="197" key="run.anything.popup" timestamp="1576429578490">
+    <state x="425" y="197" key="run.anything.popup" timestamp="1576516564645">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1576429578490" />
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1576516564645" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1576505280448">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

@@ -21,7 +21,8 @@ private:
     vector<Score> score_paper;
     string name;
     string DESCRIPTIONS[16];
-    string cutsom_command;
+    string default_color_theme[8];
+    string custom_command;
     bool finished;
     int playerID{};
     int counter[6]{};
@@ -47,6 +48,14 @@ public:
         DESCRIPTIONS[13] = "Chance";
         DESCRIPTIONS[14] = "YAHTZEE";
         DESCRIPTIONS[15] = "TOTAL SCORE";
+        default_color_theme[0] = "color";
+        default_color_theme[1] = "color 01";
+        default_color_theme[2] = "color 02";
+        default_color_theme[3] = "color 03";
+        default_color_theme[4] = "color 04";
+        default_color_theme[5] = "color 05";
+        default_color_theme[6] = "color 06";
+        default_color_theme[7] = "color 07";
         finished = false;
         init_counter();
         init();
@@ -61,11 +70,11 @@ public:
     }
 
     void setCustom_command(string _custom_command) {
-        cutsom_command = std::move(_custom_command);
+        custom_command = std::move(_custom_command);
     }
 
     void applyCustom_command() {
-        char *command = strdup(cutsom_command.c_str());
+        char *command = strdup(custom_command.c_str());
         system(command);
         free(command);
     }
@@ -82,12 +91,9 @@ public:
         }
         if (color_theme.empty()) {
             //set your own default color theme
-            string default_color_theme[8] = {"color", "color 01", "color 02", "color 03", "color 04", "color 05",
-                                             "color 06", "color 07"};
             for (int i = 0; i < 5; i++) {
                 setCustom_command(default_color_theme[i]);
             }
-
         } else {
             setCustom_command(color_theme);
         }
@@ -274,7 +280,7 @@ public:
         for (auto &item : score_paper) {
             if (action == item.getDescription()) {
                 if (item.getUsed()) {
-                    cout << "ERROR: the item you just selected has marked." << endl;
+                    error_message("ERROR: the item you just selected has marked.");
                     player_action();
                 }
                 if (action == "Sum") {
@@ -319,6 +325,14 @@ public:
 
     int getTotalScore() {
         return score_paper[15].getScore();
+    }
+
+    void error_message(string message)
+    {
+        system("color 40");
+        cout<<message<<endl;
+        applyCustom_command();
+
     }
 };
 
