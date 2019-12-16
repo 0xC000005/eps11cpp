@@ -296,6 +296,11 @@ public:
     {
         return name;
     }
+
+    int getToalScore()
+    {
+        return score_paper[15].getScore();
+    }
 };
 
 #endif //YAHTZEE_SCORESHEET_H

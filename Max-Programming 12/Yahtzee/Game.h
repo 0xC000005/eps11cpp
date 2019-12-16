@@ -40,7 +40,7 @@ public:
             system("cls");
             cout << "After all players have played in this round, the system will automatically enter the next round"
                  << endl << endl;
-            cout << "STATUES | PLAYER" << endl;
+            cout << "STATUES |  PLAYER" << endl;
             cout << "-------------------" << endl;
             for (int i = 0; i < playerList.size(); i++) {
                 if (statues[i])cout << "    x   |  player" << i << endl;
@@ -51,6 +51,12 @@ public:
             cout << "Please select the player to operate:" << endl;
             int play = 0;
             cin >> play;
+            if(statues[play])
+            {
+                cout<<"WARNING: The player you selected has already played in this round, you can only choose players who have not played."<<endl<<endl;
+                pressAnyKeyToContinue();
+                goto table;
+            }
             pickOut = 0;
             round(playerList[play]);
             statues[play] = true;
@@ -59,7 +65,18 @@ public:
             }
         }
         //game over
-        playerList[0].display();
+        cout<< "NOTICE: GAME FINISHED" << endl;
+        cout<< "PLAYER | SCORE" << endl;
+        for(int i=0;i<player_num;i++)
+        {
+            cout<<" "<<i<<" | "<<playerList[i].getToalScore()<<endl;
+        }
+        cout<<endl;
+        for(auto item : playerList)
+        {
+            item.display();
+            cout<<endl;
+        }
     }
 
     void init_playerList() {
