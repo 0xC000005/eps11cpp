@@ -21,10 +21,10 @@ private:
     vector<Score> score_paper;
     string name;
     string DESCRIPTIONS[16];
-    string default_color_theme[8];
+    string default_color_theme[7];
     string custom_command;
     bool finished;
-    int playerID{};
+    int playerID{}; //for multi-player
     int counter[6]{};
 public:
     ScoreSheet() = default;
@@ -48,14 +48,14 @@ public:
         DESCRIPTIONS[13] = "Chance";
         DESCRIPTIONS[14] = "YAHTZEE";
         DESCRIPTIONS[15] = "TOTAL SCORE";
+        //custom color theme
         default_color_theme[0] = "color";
-        default_color_theme[1] = "color 01";
-        default_color_theme[2] = "color 02";
-        default_color_theme[3] = "color 03";
-        default_color_theme[4] = "color 04";
-        default_color_theme[5] = "color 05";
-        default_color_theme[6] = "color 06";
-        default_color_theme[7] = "color 07";
+        default_color_theme[1] = "color 02";
+        default_color_theme[2] = "color 03";
+        default_color_theme[3] = "color 06";
+        default_color_theme[4] = "color 0B";
+        default_color_theme[5] = "color 1F";
+        default_color_theme[6] = "color F0";
         finished = false;
         init_counter();
         init();
@@ -70,6 +70,8 @@ public:
     }
 
     void setCustom_command(string _custom_command) {
+        string message = "NOTICE: custom command - '" + _custom_command + " has affected.";
+        notice_message(message);
         custom_command = std::move(_custom_command);
     }
 
@@ -80,11 +82,9 @@ public:
     }
 
     void setColor_theme() {
-        cout
-                << "Do you want to set the color of this player? Press enter to use the default color scheme, input 'help' for help: ";
+        cout<< "Do you want to set the color of this player? Press enter to use the default color scheme, input 'help' for help: ";
         string color_theme;
         getline(cin, color_theme);
-        if (color_theme.empty())getline(cin, color_theme);
         if (color_theme == "help") {
             system("help");
             setColor_theme();
@@ -283,16 +283,9 @@ public:
                     error_message("ERROR: the item you just selected has marked.");
                     player_action();
                 }
-                if (action == "Sum") {
-                    cout << "ERROR: you can't select item '" << action << "'." << endl;
-                    player_action();
-                }
-                if (action == "Bonus") {
-                    cout << "ERROR: you can't select item '" << action << "'." << endl;
-                    player_action();
-                }
-                if (action == "Total") {
-                    cout << "ERROR: you can't select item '" << action << "'." << endl;
+                if (action == "Sum" || action == "Bonus" || action == "TOTAL SCORE") {
+                    string message = "ERROR: you can't select item '" + action + "'.";
+                    error_message(message);
                     player_action();
                 }
                 finded = true;
@@ -303,7 +296,8 @@ public:
             }
         }
         if (!finded) {
-            cout << "ERROR: can't find the selected item '" << action << "' on score sheet." << endl;
+            string message ="ERROR: can't find the selected item '" + action + "' on score sheet.";
+            error_message(message);
             player_action();
         }
     }
@@ -327,13 +321,31 @@ public:
         return score_paper[15].getScore();
     }
 
-    void error_message(string message)
-    {
-        system("color 40");
-        cout<<message<<endl;
-        applyCustom_command();
+    void error_message(const string &message) {
+        system("color 4F");
+        cout << message << endl;
+        applyCustom_command(); //reset the color theme
 
     }
+
+    void warning_message(const string &message) {
+        system("color 60");
+        cout << message << endl;
+        applyCustom_command();
+    }
+
+    void test_message(const string &message) {
+        system("color 0A");
+        cout << message << endl;
+        applyCustom_command();
+    }
+
+    void notice_message(const string &message) {
+        system("color 09");
+        cout << message << endl;
+        applyCustom_command();
+    }
+
 };
 
 #endif //YAHTZEE_SCORESHEET_H

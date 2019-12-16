@@ -46,6 +46,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Game.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ScoreSheet.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1Uz3Jei3DvAE7J3IfRXE4ikDFAF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -115,7 +119,7 @@
       <workItem from="1576385592344" duration="140000" />
       <workItem from="1576428757117" duration="23834000" />
       <workItem from="1576471638271" duration="9869000" />
-      <workItem from="1576513955750" duration="4898000" />
+      <workItem from="1576513955750" duration="6887000" />
     </task>
     <servers />
   </component>
@@ -183,6 +187,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1576513955790" />
+    <state x="577" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576530607497">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="577" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1576530607497" />
     <state x="463" y="37" width="609" height="789" key="find.popup" timestamp="1576345853512">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

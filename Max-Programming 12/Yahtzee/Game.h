@@ -59,9 +59,8 @@ public:
             }*/
             if (statues[play])//redundant
             {
-                cout
-                        << "WARNING: The player you selected has already played in this round, you can only choose players who have not played."
-                        << endl << endl;
+                playerList[play].warning_message("WARNING: The player you selected has already played in this round, you can only choose players who have not played.");
+                cout<< endl;
                 pressAnyKeyToContinue();
                 goto table;
             }
@@ -135,7 +134,9 @@ public:
             success = true;
         }
         if (!success) {
+            system("color 4F");
             cout << "ERROR: Can't find your action '" << action << "', please check and retry." << endl;
+            system("color 0F");
             pressAnyKeyToContinue();
             init_playerList();
         }
@@ -160,12 +161,14 @@ public:
         } else {
             system("systeminfo");
             cout << endl << endl;
+            system("color 60");
             cout << "WARNING: It is detected that you are not running this program in Cygwin or UNIX system." << endl;
             cout
                     << "          The use of custom commands may result in an unstable state on the command line of your system: "
                     << endl;
             cout << "                 'Microsoft Windows 10 Pro 10.0.18363 N / A Build 18363'. " << endl;
             cout << "          Please go to UNIX Retry" << endl << endl;
+            system("color 0F");
             pressAnyKeyToContinue();
         }
         init_playerList();
@@ -210,7 +213,7 @@ public:
         cout << endl;
     }
 
-    void picking_out() {
+    void picking_out(ScoreSheet player) {
         cout << "Enter a number to select a dice you want to save." << endl;
         cout << "Enter 0 to end the pick_out operation when you finished." << endl;
         int pick = 0;
@@ -224,9 +227,8 @@ public:
             for (int &i : dice) {
                 if (i == pick) {
                     preserve[pickOut] = i;
-                    cout << "TEST_MESSAGE: dice[" << i << "] =" << dice[i] << "  dice[" << i << "] -> preserve["
-                         << pickOut
-                         << "] " << endl;
+                    string message =  "TEST_MESSAGE: dice[" + to_string(i) + "] =" + to_string(dice[i]) + "  dice[" + to_string(i) + "] -> preserve[" + to_string(pickOut) + "] ";
+                    player.test_message(message);
                     i = 0; //clean the transferred dice
                     pickOut++;
                     finded = true;
@@ -234,7 +236,7 @@ public:
                 }
             }
             if (!finded) {
-                cout << "ERROR: Can't find  this dice, check your number and retry. " << endl;
+                player.error_message("ERROR: Can't find  this dice, check your number and retry. " );
                 continue;
             }
         } while (pick != 0);
@@ -259,7 +261,7 @@ public:
             cout << endl;
             check_dice();
             cout << endl;
-            picking_out();
+            picking_out(player);
             cout << endl;
             player.counting(dice, preserve);
             pressAnyKeyToContinue();
