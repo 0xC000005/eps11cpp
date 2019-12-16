@@ -58,6 +58,7 @@ public:
                 goto table;
             }
             pickOut = 0;
+            playerList[play].applyCustom_command();
             round(playerList[play]);
             statues[play] = true;
             for (int i = 0; i < player_num; i++) {
@@ -69,7 +70,7 @@ public:
         cout<< "PLAYER | SCORE" << endl;
         for(int i=0;i<player_num;i++)
         {
-            cout<<" "<<i<<" | "<<playerList[i].getToalScore()<<endl;
+            cout << " " << i << " | " << playerList[i].getTotalScore() << endl;
         }
         cout<<endl;
         for(auto item : playerList)
@@ -86,7 +87,7 @@ public:
         cout << "Loading features and Rex";
         for (int i = 0; i < 6; i++) {
             cout << ".";
-            //sleep(1);
+            sleep(1);
 
         }
         cout << endl;
@@ -125,7 +126,7 @@ public:
         for (int i = 0; i < player_num; i++) {
             system("cls");
             cout << "initialize player" << i + 1 << endl;
-            ScoreSheet player;
+            ScoreSheet player = ScoreSheet(i);
             playerList.push_back(player);
         }
     }

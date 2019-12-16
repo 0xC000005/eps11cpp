@@ -23,10 +23,14 @@ private:
     string DESCRIPTIONS[16];
     string cutsom_command;
     bool finished;
+    int playerID{};
     int counter[6]{};
 public:
-    ScoreSheet()//init var
+    ScoreSheet() = default;
+
+    explicit ScoreSheet(int const &_playerID)//init var
     {
+        setPlayerID(_playerID);
         DESCRIPTIONS[0] = "Ones";
         DESCRIPTIONS[1] = "Twos";
         DESCRIPTIONS[2] = "Threes";
@@ -48,27 +52,44 @@ public:
         init();
     }
 
-    void setCustom_command(string _custom_command)
-    {
+    void setPlayerID(int _playerID) {
+        playerID = _playerID;
+    }
+
+    int getPlayerID() {
+        return playerID;
+    }
+
+    void setCustom_command(string _custom_command) {
         cutsom_command = std::move(_custom_command);
     }
 
-    void applyCustom_command()
-    {
-        char* command = strdup(cutsom_command.c_str());
+    void applyCustom_command() {
+        char *command = strdup(cutsom_command.c_str());
         system(command);
         free(command);
     }
 
-    static void setColor_theme()
-    {
-        cout<<"Do you want to set the color of this player? Press enter to use the default color scheme, input 'help' for help: ";
+    void setColor_theme() {
+        cout
+                << "Do you want to set the color of this player? Press enter to use the default color scheme, input 'help' for help: ";
         string color_theme;
-        cin>>color_theme;
-        if(color_theme == "help")
-        {
+        getline(cin, color_theme);
+        if (color_theme.empty())getline(cin, color_theme);
+        if (color_theme == "help") {
             system("help");
             setColor_theme();
+        }
+        if (color_theme.empty()) {
+            //set your own default color theme
+            string default_color_theme[8] = {"color", "color 01", "color 02", "color 03", "color 04", "color 05",
+                                             "color 06", "color 07"};
+            for (int i = 0; i < 5; i++) {
+                setCustom_command(default_color_theme[i]);
+            }
+
+        } else {
+            setCustom_command(color_theme);
         }
     }
 
@@ -112,7 +133,7 @@ public:
     }
 
     void init() {
-        //setColor_theme();
+        setColor_theme();
         cout << "Please enter your name: ";
         cin >> name;
         bool bypass = false;//use to bypass Sum and Bouns at the first time
@@ -292,13 +313,11 @@ public:
         }
     }
 
-    string getName()
-    {
+    string getName() {
         return name;
     }
 
-    int getToalScore()
-    {
+    int getTotalScore() {
         return score_paper[15].getScore();
     }
 };
