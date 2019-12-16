@@ -8,8 +8,10 @@
 #include <iostream>
 #include <string>
 #include <list>
+#include <utility>
 #include <vector>
 #include <iterator>
+#include <mem.h>
 #include "Score.h"
 
 using namespace std;
@@ -19,6 +21,7 @@ private:
     vector<Score> score_paper;
     string name;
     string DESCRIPTIONS[16];
+    string cutsom_command;
     bool finished;
     int counter[6]{};
 public:
@@ -43,6 +46,30 @@ public:
         finished = false;
         init_counter();
         init();
+    }
+
+    void setCustom_command(string _custom_command)
+    {
+        cutsom_command = std::move(_custom_command);
+    }
+
+    void applyCustom_command()
+    {
+        char* command = strdup(cutsom_command.c_str());
+        system(command);
+        free(command);
+    }
+
+    static void setColor_theme()
+    {
+        cout<<"Do you want to set the color of this player? Press enter to use the default color scheme, input 'help' for help: ";
+        string color_theme;
+        cin>>color_theme;
+        if(color_theme == "help")
+        {
+            system("help");
+            setColor_theme();
+        }
     }
 
     void display() {
@@ -85,6 +112,7 @@ public:
     }
 
     void init() {
+        //setColor_theme();
         cout << "Please enter your name: ";
         cin >> name;
         bool bypass = false;//use to bypass Sum and Bouns at the first time
@@ -262,6 +290,11 @@ public:
             if (i >= 8 && i <= 14) total += score_paper[i].getScore();
             if (i == 15)score_paper[i].setScore(total + score_paper[6].getScore() + score_paper[7].getScore());
         }
+    }
+
+    string getName()
+    {
+        return name;
     }
 };
 

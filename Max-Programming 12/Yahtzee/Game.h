@@ -11,6 +11,7 @@
 #include<vector>
 #include<iterator>
 #include <random>
+#include <unistd.h>
 #include"ScoreSheet.h"
 
 using namespace std;
@@ -20,18 +21,118 @@ private:
     int dice[5]{};
     int preserve[5]{};
     int pickOut;
+    int player_num;
     random_device rd;  //Will be used to obtain a seed for the random number engine
-    ScoreSheet player;
+    vector<ScoreSheet> playerList;
 
 public:
     Game() //init
     {
-        while (!player.game_finished()) {
+        player_num = 0;
+        init_playerList();
+        bool statues[player_num];
+        while (!playerList[0].game_finished()) {
+            //init table
+            for (int i = 0; i < player_num; i++) {
+                statues[i] = false;
+            }
+            table:
+            system("cls");
+            cout << "After all players have played in this round, the system will automatically enter the next round"
+                 << endl << endl;
+            cout << "STATUES | PLAYER" << endl;
+            cout << "-------------------" << endl;
+            for (int i = 0; i < playerList.size(); i++) {
+                if (statues[i])cout << "    x   |  player" << i << endl;
+                else cout << "    o   |  player" << i << endl;
+            }
+            cout << "-------------------" << endl;
+            cout << endl;
+            cout << "Please select the player to operate:" << endl;
+            int play = 0;
+            cin >> play;
             pickOut = 0;
-            round();
+            round(playerList[play]);
+            statues[play] = true;
+            for (int i = 0; i < player_num; i++) {
+                if (!statues[i])goto table;
+            }
         }
         //game over
-        player.display();
+        playerList[0].display();
+    }
+
+    void init_playerList() {
+        system("cls");
+        cout << "Welcome to Yahtzee!" << endl;
+        cout << endl;
+        cout << "Loading features and Rex";
+        for (int i = 0; i < 6; i++) {
+            cout << ".";
+            //sleep(1);
+
+        }
+        cout << endl;
+        cout << "Feature 'Color friend and foe discrimination system' now supports 5 players" << endl;
+        cout << endl;
+        cout << "Choose your Mode:" << endl;
+        cout << "--------------------" << endl;
+        cout << "Single player mode" << endl;
+        cout << "Double player mode" << endl;
+        cout << "Custom player number" << endl;
+        cout << endl;
+        cout << "Advanced Features:" << endl;
+        cout << "--------------------" << endl;
+        cout << "Load custom command set (now support Cygwin UNIX, MinGW and Windows Console standard)" << endl;
+        cout << endl << endl;
+        cout << "Choose your action: " << endl;
+        string action;
+        getline(cin, action);
+        if (action.empty())getline(cin, action);
+        //Here is the only hard code in the entire program!
+        if (action == "Single player mode") {
+            player_num = 1;
+        }
+        if (action == "Double player mode") {
+            player_num = 2;
+        }
+        if (action == "Custom player mode") {
+            system("cls");
+            cout << "input your custom player number: ";
+            cin >> player_num;
+        }
+        if (action == "Load custom command set") {
+            setCustom_command();
+        }
+
+        for (int i = 0; i < player_num; i++) {
+            system("cls");
+            cout << "initialize player" << i + 1 << endl;
+            ScoreSheet player;
+            playerList.push_back(player);
+        }
+    }
+
+    void setCustom_command() {
+        system("cls");
+        cout << "input your custom command, input 'help' for help: ";
+        string command;
+        cin >> command;
+        if (command == "help") {
+            system("help");
+            setCustom_command();
+        } else {
+            system("systeminfo");
+            cout << endl << endl;
+            cout << "WARNING: It is detected that you are not running this program in Cygwin or UNIX system." << endl;
+            cout
+                    << "          The use of custom commands may result in an unstable state on the command line of your system: "
+                    << endl;
+            cout << "                 'Microsoft Windows 10 Pro 10.0.18363 N / A Build 18363'. " << endl;
+            cout << "          Please go to UNIX Retry" << endl << endl;
+            pressAnyKeyToContinue();
+        }
+        init_playerList();
     }
 
     void check_dice() {
@@ -107,7 +208,7 @@ public:
         system("pause");
     }
 
-    void round() {
+    void round(ScoreSheet player) {
         bool finished = false;//after player_action(); return 0
         for (int i = 1; i <= 3; ++i)//each round has 3 tern
         {

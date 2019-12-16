@@ -19,6 +19,8 @@ iterator
 -
 random
 -
+unistd.h
+-
 ScoreSheet.h
 C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/ScoreSheet.h
 
@@ -43,9 +45,13 @@ string
 -
 list
 -
+utility
+-
 vector
 -
 iterator
+-
+mem.h
 -
 Score.h
 C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Score.h
