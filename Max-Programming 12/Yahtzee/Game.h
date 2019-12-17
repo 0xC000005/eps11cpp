@@ -44,11 +44,11 @@ public:
             cout << "-------------------" << endl;
             for (int i = 0; i < playerList.size(); i++) {
                 if (statues[i])cout << "    x   |  player" << i << endl;
-                else cout << "    o   |  player" << i << endl;
+                else cout << "    o   |  player " << i << endl;
             }
             cout << "-------------------" << endl;
             cout << endl;
-            cout << "Please select the player to operate:" << endl;
+            cout << "Please select the number of player to operate:" << endl;
             int play = 0;
             cin >> play;
             /*if (play < player_num || play > player_num)//error check
@@ -107,7 +107,8 @@ public:
         cout << endl;
         cout << "Advanced Features:" << endl;
         cout << "--------------------" << endl;
-        cout << "Load custom command set (now support Cygwin UNIX, MinGW and Windows Console standard)" << endl;
+        cout << "Load custom command set (now support Cygwin, MinGW and WSL)" << endl;
+        cout << "Load customize plugin (see README.md on Github)" <<endl;
         cout << endl << endl;
         cout << "Choose your action: " << endl;
         string action;
@@ -130,6 +131,10 @@ public:
             success = true;
         }
         if (action == "Load custom command set") {
+            setCustom_command();
+            success = true;
+        }
+        if(action == "Load customize plugin"){
             setCustom_command();
             success = true;
         }

@@ -12,12 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ColorText.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScoreSheet.h" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreSheet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +50,15 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="Yahtzee" />
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Max &lt;0xc00005@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -119,12 +134,29 @@
       <workItem from="1576385592344" duration="140000" />
       <workItem from="1576428757117" duration="23834000" />
       <workItem from="1576471638271" duration="9869000" />
-      <workItem from="1576513955750" duration="6887000" />
+      <workItem from="1576513955750" duration="7056000" />
+      <workItem from="1576589185599" duration="19000" />
+      <workItem from="1576589219367" duration="34000" />
+      <workItem from="1576589683053" duration="14000" />
+      <workItem from="1576614431540" duration="2496000" />
+      <workItem from="1576618010814" duration="247000" />
     </task>
+    <task id="LOCAL-00001" summary="color theme failed&#10;&#10;toooo bad">
+      <created>1576530646914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576530646914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="color theme failed&#10;&#10;toooo bad" />
+    <option name="LAST_COMMIT_MESSAGE" value="color theme failed&#10;&#10;toooo bad" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="86" width="1089" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576502008533">
@@ -135,10 +167,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="521" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1576431828695" />
+    <state x="449" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576589198546">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="449" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1576589198546" />
     <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576449571724">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576449571724" />
+    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576530645285">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576530645285" />
     <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1576383440127">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -183,10 +223,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="524" y="276" key="cloudConfig.SelfSettingsDialog/0.0.1536.864@0.0.1536.864" timestamp="1576471668002" />
-    <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1576513955790">
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1576618032688">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1576513955790" />
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1576618032688" />
     <state x="577" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576530607497">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

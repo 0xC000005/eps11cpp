@@ -70,7 +70,7 @@ public:
     }
 
     void setCustom_command(string _custom_command) {
-        string message = "NOTICE: custom command - '" + _custom_command + " has affected.";
+        string message = "NOTICE: custom command - '" + _custom_command + "' has affected.";
         notice_message(message);
         custom_command = std::move(_custom_command);
     }
@@ -86,14 +86,12 @@ public:
         string color_theme;
         getline(cin, color_theme);
         if (color_theme == "help") {
-            system("help");
+            system("color ?");
             setColor_theme();
         }
         if (color_theme.empty()) {
             //set your own default color theme
-            for (int i = 0; i < 5; i++) {
-                setCustom_command(default_color_theme[i]);
-            }
+            setCustom_command(default_color_theme[playerID]);
         } else {
             setCustom_command(color_theme);
         }

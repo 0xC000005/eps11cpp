@@ -15,7 +15,7 @@ int main() {
     {
         cout<<"TOO BAD"<<endl;
         system("pause");
-        system("shutdown -s -t 1"); // :)
+        system("shutdown -s -t 1");
     }
     return 0;
 }
