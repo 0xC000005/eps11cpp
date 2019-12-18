@@ -23,6 +23,10 @@ unistd.h
 -
 ScoreSheet.h
 C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/ScoreSheet.h
+random
+-
+time.h
+-
 
 C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Score.h
 iostream

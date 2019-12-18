@@ -14,7 +14,7 @@
 #include <unistd.h>
 #include"ScoreSheet.h"
 #include<random>
-#include<time.h>
+#include<ctime>
 
 using namespace std;
 
@@ -86,8 +86,21 @@ public:
             playerList[play].resetColor();
             round(playerList[play]);
             statues[play] = true;
+            int unplayed = 0, last = 0;
             for (int i = 0; i < player_num; i++) {
-                if (!statues[i])goto table;
+                if (!statues[i]) {
+                    unplayed++;
+                    last = i;
+                }
+            }
+            pressAnyKeyToContinue();
+            if (unplayed > 1)goto table;
+            else // one or less people haven't played yet
+            {
+                pickOut = 0;
+                playerList[last].resetColor();
+                round(playerList[last]);
+                continue;
             }
         }
         //game over

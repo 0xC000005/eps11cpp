@@ -11,10 +11,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="">
+    <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="UI improvement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScoreSheet.h" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreSheet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +138,7 @@
       <workItem from="1576614431540" duration="2496000" />
       <workItem from="1576618010814" duration="7759000" />
       <workItem from="1576691729692" duration="3028000" />
-      <workItem from="1576705337372" duration="1617000" />
+      <workItem from="1576705337372" duration="5655000" />
     </task>
     <task id="LOCAL-00001" summary="color theme failed&#10;&#10;toooo bad">
       <created>1576530646914</created>
@@ -172,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576694945957</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="UI improvement">
+      <created>1576707082754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576707082754</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +209,8 @@
     <MESSAGE value="major malfunction occur" />
     <MESSAGE value="major malfunction fixed" />
     <MESSAGE value="finished?" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished?" />
+    <MESSAGE value="UI improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI improvement" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="86" width="1089" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576502008533">
@@ -218,30 +229,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576670442405" />
-    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576694944834">
+    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576712552065">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576694944834" />
+    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576712552065" />
     <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1576383440127">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1576383440127" />
-    <state width="1493" height="370" key="GridCell.Tab.0.bottom" timestamp="1576510882524">
+    <state width="1493" height="541" key="GridCell.Tab.0.bottom" timestamp="1576711743280">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="370" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576510882524" />
-    <state width="1493" height="370" key="GridCell.Tab.0.center" timestamp="1576510882524">
+    <state width="1493" height="541" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576711743280" />
+    <state width="1493" height="541" key="GridCell.Tab.0.center" timestamp="1576711743280">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="370" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1576510882524" />
-    <state width="1493" height="370" key="GridCell.Tab.0.left" timestamp="1576510882523">
+    <state width="1493" height="541" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1576711743280" />
+    <state width="1493" height="541" key="GridCell.Tab.0.left" timestamp="1576711743279">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="370" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1576510882523" />
-    <state width="1493" height="370" key="GridCell.Tab.0.right" timestamp="1576510882524">
+    <state width="1493" height="541" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1576711743279" />
+    <state width="1493" height="541" key="GridCell.Tab.0.right" timestamp="1576711743280">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="370" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1576510882524" />
+    <state width="1493" height="541" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1576711743280" />
     <state width="1493" height="370" key="GridCell.Tab.1.bottom" timestamp="1576510882524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -270,10 +281,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1576669814577" />
-    <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1576705337875">
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1576712481342">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1576705337875" />
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1576712481342" />
     <state x="577" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576530607497">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
