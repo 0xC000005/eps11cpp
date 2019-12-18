@@ -143,7 +143,7 @@ public:
 
     void init() {
         cout << "Please enter your name: ";
-        cin >> name;
+        getline(cin,name);
         bool bypass = false;//use to bypass Sum and Bouns at the first time
         int count = 0;//use count to replace swither(int type)
         for (const auto &i : DESCRIPTIONS) {
@@ -227,8 +227,8 @@ public:
         if (type == 8)//Full house
         {
             bool two = false, three = false;
+            sum =25;
             for (int i = 0; i < 5; ++i) {
-                sum += counter[i] * (i + 1);
                 if (counter[i] == 2)two = true;
                 if (counter[i] == 3)three = true;
             }
@@ -236,7 +236,7 @@ public:
         }
         if (type == 9)//Small straight
         {
-            for (int i = 0; i < 5; ++i)sum += counter[i] * (i + 1);
+            sum=30;
             bool case1 = true, case2 = true, case3 = true;
             for (int i = 0; i < 3; ++i) {
                 if (!(counter[i] > 0 && counter[i + 1] > 0))case1 = false;
@@ -248,8 +248,8 @@ public:
         if (type == 10)//Large straight
         {
             bool statement = true;
+            sum=40;
             for (int i = 0; i < 5; ++i) {
-                sum += counter[i] * (i + 1);
                 if (counter[i] != 1)statement = false;
             }
             if (!statement)sum = 0;

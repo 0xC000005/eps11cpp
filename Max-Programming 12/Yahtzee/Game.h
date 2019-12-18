@@ -13,6 +13,8 @@
 #include <random>
 #include <unistd.h>
 #include"ScoreSheet.h"
+#include<random>
+#include<time.h>
 
 using namespace std;
 
