@@ -269,7 +269,7 @@ public:
         system("pause");
     }
 
-    void round(ScoreSheet player) {
+    void round(ScoreSheet &player) {
         bool finished = false;//after player_action(); return 0
         for (int i = 1; i <= 3; ++i)//each round has 3 tern
         {
