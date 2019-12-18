@@ -42,25 +42,22 @@ public:
             system("cls");
             cout << "After all players have played in this round, the system will automatically enter the next round."
                  << endl << endl;
-            cout << "TABLE: " <<endl;
+            cout << "TABLE: " << endl;
             cout << "STATUES |  PLAYER" << endl;
             cout << "-------------------" << endl;
             for (int i = 0; i < playerList.size(); i++) {
-                if (statues[i])
-                {
+                if (statues[i]) {
                     cout << "    ";
                     setColor(4);
-                    cout<<'x';
+                    cout << 'x';
                     resetColor();
-                    cout<<"   |  player " << i << endl;
-                }
-                else
-                {
+                    cout << "   |  player " << i << endl;
+                } else {
                     cout << "    ";
                     setColor(10);
-                    cout<<"o";
+                    cout << "o";
                     resetColor();
-                    cout<<"   |  player " << i << endl;
+                    cout << "   |  player " << i << endl;
                 }
             }
             cout << "-------------------" << endl;
@@ -68,7 +65,7 @@ public:
             cout << "Please select the number of player to operate:";
             int play = 0;
             cin >> play;
-            if (play < 0 || play > player_num-1)//error check
+            if (play < 0 || play > player_num - 1)//error check
             {
                 playerList[0].error_message("ERROR: The number you inputted is not within the range, please retry.");
                 pressAnyKeyToContinue();
@@ -76,8 +73,9 @@ public:
             }
             if (statues[play])//redundant
             {
-                playerList[play].warning_message("WARNING: The player you selected has already played in this round, you can only choose players who have not played.");
-                cout<< endl;
+                playerList[play].warning_message(
+                        "WARNING: The player you selected has already played in this round, you can only choose players who have not played.");
+                cout << endl;
                 pressAnyKeyToContinue();
                 goto table;
             }
@@ -133,11 +131,11 @@ public:
         cout << "Advanced Features:" << endl;
         cout << "--------------------" << endl;
         cout << "4.Load custom command set (now support Cygwin, MinGW and WSL)" << endl;
-        cout << "5.Load plugin (see README.md on Github)" <<endl;
+        cout << "5.Load plugin (see README.md on Github)" << endl;
         cout << endl << endl;
         cout << "Select your number: ";
-        int action=0;
-        cin>>action;
+        int action = 0;
+        cin >> action;
         //Here is the only hard code in the entire program!
         if (action == 1) {
             player_num = 1;
@@ -153,10 +151,10 @@ public:
         if (action == 4) {
             setCustom_command();
         }
-        if(action == 5){
+        if (action == 5) {
             setCustom_command();
         }
-        if (action>5 || action <1) {
+        if (action > 5 || action < 1) {
             setColor(79);
             cout << "ERROR: Can not locate'" << action << "', please check and retry." << endl;
             resetColor();
@@ -247,22 +245,62 @@ public:
                 break;
             }
             bool finded = false;
-            for (int &i : dice) {
-                if (i == pick) {
-                    preserve[pickOut] = i;
-                    string message =  "TEST_MESSAGE: dice[" + to_string(i) + "] =" + to_string(dice[i]) + "  dice[" + to_string(i) + "] -> preserve[" + to_string(pickOut) + "] ";
-                    player.test_message(message);
-                    i = 0; //clean the transferred dice
-                    pickOut++;
-                    finded = true;
-                    break;
+            for (int &d : dice) {
+                if (finded)break;
+                if (d == pick) {
+                    for (int &p:preserve) {
+                        if (p == 0) {
+                            p = d;
+                            d = 0; //clean the transferred dice
+                            pickOut++;
+                            finded = true;
+                            break;
+                        }
+                    }
                 }
             }
             if (!finded) {
-                player.error_message("ERROR: Can't find  this dice, check your number and retry. " );
+                player.error_message("ERROR: Can't find  this dice, check your number and retry. ");
                 continue;
             }
         } while (pick != 0);
+
+        cout << endl;
+        check_dice();
+        cout << endl;
+
+        cout << "Enter a number to select a preserved dice that you don't want." << endl;
+        cout << "Enter 0 to end the pick_out operation when you finished." << endl;
+        pick = 0;
+        do {
+            cout << "Input:";
+            cin >> pick;
+            if (pick == 0) {
+                break;
+            }
+            bool finded = false;
+            for (int &p : preserve) {
+                if (finded)break;
+                if (p == pick) {
+                    for (int &d :dice) {
+                        if (d == 0) {
+                            d = p;
+                            p = 0; //clean the transferred dice
+                            pickOut--;
+                            finded = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (!finded) {
+                player.error_message("ERROR: Can't find this preserved dice, check your number and retry. ");
+                continue;
+            }
+        } while (pick != 0);
+        cout << endl;
+        check_dice();
+        cout << endl;
     }
 
     static void pressAnyKeyToContinue() {

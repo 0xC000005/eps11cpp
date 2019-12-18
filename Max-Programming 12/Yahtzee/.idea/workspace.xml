@@ -11,7 +11,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="" />
+    <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,6 +135,7 @@
       <workItem from="1576589683053" duration="14000" />
       <workItem from="1576614431540" duration="2496000" />
       <workItem from="1576618010814" duration="7759000" />
+      <workItem from="1576691729692" duration="2997000" />
     </task>
     <task id="LOCAL-00001" summary="color theme failed&#10;&#10;toooo bad">
       <created>1576530646914</created>
@@ -151,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576679336362</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="major malfunction fixed">
+      <created>1576691961621</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576691961621</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +176,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -174,7 +190,8 @@
     <MESSAGE value="color text fixed!!!!" />
     <MESSAGE value="color assistance supported" />
     <MESSAGE value="major malfunction occur" />
-    <option name="LAST_COMMIT_MESSAGE" value="major malfunction occur" />
+    <MESSAGE value="major malfunction fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="major malfunction fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="86" width="1089" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576502008533">
@@ -193,10 +210,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576670442405" />
-    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576679334740">
+    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576691959966">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576679334740" />
+    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576691959966" />
     <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1576383440127">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
