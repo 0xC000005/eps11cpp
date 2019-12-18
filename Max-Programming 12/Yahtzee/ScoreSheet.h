@@ -72,7 +72,14 @@ public:
     }
 
     void display() {
-        cout << name << "'s Score Sheet:" << endl << endl;
+        cout << name << "'s Score Sheet:" << endl<<endl;
+        cout << "HINT: ";
+        setColor(10);
+        cout << "GREEN indicate items that have noo-zero potential score"<<endl;
+        setColor(4);
+        cout << "      RED indicate items that have been selected";
+        resetColor();
+        cout << endl << endl;
         cout << " ID | STATUS |   DESCRIPTION   | SCORE " << endl;
         cout << "--------------------------------------" << endl;
         for (auto item : score_paper) {
@@ -83,7 +90,7 @@ public:
                 cout.setf(ios::left);
                 cout.width(16);
                 cout << item.getDescription();
-                cout << "| " << item.getScore() << endl; // total score doesnt need markded sign
+                cout << "|  " << item.getScore() << endl; // total score doesnt need markded sign
                 if (item.getDescription() == "Bonus") cout << "--------------------------------------" << endl;
                 continue;
             } else {
@@ -92,8 +99,8 @@ public:
                     cout << " ";
                     cout.setf(ios::left);
                     cout.width(2);
-                    cout << item.getID();
-                    cout << "|    ";
+                    cout << item.getID() + 1;
+                    cout << " |    ";
                     setColor(4);
                     cout << "x";
                     resetColor();
@@ -101,7 +108,7 @@ public:
                     cout.setf(ios::left);
                     cout.width(16);
                     cout << item.getDescription();
-                    cout << "| " << item.getScore() << endl;
+                    cout << "|  " << item.getScore() << endl;
                     continue;
                 } else {
                     //marked = "   ☐";
@@ -109,10 +116,10 @@ public:
                     cout.setf(ios::left);
                     cout.width(2);
                     if (calculator(item.getID()) == 0) {
-                        cout << item.getID();
+                        cout << item.getID() + 1;
                     } else {
                         setColor(10);
-                        cout << item.getID();
+                        cout << item.getID() + 1;
                         resetColor();
                     }
                     cout << " |    ";
@@ -121,9 +128,9 @@ public:
                     cout.setf(ios::left);
                     cout.width(16);
                     cout << item.getDescription();
-                    if (calculator(item.getID()) == 0)cout << "| " << calculator(item.getID()) << endl;
+                    if (calculator(item.getID()) == 0)cout << "|  " << calculator(item.getID()) << endl;
                     else {
-                        cout << "| ";
+                        cout << "|  ";
                         setColor(10);
                         cout << calculator(item.getID());
                         resetColor();
@@ -265,33 +272,30 @@ public:
     }
 
     void player_action() {
-        cout << "Enter *full name* of the option you want to mark this round: ";
-        string action;
-        bool finded = false;
-        getline(cin, action);
-        if (action.empty()) {
-            getline(cin, action);
-        }
+        cout << "Enter the ID of the option you want to mark this round: ";
+        int action;
+        cin >> action;
+        action -= 1;
         for (auto &item : score_paper) {
-            if (action == item.getDescription()) {
+            if (action == item.getID()) {
                 if (item.getUsed()) {
                     error_message("ERROR: the item you just selected has marked.");
                     player_action();
                 }
-                if (action == "Sum" || action == "Bonus" || action == "TOTAL SCORE") {
-                    string message = "ERROR: you can't select item '" + action + "'.";
+                /*
+                if (action == -1) {
+                    string message = "ERROR: you can't select item 'Sum'.";
                     error_message(message);
                     player_action();
-                }
-                finded = true;
+                }*/
                 item.setScore(calculator(item.getID()));
                 item.setUsed(true);
                 cout << endl << "the item '" << item.getDescription() << "' has marked as " << item.getScore() << endl;
                 break;
             }
         }
-        if (!finded) {
-            string message = "ERROR: can't find the selected item '" + action + "' on score sheet.";
+        if (action > 12 || action < 0) {
+            string message = "ERROR: can't find the selected ID '" + to_string(action + 1) + "' on score sheet.";
             error_message(message);
             player_action();
         }

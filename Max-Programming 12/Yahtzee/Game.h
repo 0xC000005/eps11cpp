@@ -65,7 +65,7 @@ public:
             }
             cout << "-------------------" << endl;
             cout << endl;
-            cout << "Please select the number of player to operate:" << endl;
+            cout << "Please select the number of player to operate:";
             int play = 0;
             cin >> play;
             if (play < 0 || play > player_num-1)//error check
@@ -124,7 +124,7 @@ public:
         cout << endl;
         cout << "The feature 'Color text' has loaded" << endl;
         cout << endl;
-        cout << "Choose your Mode:" << endl;
+        cout << "Game Mode:" << endl;
         cout << "--------------------" << endl;
         cout << "1.Single player mode" << endl;
         cout << "2.Double player mode" << endl;
@@ -135,7 +135,7 @@ public:
         cout << "4.Load custom command set (now support Cygwin, MinGW and WSL)" << endl;
         cout << "5.Load plugin (see README.md on Github)" <<endl;
         cout << endl << endl;
-        cout << "Choose your action: " << endl;
+        cout << "Select your number: ";
         int action=0;
         cin>>action;
         //Here is the only hard code in the entire program!
