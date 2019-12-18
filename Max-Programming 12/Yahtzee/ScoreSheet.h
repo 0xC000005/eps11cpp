@@ -11,7 +11,7 @@
 #include <utility>
 #include <vector>
 #include <iterator>
-#include <mem.h>
+#include <windows.h>
 #include "Score.h"
 
 using namespace std;
@@ -21,16 +21,16 @@ private:
     vector<Score> score_paper;
     string name;
     string DESCRIPTIONS[16];
-    string default_color_theme[7];
-    string custom_command;
     bool finished;
     int playerID{}; //for multi-player
     int counter[6]{};
+    HANDLE h;
 public:
     ScoreSheet() = default;
 
     explicit ScoreSheet(int const &_playerID)//init var
     {
+        h = GetStdHandle(STD_OUTPUT_HANDLE);
         setPlayerID(_playerID);
         DESCRIPTIONS[0] = "Ones";
         DESCRIPTIONS[1] = "Twos";
@@ -48,14 +48,6 @@ public:
         DESCRIPTIONS[13] = "Chance";
         DESCRIPTIONS[14] = "YAHTZEE";
         DESCRIPTIONS[15] = "TOTAL SCORE";
-        //custom color theme
-        default_color_theme[0] = "color";
-        default_color_theme[1] = "color 02";
-        default_color_theme[2] = "color 03";
-        default_color_theme[3] = "color 06";
-        default_color_theme[4] = "color 0B";
-        default_color_theme[5] = "color 1F";
-        default_color_theme[6] = "color F0";
         finished = false;
         init_counter();
         init();
@@ -69,55 +61,43 @@ public:
         return playerID;
     }
 
-    void setCustom_command(string _custom_command) {
-        string message = "NOTICE: custom command - '" + _custom_command + "' has affected.";
-        notice_message(message);
-        custom_command = std::move(_custom_command);
+    void setColor(int _color) {
+        //string message = "NOTICE: custom command - '" + to_string(_color) + "' has affected.";
+        //notice_message(message);
+        SetConsoleTextAttribute(h, _color);
     }
 
-    void applyCustom_command() {
-        char *command = strdup(custom_command.c_str());
-        system(command);
-        free(command);
-    }
-
-    void setColor_theme() {
-        cout<< "Do you want to set the color of this player? Press enter to use the default color scheme, input 'help' for help: ";
-        string color_theme;
-        getline(cin, color_theme);
-        if (color_theme == "help") {
-            system("color ?");
-            setColor_theme();
-        }
-        if (color_theme.empty()) {
-            //set your own default color theme
-            setCustom_command(default_color_theme[playerID]);
-        } else {
-            setCustom_command(color_theme);
-        }
+    void resetColor() {
+        SetConsoleTextAttribute(h, 15);
     }
 
     void display() {
         cout << name << "'s Score Sheet:" << endl << endl;
-        cout << "STATUS |   DESCRIPTION   | SCORE " << endl;
-        cout << "--------------------------------" << endl;
+        cout << " ID | STATUS |   DESCRIPTION   | SCORE " << endl;
+        cout << "--------------------------------------" << endl;
         for (auto item : score_paper) {
             if (item.getID() == -1) {
                 if (item.getDescription() == "TOTAL SCORE" || item.getDescription() == "Sum")
-                    cout << "--------------------------------" << endl;
-                cout << "       | ";
+                    cout << "--------------------------------------" << endl;
+                cout << "             | ";
                 cout.setf(ios::left);
                 cout.width(16);
                 cout << item.getDescription();
                 cout << "| " << item.getScore() << endl; // total score doesnt need markded sign
-                if (item.getDescription() == "Bonus") cout << "--------------------------------" << endl;
+                if (item.getDescription() == "Bonus") cout << "--------------------------------------" << endl;
                 continue;
             } else {
-                string marked;
                 if (item.getUsed() == 1) {
                     //marked = "   ☑";
-                    marked = "   x";
-                    cout << marked << "   | ";
+                    cout << " ";
+                    cout.setf(ios::left);
+                    cout.width(2);
+                    cout << item.getID();
+                    cout << "|    ";
+                    setColor(4);
+                    cout << "x";
+                    resetColor();
+                    cout << "   | ";
                     cout.setf(ios::left);
                     cout.width(16);
                     cout << item.getDescription();
@@ -125,19 +105,36 @@ public:
                     continue;
                 } else {
                     //marked = "   ☐";
-                    marked = "   o";
-                    cout << marked << "   | ";
+                    cout << " ";
+                    cout.setf(ios::left);
+                    cout.width(2);
+                    if (calculator(item.getID()) == 0) {
+                        cout << item.getID();
+                    } else {
+                        setColor(10);
+                        cout << item.getID();
+                        resetColor();
+                    }
+                    cout << " |    ";
+                    cout << "o";
+                    cout << "   | ";
                     cout.setf(ios::left);
                     cout.width(16);
                     cout << item.getDescription();
-                    cout << "| " << calculator(item.getID()) << endl;
+                    if (calculator(item.getID()) == 0)cout << "| " << calculator(item.getID()) << endl;
+                    else {
+                        cout << "| ";
+                        setColor(10);
+                        cout << calculator(item.getID());
+                        resetColor();
+                        cout << endl;
+                    }
                 }
             }
         }
     }
 
     void init() {
-        setColor_theme();
         cout << "Please enter your name: ";
         cin >> name;
         bool bypass = false;//use to bypass Sum and Bouns at the first time
@@ -294,7 +291,7 @@ public:
             }
         }
         if (!finded) {
-            string message ="ERROR: can't find the selected item '" + action + "' on score sheet.";
+            string message = "ERROR: can't find the selected item '" + action + "' on score sheet.";
             error_message(message);
             player_action();
         }
@@ -320,28 +317,28 @@ public:
     }
 
     void error_message(const string &message) {
-        system("color 4F");
+        setColor(79);
         cout << message << endl;
-        applyCustom_command(); //reset the color theme
+        resetColor(); //reset the color theme
 
     }
 
     void warning_message(const string &message) {
-        system("color 60");
+        setColor(111);
         cout << message << endl;
-        applyCustom_command();
+        resetColor();
     }
 
     void test_message(const string &message) {
-        system("color 0A");
+        setColor(47);
         cout << message << endl;
-        applyCustom_command();
+        resetColor();
     }
 
     void notice_message(const string &message) {
-        system("color 09");
+        setColor(31);
         cout << message << endl;
-        applyCustom_command();
+        resetColor();
     }
 
 };

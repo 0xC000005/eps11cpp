@@ -11,20 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ColorText.h" afterDir="false" />
+    <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="color text fixed!!!!">
+      <change afterPath="$PROJECT_DIR$/color_text.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ColorText.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScoreSheet.h" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreSheet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +64,16 @@
     <setting file="file://$PROJECT_DIR$/ScoreSheet.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1Uz3Jei3DvAE7J3IfRXE4ikDFAF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
@@ -139,7 +140,7 @@
       <workItem from="1576589219367" duration="34000" />
       <workItem from="1576589683053" duration="14000" />
       <workItem from="1576614431540" duration="2496000" />
-      <workItem from="1576618010814" duration="247000" />
+      <workItem from="1576618010814" duration="5768000" />
     </task>
     <task id="LOCAL-00001" summary="color theme failed&#10;&#10;toooo bad">
       <created>1576530646914</created>
@@ -155,8 +156,10 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="color theme failed&#10;&#10;toooo bad" />
-    <option name="LAST_COMMIT_MESSAGE" value="color theme failed&#10;&#10;toooo bad" />
+    <MESSAGE value="color text fixed!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="color text fixed!!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="86" width="1089" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576502008533">
@@ -167,18 +170,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="521" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1576431828695" />
-    <state x="449" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576589198546">
+    <state x="449" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576675802017">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="449" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1576589198546" />
-    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576449571724">
+    <state x="449" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1576675802017" />
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576670442405">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576449571724" />
-    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576530645285">
+    <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576670442405" />
+    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576672088596">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576530645285" />
+    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576672088596" />
     <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1576383440127">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -223,6 +226,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="524" y="276" key="cloudConfig.SelfSettingsDialog/0.0.1536.864@0.0.1536.864" timestamp="1576471668002" />
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1576669814577">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1576669814577" />
     <state x="465" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1576618032688">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -239,10 +246,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="510" y="75" key="refactoring.ChangeSignatureDialog/0.0.1536.864@0.0.1536.864" timestamp="1576503972263" />
-    <state x="425" y="197" key="run.anything.popup" timestamp="1576516564645">
+    <state x="425" y="197" key="run.anything.popup" timestamp="1576676685147">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1576516564645" />
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1576676685147" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1576505280448">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

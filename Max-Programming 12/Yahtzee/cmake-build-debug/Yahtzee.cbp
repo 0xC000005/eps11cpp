@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/ColorText.h">
-			<Option target="Yahtzee"/>
-		</Unit>
 		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Game.h">
 			<Option target="Yahtzee"/>
 		</Unit>

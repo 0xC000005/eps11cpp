@@ -24,10 +24,12 @@ private:
     int player_num;
     random_device rd;  //Will be used to obtain a seed for the random number engine
     vector<ScoreSheet> playerList;
+    HANDLE h;
 
 public:
     Game() //init
     {
+        h = GetStdHandle(STD_OUTPUT_HANDLE);
         player_num = 0;
         init_playerList();
         bool statues[player_num];
@@ -38,25 +40,40 @@ public:
             }
             table:
             system("cls");
-            cout << "After all players have played in this round, the system will automatically enter the next round"
+            cout << "After all players have played in this round, the system will automatically enter the next round."
                  << endl << endl;
+            cout << "TABLE: " <<endl;
             cout << "STATUES |  PLAYER" << endl;
             cout << "-------------------" << endl;
             for (int i = 0; i < playerList.size(); i++) {
-                if (statues[i])cout << "    x   |  player" << i << endl;
-                else cout << "    o   |  player " << i << endl;
+                if (statues[i])
+                {
+                    cout << "    ";
+                    setColor(4);
+                    cout<<'x';
+                    resetColor();
+                    cout<<"   |  player " << i << endl;
+                }
+                else
+                {
+                    cout << "    ";
+                    setColor(10);
+                    cout<<"o";
+                    resetColor();
+                    cout<<"   |  player " << i << endl;
+                }
             }
             cout << "-------------------" << endl;
             cout << endl;
             cout << "Please select the number of player to operate:" << endl;
             int play = 0;
             cin >> play;
-            /*if (play < player_num || play > player_num)//error check
+            if (play < 0 || play > player_num-1)//error check
             {
-                cout << "WARNING: The number you inputed is not within the range retry." << endl;
+                playerList[0].error_message("ERROR: The number you inputted is not within the range, please retry.");
                 pressAnyKeyToContinue();
                 goto table;
-            }*/
+            }
             if (statues[play])//redundant
             {
                 playerList[play].warning_message("WARNING: The player you selected has already played in this round, you can only choose players who have not played.");
@@ -66,7 +83,7 @@ public:
             }
 
             pickOut = 0;
-            playerList[play].applyCustom_command();
+            playerList[play].resetColor();
             round(playerList[play]);
             statues[play] = true;
             for (int i = 0; i < player_num; i++) {
@@ -86,6 +103,14 @@ public:
         }
     }
 
+    void setColor(int _color) {
+        SetConsoleTextAttribute(h, _color);
+    }
+
+    void resetColor() {
+        SetConsoleTextAttribute(h, 15);
+    }
+
     void init_playerList() {
         system("cls");
         cout << "Welcome to Yahtzee!" << endl;
@@ -97,51 +122,44 @@ public:
 
         }
         cout << endl;
-        cout << "Feature 'Friend or foe identification system' now supports 7 players" << endl;
+        cout << "The feature 'Color text' has loaded" << endl;
         cout << endl;
         cout << "Choose your Mode:" << endl;
         cout << "--------------------" << endl;
-        cout << "Single player mode" << endl;
-        cout << "Double player mode" << endl;
-        cout << "Custom player number" << endl;
+        cout << "1.Single player mode" << endl;
+        cout << "2.Double player mode" << endl;
+        cout << "3.Custom player number" << endl;
         cout << endl;
         cout << "Advanced Features:" << endl;
         cout << "--------------------" << endl;
-        cout << "Load custom command set (now support Cygwin, MinGW and WSL)" << endl;
-        cout << "Load customize plugin (see README.md on Github)" <<endl;
+        cout << "4.Load custom command set (now support Cygwin, MinGW and WSL)" << endl;
+        cout << "5.Load plugin (see README.md on Github)" <<endl;
         cout << endl << endl;
         cout << "Choose your action: " << endl;
-        string action;
-        getline(cin, action);
-        if (action.empty())getline(cin, action);
-        bool success = false;
+        int action=0;
+        cin>>action;
         //Here is the only hard code in the entire program!
-        if (action == "Single player mode") {
+        if (action == 1) {
             player_num = 1;
-            success = true;
         }
-        if (action == "Double player mode") {
+        if (action == 2) {
             player_num = 2;
-            success = true;
         }
-        if (action == "Custom player number") {
+        if (action == 3) {
             system("cls");
             cout << "input your custom player number: ";
             cin >> player_num;
-            success = true;
         }
-        if (action == "Load custom command set") {
+        if (action == 4) {
             setCustom_command();
-            success = true;
         }
-        if(action == "Load customize plugin"){
+        if(action == 5){
             setCustom_command();
-            success = true;
         }
-        if (!success) {
-            system("color 4F");
-            cout << "ERROR: Can't find your action '" << action << "', please check and retry." << endl;
-            system("color 0F");
+        if (action>5 || action <1) {
+            setColor(79);
+            cout << "ERROR: Can not locate'" << action << "', please check and retry." << endl;
+            resetColor();
             pressAnyKeyToContinue();
             init_playerList();
         }
@@ -166,14 +184,14 @@ public:
         } else {
             system("systeminfo");
             cout << endl << endl;
-            system("color 60");
+            setColor(111);
             cout << "WARNING: It is detected that you are not running this program in Cygwin or UNIX system." << endl;
             cout
                     << "          The use of custom commands may result in an unstable state on the command line of your system: "
                     << endl;
             cout << "                 'Microsoft Windows 10 Pro 10.0.18363 N / A Build 18363'. " << endl;
             cout << "          Please go to UNIX Retry" << endl << endl;
-            system("color 0F");
+            resetColor();
             pressAnyKeyToContinue();
         }
         init_playerList();
@@ -273,7 +291,7 @@ public:
             system("cls");
             player.display();
             if (i < 3) {
-                cout << "Do you want to use the score paper now? (0/1) ";
+                cout << "Do you want to use the score paper now? (NO = 0/ YES = 1) ";
                 int statement = 0;
                 cin >> statement;
                 if (statement == 1) {
