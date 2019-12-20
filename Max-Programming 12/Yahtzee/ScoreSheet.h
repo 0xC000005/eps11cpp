@@ -30,7 +30,7 @@ public:
 
     explicit ScoreSheet(int const &_playerID)//init var
     {
-
+        h = GetStdHandle(STD_OUTPUT_HANDLE);
         setPlayerID(_playerID);
         DESCRIPTIONS[0] = "Ones";
         DESCRIPTIONS[1] = "Twos";
@@ -143,7 +143,9 @@ public:
 
     void init() {
         cout << "Please enter your name: ";
-        getline(cin,name);
+        name = "\n";
+        getline(cin, name);
+        getline(cin, name);
         if (name.empty())getline(cin, name);
         bool bypass = false;//use to bypass Sum and Bouns at the first time
         int count = 0;//use count to replace swither(int type)
@@ -272,10 +274,11 @@ public:
         return sum;
     }
 
-    void player_action() {
-        cout << "Enter the ID of the option you want to mark this round: ";
-        int action;
-        cin >> action;
+    void player_action(int action = 0) {
+        if (!action) {
+            cout << "Enter the ID of the option you want to mark this round: ";
+            cin >> action;
+        }
         action -= 1;
         for (auto &item : score_paper) {
             if (action == item.getID()) {

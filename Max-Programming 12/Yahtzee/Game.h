@@ -93,7 +93,6 @@ public:
                     last = i;
                 }
             }
-            pressAnyKeyToContinue();
             if (unplayed > 1)goto table;
             else // one or less people haven't played yet
             {
@@ -131,7 +130,7 @@ public:
         cout << "Loading features and Plugins";
         for (int i = 0; i < 6; i++) {
             cout << ".";
-            sleep(1);
+            // sleep(1);
 
         }
         cout << endl;
@@ -235,87 +234,58 @@ public:
         }
     }
 
-    void print_dice(int number) {
+    void get_dice(int number) {
 
-        cout << "Your dices:" << endl;
         for (int i = 0; i < number; i++) {
-
             mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
             uniform_int_distribution<> dis(1, 6);
             dice[i] = dis(gen);
-            cout << dice[i] << " ";
+        }
 
+    }
+
+    void print_dice() {
+        cout << "Your dices:" << endl;
+        for (int &d :dice) {
+            if (!d) {
+                for (int &p :preserve) {
+                    if (!p)continue;
+                    cout << p << " ";
+                    d = p;
+                    p = 0;
+                    break;
+                }
+                continue;
+            }
+            cout << d << " ";
         }
         cout << endl;
     }
 
     void picking_out(ScoreSheet player) {
-        cout << "Enter a number to select a dice you want to save." << endl;
-        cout << "Enter 0 to end the pick_out operation when you finished." << endl;
         int pick = 0;
-        do {
-            cout << "Input:";
-            cin >> pick;
-            if (pick == 0) {
-                break;
-            }
+        pickOut = 0;
+        cout << "Enter all the dices you want to save, separating with space, then enter to end." << endl;
+        while (cin >> pick) {
             bool finded = false;
             for (int &d : dice) {
-                if (finded)break;
                 if (d == pick) {
-                    for (int &p:preserve) {
-                        if (p == 0) {
-                            p = d;
-                            d = 0; //clean the transferred dice
-                            pickOut++;
-                            finded = true;
-                            break;
-                        }
-                    }
+                    preserve[pickOut] = d;
+                    d = 0;
+                    pickOut++;
+                    finded = true;
+                    break;
                 }
             }
             if (!finded) {
-                player.error_message("ERROR: Can't find  this dice, check your number and retry. ");
+                player.error_message("ERROR: Can't find dice " + to_string(pick) + " , check your number and retry. ");
                 continue;
             }
-        } while (pick != 0);
-
-        cout << endl;
+            char ch = getchar();//通过getchar()来判断最后输入回车符结束
+            if (ch == '\n')break;
+        }
         check_dice();
-        cout << endl;
-
-        cout << "Enter a number to select a preserved dice that you don't want." << endl;
-        cout << "Enter 0 to end the pick_out operation when you finished." << endl;
-        pick = 0;
-        do {
-            cout << "Input:";
-            cin >> pick;
-            if (pick == 0) {
-                break;
-            }
-            bool finded = false;
-            for (int &p : preserve) {
-                if (finded)break;
-                if (p == pick) {
-                    for (int &d :dice) {
-                        if (d == 0) {
-                            d = p;
-                            p = 0; //clean the transferred dice
-                            pickOut--;
-                            finded = true;
-                            break;
-                        }
-                    }
-                }
-            }
-            if (!finded) {
-                player.error_message("ERROR: Can't find this preserved dice, check your number and retry. ");
-                continue;
-            }
-        } while (pick != 0);
-        cout << endl;
-        check_dice();
-        cout << endl;
+        pressAnyKeyToContinue();
     }
 
     static void pressAnyKeyToContinue() {
@@ -329,29 +299,27 @@ public:
             system("cls");//clear
             player.init_counter();
             init_dice();
+            get_dice(5 - pickOut);
+            player.counting(dice, preserve);
             player.display(); //display new sheet
             cout << endl;
             cout << "This is your " << i << " round." << endl;
             cout << endl;
-            print_dice(5 - pickOut);
+            print_dice();
             cout << endl;
-            check_dice();
-            cout << endl;
-            picking_out(player);
-            cout << endl;
-            player.counting(dice, preserve);
-            pressAnyKeyToContinue();
-            system("cls");
-            player.display();
             if (i < 3) {
-                cout << "Do you want to use the score paper now? (NO = 0/ YES = 1) ";
-                int statement = 0;
+                cout << "Input the ID for selected item if you want to use score sheet, or press 0 to skip: ";
+                int statement;
                 cin >> statement;
-                if (statement == 1) {
-                    player.player_action();
+                if (statement) {
+                    player.player_action(statement);
                     break;
+                } else {
+                    picking_out(player);
+                    cout << endl;
+                    player.counting(dice, preserve);
                 }
-            } else if (i == 3) {
+            } else {
                 player.player_action();
             }
         }
