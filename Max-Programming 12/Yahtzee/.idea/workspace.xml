@@ -11,17 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cycling_input.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cycling_input.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreSheet.h" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreSheet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/color_text.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/color_text.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +134,7 @@
       <workItem from="1576712479851" duration="1509000" />
       <workItem from="1576716920469" duration="445000" />
       <workItem from="1576717963072" duration="2140000" />
-      <workItem from="1576842297045" duration="5207000" />
+      <workItem from="1576842297045" duration="5388000" />
     </task>
     <task id="LOCAL-00001" summary="color theme failed&#10;&#10;toooo bad">
       <created>1576530646914</created>
@@ -195,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576712617347</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="skip table selection for the last player">
+      <created>1576848549740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576848549740</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,46 +242,46 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576670442405" />
-    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576712615596">
+    <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1576848547476">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576712615596" />
+    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576848547476" />
     <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1576383440127">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1576383440127" />
-    <state width="1493" height="541" key="GridCell.Tab.0.bottom" timestamp="1576846926936">
+    <state width="1493" height="541" key="GridCell.Tab.0.bottom" timestamp="1576848551959">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="541" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576846926936" />
-    <state width="1493" height="541" key="GridCell.Tab.0.center" timestamp="1576846926936">
+    <state width="1493" height="541" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576848551959" />
+    <state width="1493" height="541" key="GridCell.Tab.0.center" timestamp="1576848551959">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="541" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1576846926936" />
-    <state width="1493" height="541" key="GridCell.Tab.0.left" timestamp="1576846926936">
+    <state width="1493" height="541" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1576848551959" />
+    <state width="1493" height="541" key="GridCell.Tab.0.left" timestamp="1576848551958">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="541" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1576846926936" />
-    <state width="1493" height="541" key="GridCell.Tab.0.right" timestamp="1576846926936">
+    <state width="1493" height="541" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1576848551958" />
+    <state width="1493" height="541" key="GridCell.Tab.0.right" timestamp="1576848551959">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="541" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1576846926936" />
-    <state width="1493" height="370" key="GridCell.Tab.1.bottom" timestamp="1576844652904">
+    <state width="1493" height="541" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1576848551959" />
+    <state width="1493" height="370" key="GridCell.Tab.1.bottom" timestamp="1576848551955">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="370" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576844652904" />
-    <state width="1493" height="370" key="GridCell.Tab.1.center" timestamp="1576844652904">
+    <state width="1493" height="370" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576848551955" />
+    <state width="1493" height="370" key="GridCell.Tab.1.center" timestamp="1576848551955">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="370" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1576844652904" />
-    <state width="1493" height="370" key="GridCell.Tab.1.left" timestamp="1576844652903">
+    <state width="1493" height="370" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1576848551955" />
+    <state width="1493" height="370" key="GridCell.Tab.1.left" timestamp="1576848551955">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="370" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1576844652903" />
-    <state width="1493" height="370" key="GridCell.Tab.1.right" timestamp="1576844652904">
+    <state width="1493" height="370" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1576848551955" />
+    <state width="1493" height="370" key="GridCell.Tab.1.right" timestamp="1576848551955">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="370" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1576844652904" />
+    <state width="1493" height="370" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1576848551955" />
     <state x="430" y="22" key="SettingsEditor" timestamp="1576516393671">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
