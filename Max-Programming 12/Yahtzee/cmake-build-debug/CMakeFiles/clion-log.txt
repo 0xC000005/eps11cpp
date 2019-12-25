@@ -1,4 +1,4 @@
-C:\Users\heckn\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\heckn\Documents\GitHub\eps11cpp\Max-Programming 12\Yahtzee"
+"D:\Program Files\JetBrains\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\heckn\Documents\GitHub\eps11cpp\Max-Programming 12\Yahtzee"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug

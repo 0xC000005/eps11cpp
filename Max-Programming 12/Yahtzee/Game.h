@@ -281,7 +281,7 @@ public:
                 player.error_message("ERROR: Can't find dice " + to_string(pick) + " , check your number and retry. ");
                 continue;
             }
-            char ch = getchar();//通过getchar()来判断最后输入回车符结束
+            char ch = char(getchar());//通过getchar()来判断最后输入回车符结束
             if (ch == '\n')break;
         }
         check_dice();

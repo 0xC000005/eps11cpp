@@ -21,10 +21,10 @@ private:
     vector<Score> score_paper;
     string name;
     string DESCRIPTIONS[16];
-    bool finished;
+    bool finished{};
     int playerID{}; //for multi-player
     int counter[6]{};
-    HANDLE h;
+    HANDLE h{};
 public:
     ScoreSheet() = default;
 
