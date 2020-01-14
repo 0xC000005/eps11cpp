@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -static CMakeFiles/Poker.dir/main.cpp.o  -o Poker 

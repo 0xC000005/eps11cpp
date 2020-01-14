@@ -8,93 +8,95 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug"/>
+				<Option working_dir="/tmp/tmp.jceDSz2Vhn/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug"/>
+				<Option working_dir="/tmp/tmp.jceDSz2Vhn/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Yahtzee">
-				<Option output="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Yahtzee.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug"/>
+				<Option output="/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Yahtzee" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.jceDSz2Vhn/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 Yahtzee"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 Yahtzee"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Yahtzee/fast">
-				<Option output="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Yahtzee.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug"/>
+				<Option output="/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Yahtzee" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.jceDSz2Vhn/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 Yahtzee/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 Yahtzee/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug"/>
+				<Option working_dir="/tmp/tmp.jceDSz2Vhn/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.jceDSz2Vhn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Game.h">
+		<Unit filename="/tmp/tmp.jceDSz2Vhn/Game.h">
 			<Option target="Yahtzee"/>
 		</Unit>
-		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Score.h">
+		<Unit filename="/tmp/tmp.jceDSz2Vhn/Score.h">
 			<Option target="Yahtzee"/>
 		</Unit>
-		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/ScoreSheet.h">
+		<Unit filename="/tmp/tmp.jceDSz2Vhn/ScoreSheet.h">
 			<Option target="Yahtzee"/>
 		</Unit>
-		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/main.cpp">
+		<Unit filename="/tmp/tmp.jceDSz2Vhn/main.cpp">
 			<Option target="Yahtzee"/>
 		</Unit>
-		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/CMakeLists.txt">
+		<Unit filename="/tmp/tmp.jceDSz2Vhn/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
