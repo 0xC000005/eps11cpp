@@ -1,0 +1,229 @@
+int ante() {
+        cout << "==================ANTE=================" << endl;
+        cout << name << "'s Balance:" << money << endl;
+        cout << "Please enter your bet:";
+        cin >> bet;
+        cout << "==================END==================" << endl;
+        if (bet > money) {
+            cout << "ERROR: Now you only have " << money << "$, try again!" << endl;
+            ante();
+        }
+        return bet;
+    }
+
+    int getBet() {
+        return bet;
+    }
+
+    void CheckOut() {
+        if (Check_Code == 1) {
+            money += bet;
+        } else if (Check_Code == 0) {
+            money -= bet;
+        } else if (Check_Code == 2) {
+            money += bet * 2;
+        }
+    }
+
+
+    Card take() {
+        Card temp = deck[0];
+        deck.erase(deck.begin());
+        return temp;
+    }
+
+    void takeCard() {
+        if (deck.empty()) {
+            cout << "------------ERROR:THERE_IS_NO_CARD_REMAIN------------" << endl;
+            cout << "Play again? (yes/no)";
+            string temp;
+            cout << temp;
+            if (temp == "yes") {
+                init();
+            }
+        } else take();
+    }
+
+    void showDeck() {
+        for (auto element : deck) {
+            cout << element.getDescription() << " of " << element.getSuit() << endl;
+        }
+    }
+
+    void showPlayerCard() {
+        cout << name << "'s cards: " << endl;
+        int count = 0;
+        for (auto element : playerCard) {
+            count++;
+            cout << count << ". " << element.getDescription() << " of " << element.getSuit() << endl;
+        }
+    }
+
+    void discard() {
+        cout << "=================================DISCARD================================" << endl << endl;
+        cout << "Input the number of the card that you want to discard, input 0 to exit: " << endl;
+        int ID;
+        cin >> ID;
+
+
+    }
+
+
+    void AceCheck(int i) {
+        if (tempCard.getValue() == 11 && i == 0) p_aceCounter++;
+        if (tempCard.getValue() == 11 && i == 1) d_aceCounter++;
+
+        if (i == 0) {
+            if ((tempCard.getValue() + pTotal + 10 > 21) && p_aceCounter != 0) {
+                pTotal -= 10;
+                p_aceCounter--;
+            }
+        } else {
+            if ((tempCard.getValue() + dTotal + 10 > 21) && d_aceCounter != 0) {
+                dTotal -= 10;
+                d_aceCounter--;
+            }
+        }
+
+    }
+
+    void Judge() {
+        //System.out.println("------------CHECK POINT:CHECK_OUT------------");
+        if (pTotal > 21) {
+            cout << "YOU LOSE" << endl;
+            Check_Code = 0;
+        } else if (dTotal > 21 || pTotal > dTotal) {
+            cout << "YOU WIN" << endl;
+            Check_Code = 1;
+        } else if (pTotal == dTotal) {
+            cout << "PUSH" << endl;
+            Check_Code = 3;
+        } else if (dTotal <= 21 && pTotal < 21 && pTotal < dTotal) {
+            cout << "YOU LOSE" << endl;
+            Check_Code = 0;
+
+        }
+    }
+
+    void Black_Jack() {
+        int count = 0, total = 0, flag = 0;
+        count++;
+        if (flag == 0 && count == 1) {
+            if (tempCard.getSuit() == "Ace" || tempCard.getSuit() == "Jack") {
+                flag++;
+            }
+        }
+        if (flag == 1 && count == 2) {
+            if (tempCard.getSuit() == "Ace" || tempCard.getSuit() == "Jack") {
+                flag++;
+            }
+        }
+        if (flag == 2 && count == 2) {
+            cout << "------------BLACK JACK------------" << endl;
+            cout << "YOU WIN" << endl;
+            Check_Code = 2;
+            money += bet;
+        }
+
+    }
+
+
+    void addCard(const Card &cardToAdd) {
+        deck.push_back(cardToAdd);
+    }
+
+
+    void stand() {
+        while (dTotal < 17) {
+            tempCard = deck[0];
+            cout << tempCard.getDescription() << " of " << tempCard.getSuit() << endl;
+            AceCheck(1);
+            dTotal += tempCard.getValue();
+            takeCard();
+            cout << "Dealer total= " << dTotal << endl;
+        }
+    }
+
+    void reset()
+    {
+        pTotal = 0;
+        dTotal = 0;
+        p_aceCounter = 0;
+        d_aceCounter = 0;
+    }
+
+    void Deal() {
+        cout << "Dealer's hand:" << endl;
+        tempCard = deck[0];
+        cout << "Down Card" << endl;
+        Card downCard = tempCard;
+        takeCard();//up carrd
+        tempCard = deck[0];
+        cout << tempCard.getDescription() << " of " << tempCard.getSuit() << endl;
+        AceCheck(1);
+        dTotal += tempCard.getValue();
+        cout << "Dealer total= " << dTotal << endl;
+        cout << endl;
+        cout << "Your hand:" << endl;
+        tempCard = deck[0];
+        cout << tempCard.getDescription() << " of " << tempCard.getSuit() << endl;
+        AceCheck(0);
+        Black_Jack();
+        pTotal += tempCard.getValue();
+        takeCard();
+        tempCard = deck[0];
+        cout << tempCard.getDescription() << " of " << tempCard.getSuit() << endl;
+        AceCheck(0);
+        pTotal += tempCard.getValue();
+        takeCard();
+        cout << "Player total= " << pTotal << endl;
+
+        cout << "Would you like a hit? (yes/no)";
+        cin >> hit;
+        while (pTotal < 21 && hit == "yes") {
+            tempCard = deck[0];
+            cout << tempCard.getDescription() << " of " << tempCard.getSuit() << endl;
+            AceCheck(0);
+            pTotal += tempCard.getValue();
+            takeCard();
+            cout << "Player total= " << pTotal << endl;
+            if (pTotal < 21) {
+                cout << "Would you like a hit? (yes/no)";
+                cin >> hit;
+            }
+        }
+
+        if (pTotal < 21 && hit == "no")stand();
+
+        if (pTotal >= 21) {
+            cout << "Down Card: " << downCard.getDescription() << " of " << downCard.getSuit();
+            if (downCard.getValue() + 10 + dTotal < 21)dTotal += 10;
+            dTotal += downCard.getValue();
+            cout << "Dealer total= " << dTotal << endl;
+            stand();
+        }
+        Judge();
+
+        // System.out.println("------------CHECK POINT:DEAL_FUNCTION_END------------");
+        //if blackjack Check_Code=2;
+        cout << "------------------------" << endl;
+        cout << "Would you like another round? (yes/no)";
+        cin >> next_round;
+        cout << "------------------------" << endl;
+        reset();
+    }
+
+    void round() {
+        bet = ante();
+        Deal();
+        CheckOut();
+    }
+
+    void Play() {
+        cout << "------------GAME START------------" << endl;
+        while (money > 0 && next_round == "yes") {
+            round();
+        }
+        if (money <= 0) cout << "You're out of money dumbass!" << endl;
+        cout << "------------GAME OVER------------" << endl;
+    }

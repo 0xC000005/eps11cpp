@@ -88,6 +88,9 @@
 		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Game.h">
 			<Option target="Poker"/>
 		</Unit>
+		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Player.h">
+			<Option target="Poker"/>
+		</Unit>
 		<Unit filename="C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/main.cpp">
 			<Option target="Poker"/>
 		</Unit>
