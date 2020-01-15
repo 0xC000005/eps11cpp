@@ -17,10 +17,10 @@ class Player {
 private:
     string name;
 
-
 public:
     Player() = default;
     int money = 100;
+    bool fold = false;
     vector<Card> playerCard;
 
     void setName(string _name) {

@@ -16,15 +16,14 @@ using namespace std;
 class Deck {
 private:
     vector<Card> deck;
-    vector<Player> playerList;
-    Card tempCard;
-
     int SHUFFLE{};
     string SUITS[4];
     string DESC[13];
     int VALUE[13] = {11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
 
 public:
+    vector<Player> playerList;
+    vector<Card> deckCards;
     Deck() {
         SHUFFLE = 1000;
         SUITS[0] = "Heart";
@@ -59,7 +58,7 @@ public:
         VALUE[12] = 13;
     }
 
-    void newPlayer() {
+    void addNewPlayer() {
         cout << "Please input the name for this player: ";
         string name = "\n";
         getline(cin, name);
@@ -69,11 +68,6 @@ public:
         playerList.push_back(temp);
     }
 
-    void card_swap(int num1, int num2) {
-        deck[num1] = deck[num2];
-        deck[num2] = tempCard;
-    }
-
     void shuffle() {
         int num1, num2;
         for (int x = 1; x <= SHUFFLE; x++) {
@@ -81,13 +75,14 @@ public:
                 num1 = rand() % 52;// number from 0-51
                 num2 = rand() % 52;// 1 number less than value
             } while (num1 == num2);
-            card_swap(num1, num2);
+            swap(deck[num1], deck[num2]);
         }
     }
 
     void loadDeck() {
         for (const auto &s : SUITS)
             for (int d = 0; d < 13; d++) {
+                Card tempCard;
                 tempCard.setSuit(s);
                 tempCard.setDescription(DESC[d]);
                 tempCard.setValue(VALUE[d]);
@@ -127,7 +122,6 @@ public:
                 element.playerCard.push_back(takeCard());
             }
         }
-
     }
 
     void showDeck() {
@@ -162,7 +156,7 @@ public:
         }
     }
 
-    int setAnte() {
+    void setAnte() {
         int ante;
         bool allGood = false;
         cout << "Input Antes: " << endl;
@@ -183,6 +177,27 @@ public:
         }
     }
 
+    static vector<Card> allCombination(const vector<Card>& playerCard, const vector<Card>& deckCard)
+    {
+
+    }
+
+    static int getCardPoints()
+    {
+        cout<<"High card"<<endl;
+
+        cout<<"One pair"<<endl;
+        cout<<"Two pair"<<endl;
+        cout<<"Three of a kind"<<endl;
+        cout<<"Straight"<<endl;
+        cout<<"Flush"<<endl;
+        cout<<"Full house"<<endl;
+        cout<<"Four of a Kind"<<endl;
+        cout<<"Straight Flush"<<endl;
+        cout<<"Royal Flush"<<endl;
+        cout<<"Five of a kind "<<endl;
+        return 0;
+    }
 
 };
 
