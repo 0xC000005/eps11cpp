@@ -12,21 +12,287 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Black Jack.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Debug/Black Jack.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Debug/Black Jack.ilk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Debug/Black Jack.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Debug/ch4ex33.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Debug/ch4ex33.ilk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Debug/ch4ex33.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Release/ch4ex33.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/Release/ch4ex33.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Black Jack.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/Black Jack.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/Black Jack.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/Black Jack.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/Black Jack_manifest.rc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/CL.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/CL.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33.exe.embed.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33.exe.embed.manifest.res" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33.exe.intermediate.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/cl.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.18464-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.18464-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.18464.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.18464.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19108-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19108-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19108.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19108.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19504-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19504-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19504.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19504.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19700-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19700-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19700.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.19700.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.3164-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.3164-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.3164.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.3164.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.3664-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.3664-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.3664.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.3664.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.4016-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.4016-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.4016.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.4016.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.4944-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.4944-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.4944.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.4944.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.6716-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.6716-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.6716.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.6716.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.8568-cvtres.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.8568-cvtres.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.8568.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.8568.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/mt.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/mt.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/mt.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/rc.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/rc.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/rc.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/vc100.idb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/CL.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/CL.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/ch4ex33.exe.intermediate.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/ch4ex33.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/ch4ex33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/ch4ex33.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/ch4ex33.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/cl.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/link.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/link.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/mt.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/mt.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/mt.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/vc100.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/blackJack.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/blackJack.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/.idea/Poker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/Card.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/Game.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/main.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Poker.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Progress/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/Progress/count.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/Poker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/Poker.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Poker/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/.idea/helloWorld.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/helloWorld.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/Debug/ch4ex33.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/Debug/ch4ex33.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/Debug/ch4ex33.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/Debug/ch4ex33.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/Debug/ch4ex33.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/Debug/ch4ex33.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/ch4ex33.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/ch4ex33.lastbuildstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/ch4ex33.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/ch4ex33.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/ch4ex33.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/ch4ex33.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/cl.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/cl.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/mt.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/mt.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/mt.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/mt.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/rc.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/rc.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/rc.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/rc.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/rc.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/rc.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/vc100.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/vc100.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/vc100.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/vc100.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Debug/Yahtzee.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Debug/Yahtzee.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Debug/Yahtzee.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/Black Jack.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/Yahtzee.exe.embed.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/Black Jack.exe.embed.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/Yahtzee.exe.embed.manifest.res" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/Black Jack.exe.embed.manifest.res" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/Yahtzee.exe.intermediate.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/Black Jack.exe.intermediate.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/Yahtzee.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/Yahtzee.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/Yahtzee.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/Yahtzee.vcxprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33.vcxprojResolveAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/Yahtzee_manifest.rc" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/ch4ex33_manifest.rc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/cl.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link-cvtres.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link-cvtres.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link-cvtres.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link-cvtres.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link.8052-cvtres.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.16984-cvtres.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link.8052-cvtres.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.16984-cvtres.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link.8052.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.16984.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link.8052.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/link.16984.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Release/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/mt.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/mt.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/mt.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/rc.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/rc.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/rc.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/vc100.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Debug/vc100.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/Debug/vc100.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Score.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Scoresheet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/TEST.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Yahtzee.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Yahtzee.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/ch4ex33.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Yahtzee.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/ch4ex33.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Yahtzee.vcxproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/ch4ex33.vcxproj.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +424,7 @@
       <workItem from="1578871803886" duration="73000" />
       <workItem from="1578874523050" duration="2032000" />
       <workItem from="1578922374317" duration="462000" />
+      <workItem from="1579087616082" duration="477000" />
     </task>
     <task id="LOCAL-00001" summary="color theme failed&#10;&#10;toooo bad">
       <created>1576530646914</created>
