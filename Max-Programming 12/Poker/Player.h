@@ -7,6 +7,7 @@
 
 #include <string>
 #include <iostream>
+#include <utility>
 #include <vector>
 #include "Card.h"
 
@@ -15,19 +16,24 @@ using namespace std;
 class Player {
 private:
     string name;
-    int money{}, bet{};
-    vector<Card> playerCard;
+
 
 public:
     Player() = default;
+    int money = 100;
+    vector<Card> playerCard;
 
-    explicit Player(string const &_name) {
-        name = _name;
-        money = 5;
+    void setName(string _name) {
+        name = std::move(_name);
     }
 
-    int getBet() {
-        return bet;
+    string getName() {
+        return name;
+    }
+
+    int getMoney()
+    {
+        return money;
     }
 
 };

@@ -7,17 +7,16 @@
 
 #include<iostream>
 #include<string>
-#include "Card.h"
 #include<vector>
+#include "Card.h"
+#include "Player.h"
 
 using namespace std;
 
 class Deck {
 private:
-    int pTotal{}, dTotal{}, money{}, Check_Code{}, bet{}, p_aceCounter{}, d_aceCounter{};
-    string hit, next_round, name;
     vector<Card> deck;
-    vector<Card> playerCard;
+    vector<Player> playerList;
     Card tempCard;
 
     int SHUFFLE{};
@@ -27,10 +26,6 @@ private:
 
 public:
     Deck() {
-        money = 500;
-        p_aceCounter = 0;
-        d_aceCounter = 0;
-        next_round = "yes";
         SHUFFLE = 1000;
         SUITS[0] = "Heart";
         SUITS[1] = "Diamonds";
@@ -64,9 +59,14 @@ public:
         VALUE[12] = 13;
     }
 
-
-    void addCard(int index1, const Card &cardToAdd) {
-        deck.push_back(cardToAdd);
+    void newPlayer() {
+        cout << "Please input the name for this player: ";
+        string name = "\n";
+        getline(cin, name);
+        getline(cin, name);
+        if (name.empty())getline(cin, name);
+        Player temp;
+        playerList.push_back(temp);
     }
 
     void card_swap(int num1, int num2) {
@@ -86,23 +86,101 @@ public:
     }
 
     void loadDeck() {
-        for (int s = 0; s < 4; s++)
+        for (const auto &s : SUITS)
             for (int d = 0; d < 13; d++) {
-                tempCard.setSuit(SUITS[s]);
+                tempCard.setSuit(s);
                 tempCard.setDescription(DESC[d]);
                 tempCard.setValue(VALUE[d]);
-                addCard(13 * s + d, tempCard);
+                deck.push_back(tempCard);
             }
     }
 
     void init() {
         loadDeck();
         shuffle();
-        cout << "Please enter your name: ";
-        name = "\n";
-        getline(cin, name);
-        getline(cin, name);
-        if (name.empty())getline(cin, name);
+
+    }
+
+    Card take() {
+        Card temp = deck[0];
+        deck.erase(deck.begin());
+        return temp;
+    }
+
+    Card takeCard() {
+        if (deck.empty()) {
+            cout << "ERROR:RUN OUT THE CARDS" << endl;
+            cout << "Play again? (yes/no)";
+            string temp;
+            cout << temp;
+            if (temp == "yes") {
+                init();
+            }
+        }
+        Card temp = take();
+        return temp;
+    }
+
+    void assignCards() {
+        for (int i = 0; i < 5; i++) {
+            for (auto &element: playerList) {
+                element.playerCard.push_back(takeCard());
+            }
+        }
+
+    }
+
+    void showDeck() {
+        for (auto element : deck) {
+            cout << element.getDescription() << " of " << element.getSuit() << endl;
+        }
+    }
+
+    static int showPlayerCard(const Player &temp) {
+        int count = 0;
+        for (auto element : temp.playerCard) {
+            count++;
+            cout << count << ". " << element.getDescription() << " of " << element.getSuit() << endl;
+        }
+        return count;
+    }
+
+    void discard(int num) {
+        system("cls");
+        cout << "=================================DISCARD================================" << endl << endl;
+        cout << playerList[num].getName() << "'s cards: " << endl;
+        int range = showPlayerCard(playerList[num]);
+        cout << "Input the number of the card that you want to discard, input 0 to exit: " << endl;
+        int ID;
+        cin >> ID;
+        if (ID < 0 || ID > range) {
+            cout << "ERROR: Can't find ID" << ID << endl;
+            discard(num);
+        } else if (ID) {
+            Card newCard = takeCard();
+            swap(playerList[num].playerCard[ID - 1], newCard);
+        }
+    }
+
+    int setAnte() {
+        int ante;
+        bool allGood = false;
+        cout << "Input Antes: " << endl;
+        cin >> ante;
+        for (auto element: playerList) {
+            if (element.getMoney() < ante) {
+                cout << element.getName() << " doesn't have enough money, " << element.getName() << " only have "
+                     << element.getMoney() << "$." << endl;
+                setAnte();
+                break;
+            }
+
+        }
+        for (auto &element: playerList) {
+            cout << element.getName() << " has paid ante. Now " << element.getName() << " only has "
+                 << element.getMoney() << endl;
+            element.money -= ante;
+        }
     }
 
 
