@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Yahtzee.dir/main.cpp.obj"
-  "Yahtzee.exe"
-  "Yahtzee.exe.manifest"
+  "CMakeFiles/Yahtzee.dir/main.cpp.o"
   "Yahtzee.pdb"
-  "libYahtzee.dll.a"
+  "Yahtzee"
 )
 
 # Per-language clean rules from dependency scanning.

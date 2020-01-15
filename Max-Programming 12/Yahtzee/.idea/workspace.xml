@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="490dc0aa-3547-45e3-89aa-948ecfae5f6c" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../Black Jack/Black Jack.suo" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Black Jack/Debug/Black Jack.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Black Jack/Debug/Black Jack.ilk" afterDir="false" />
@@ -206,6 +207,46 @@
       <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../helloWorld/cmake-build-debug/helloWorld.cbp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../helloWorld/main.cpp" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/Card.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/Game.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/3.10.2/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Poker.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Poker.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Poker.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Poker.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Poker.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Poker.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/Poker.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/Poker.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Poker/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../helloWorld/.idea/.gitignore" afterDir="false" />
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -215,13 +256,20 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/cmake_clean.cmake" afterDir="false" />
@@ -231,6 +279,25 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects1.rsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Yahtzee.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Yahtzee.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
@@ -254,6 +321,7 @@
       <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/rc.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/rc.write.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/vc100.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/vc100.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/vc100.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ch4ex33/ch4ex33/Debug/vc100.pdb" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Debug/Yahtzee.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Debug/Yahtzee.ilk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Debug/Yahtzee.pdb" beforeDir="false" />
@@ -293,6 +361,8 @@
       <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Yahtzee.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/ch4ex33.vcxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Yahtzee.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/ch4ex33.vcxproj.filters" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Yahtzee Part 1/Yahtzee/Yahtzee.vcxproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/../Black Jack/ch4ex33/ch4ex33.vcxproj.user" afterDir="false" />
+=======
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +400,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Game.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ScoreSheet.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1Uz3Jei3DvAE7J3IfRXE4ikDFAF" />
@@ -354,7 +423,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Poker" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -417,6 +486,7 @@
       <workItem from="1576716920469" duration="445000" />
       <workItem from="1576717963072" duration="2140000" />
       <workItem from="1576842297045" duration="5388000" />
+<<<<<<< HEAD
       <workItem from="1576872077225" duration="58000" />
       <workItem from="1577281142196" duration="212000" />
       <workItem from="1577281442018" duration="108000" />
@@ -425,6 +495,20 @@
       <workItem from="1578874523050" duration="2032000" />
       <workItem from="1578922374317" duration="462000" />
       <workItem from="1579087616082" duration="477000" />
+=======
+      <workItem from="1578329445188" duration="1166000" />
+      <workItem from="1578330993587" duration="67000" />
+      <workItem from="1578331250353" duration="61000" />
+      <workItem from="1578431022419" duration="187000" />
+      <workItem from="1578431227571" duration="68000" />
+      <workItem from="1578431347760" duration="35000" />
+      <workItem from="1578503335314" duration="675000" />
+      <workItem from="1578695021038" duration="560000" />
+      <workItem from="1578695600044" duration="62000" />
+      <workItem from="1579033127253" duration="38000" />
+      <workItem from="1579033609541" duration="601000" />
+      <workItem from="1579034229221" duration="38000" />
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
     </task>
     <task id="LOCAL-00001" summary="color theme failed&#10;&#10;toooo bad">
       <created>1576530646914</created>
@@ -524,10 +608,17 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="223" y="82" width="1089" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578922678364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578922678364" />
+=======
+    <state x="209" y="86" width="1089" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578695656839">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="209" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1578695656839" />
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
     <state x="223" y="86" width="1089" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1576502008533" />
     <state x="521" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576713195647">
       <screen x="0" y="0" width="1536" height="864" />
@@ -544,11 +635,19 @@
     <state x="289" y="0" key="CommitChangelistDialog2" timestamp="1577281505908">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+<<<<<<< HEAD
     <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1577281505908" />
     <state x="549" y="177" key="FileChooserDialogImpl" timestamp="1578876113676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="177" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578876113676" />
+=======
+    <state x="289" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1576848547476" />
+    <state x="515" y="185" key="FileChooserDialogImpl" timestamp="1579034265476">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="515" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1579034265476" />
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
     <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1576383440127" />
     <state width="1493" height="510" key="GridCell.Tab.0.bottom" timestamp="1578869891897">
       <screen x="0" y="0" width="1536" height="824" />
@@ -586,10 +685,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="370" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1576848551955" />
+<<<<<<< HEAD
     <state x="430" y="21" key="SettingsEditor" timestamp="1578922826488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="430" y="21" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578922826488" />
+=======
+    <state x="403" y="22" key="SettingsEditor" timestamp="1578695565828">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="403" y="22" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1578695565828" />
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
     <state x="430" y="22" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1576516393671" />
     <state x="524" y="276" key="cloudConfig.SelfSettingsDialog" timestamp="1576471668002">
       <screen x="0" y="0" width="1536" height="864" />
@@ -599,11 +705,19 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1576669814577" />
+<<<<<<< HEAD
     <state x="465" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1578922410833">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578922410833" />
     <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1577281453585" />
+=======
+    <state x="436" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1579034230204">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="436" y="254" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1579034230204" />
+    <state x="465" y="255" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1576842297824" />
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
     <state x="577" y="343" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576530607497">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

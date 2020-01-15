@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 "D:\Program Files\JetBrains\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Yahtzee.dir/objects.a
 C:\MinGW\bin\ar.exe cr CMakeFiles\Yahtzee.dir/objects.a @CMakeFiles\Yahtzee.dir\objects1.rsp
 C:\MinGW\bin\g++.exe -g  -static -Wl,--whole-archive CMakeFiles\Yahtzee.dir/objects.a -Wl,--no-whole-archive  -o Yahtzee.exe -Wl,--out-implib,libYahtzee.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Yahtzee.dir\linklibs.rsp
+=======
+/usr/bin/c++  -g  -static CMakeFiles/Yahtzee.dir/main.cpp.o  -o Yahtzee 
+>>>>>>> 603ce15e88c8858aa3408fb4221bee5a4c992f7a
