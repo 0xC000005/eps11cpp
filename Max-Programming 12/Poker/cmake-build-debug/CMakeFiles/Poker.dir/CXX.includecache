@@ -6,5 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/tmp/tmp.xbzSbndgyR/main.cpp
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Card.h
+iostream
+-
+string
+-
+utility
+-
+
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Game.h
+iostream
+-
+string
+-
+Card.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Card.h
+vector
+-
+
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/main.cpp
+Game.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Game.h
 

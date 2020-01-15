@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Game.h
+iostream
+-
+string
+-
+list
+-
+vector
+-
+iterator
+-
+random
+-
+unistd.h
+-
+ScoreSheet.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/ScoreSheet.h
+random
+-
+ctime
+-
+
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Score.h
+iostream
+-
+string
+-
+list
+-
+utility
+-
+vector
+-
+iterator
+-
+
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/ScoreSheet.h
+iostream
+-
+string
+-
+list
+-
+utility
+-
+vector
+-
+iterator
+-
+windows.h
+-
+Score.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Score.h
+
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/main.cpp
+Game.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Yahtzee/Game.h
+
