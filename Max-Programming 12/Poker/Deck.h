@@ -8,6 +8,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include<algorithm>
 #include "Card.h"
 #include "Player.h"
 
@@ -24,6 +25,7 @@ private:
 public:
     vector<Player> playerList;
     vector<Card> deckCards;
+
     Deck() {
         SHUFFLE = 1000;
         SUITS[0] = "Heart";
@@ -117,7 +119,7 @@ public:
     }
 
     void assignCards() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             for (auto &element: playerList) {
                 element.playerCard.push_back(takeCard());
             }
@@ -177,29 +179,63 @@ public:
         }
     }
 
-    static vector<Card> allCombination(const vector<Card>& playerCard, const vector<Card>& deckCard)
-    {
+    vector<Card> allCombination(const vector<Card> &playerCard) {
 
+        vector<Card> totalCard;
+        for (const auto &element: playerCard) {
+            totalCard.push_back(element);
+        }
+        for (const auto &element: deckCards) {
+            totalCard.push_back(element);
+        }
+
+        do {
+            for (auto element:totalCard) {
+
+            }
+            cout << endl;
+        } while (next_permutation(totalCard.begin(), totalCard.end()));
+        return vector<Card>();
     }
 
-    static int getCardPoints()
-    {
-        cout<<"High card"<<endl;
+    void getCardScore(vector<Card> &Cards) {
+        bool straight = true, flush = true, fourOfAKind = false, threeOfAKind = false, onePairs = false, twoPairs = false;
+        int values[13];
+        for (int i = 0; i < Cards.size(); i++) {
+            Card element = Cards[i];
+            if (i != Cards.size() - 1) {
+                if (element.getSuit() != element.getSuit())flush = false;
+                if (element.getValue() != element.getValue())straight = false;
+            }
+            values[element.getValue()]++;
+        }
 
-        cout<<"One pair"<<endl;
-        cout<<"Two pair"<<endl;
-        cout<<"Three of a kind"<<endl;
-        cout<<"Straight"<<endl;
-        cout<<"Flush"<<endl;
-        cout<<"Full house"<<endl;
-        cout<<"Four of a Kind"<<endl;
-        cout<<"Straight Flush"<<endl;
-        cout<<"Royal Flush"<<endl;
-        cout<<"Five of a kind "<<endl;
+        for (int i: values) {
+            if (i == 4)fourOfAKind = true;
+            if (i == 3)threeOfAKind = true;
+            if (i == 2)onePairs = true;
+            if (onePairs && i == 2) twoPairs = true;
+        }
+    }
+
+
+    static int getCardPoints() {
+        cout << "High card" << endl;
+
+        cout << "One pair" << endl;
+        cout << "Two pair" << endl;
+        cout << "Three of a kind" << endl;
+        cout << "Straight" << endl;
+        cout << "Flush" << endl;
+        cout << "Full house" << endl;
+        cout << "Four of a Kind" << endl;
+        cout << "Straight Flush" << endl;
+        cout << "Royal Flush" << endl;
+        cout << "Five of a kind " << endl;
         return 0;
     }
 
-};
+}
 
 
 #endif //POKER_DECK_H

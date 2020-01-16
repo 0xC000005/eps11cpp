@@ -20,7 +20,7 @@ private:
 public:
     Player() = default;
     int money = 100;
-    bool fold = false;
+    bool fold = false, dealer = false;
     vector<Card> playerCard;
 
     void setName(string _name) {
