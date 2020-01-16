@@ -1,4 +1,15 @@
-"D:\Program Files\JetBrains\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\heckn\Documents\GitHub\eps11cpp\Max-Programming 12\Poker"
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /tmp/tmp.xbzSbndgyR
 -- Configuring done
+CMake Error at CMakeLists.txt:8 (add_executable):
+  Cannot find source file:
+
+    Player.h
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: Poker
+CMake Error: Cannot determine link language for target "Poker".
 -- Generating done
--- Build files have been written to: C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/cmake-build-debug
+-- Build files have been written to: /tmp/tmp.xbzSbndgyR/cmake-build-debug

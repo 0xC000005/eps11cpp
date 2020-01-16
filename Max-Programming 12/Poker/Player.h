@@ -19,7 +19,7 @@ private:
 
 public:
     Player() = default;
-    int money = 100;
+    int money = 100, bet;
     bool fold = false, dealer = false;
     vector<Card> playerCard;
 

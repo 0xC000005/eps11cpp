@@ -25,6 +25,8 @@ private:
 public:
     vector<Player> playerList;
     vector<Card> deckCards;
+    int hightestBet;
+    bool check = true;
 
     Deck() {
         SHUFFLE = 1000;
@@ -164,38 +166,70 @@ public:
         cout << "Input Antes: " << endl;
         cin >> ante;
         for (auto element: playerList) {
-            if (element.getMoney() < ante) {
-                cout << element.getName() << " doesn't have enough money, " << element.getName() << " only have "
-                     << element.getMoney() << "$." << endl;
-                setAnte();
-                break;
-            }
 
+            hightestBet = ante;
         }
-        for (auto &element: playerList) {
-            cout << element.getName() << " has paid ante. Now " << element.getName() << " only has "
-                 << element.getMoney() << endl;
-            element.money -= ante;
-        }
+
+
     }
 
-    vector<Card> allCombination(const vector<Card> &playerCard) {
-
-        vector<Card> totalCard;
-        for (const auto &element: playerCard) {
-            totalCard.push_back(element);
-        }
-        for (const auto &element: deckCards) {
-            totalCard.push_back(element);
+    int tranfer(Player element, int money) {
+        if (element.getMoney() < money) {
+            cout << element.getName() << " doesn't have enough money, " << element.getName() << " only have "
+                 << element.getMoney() << "$." << endl;
+            return -1;
         }
 
-        do {
-            for (auto element:totalCard) {
+        cout << element.getName() << " has paid ante. Now " << element.getName() << " only has "
+             << element.getMoney() << "$" << endl;
+        element.money -= money;
+        element
 
-            }
-            cout << endl;
-        } while (next_permutation(totalCard.begin(), totalCard.end()));
-        return vector<Card>();
+    }
+
+
+    void calling(Player player) {
+
+    }
+
+    void raising(Player player) {
+
+    }
+
+    void folding(Player &player) {
+        player.fold = true;
+    }
+
+    void checking(Player player) {
+
+    }
+
+    void betting(Player player) {
+        system("cls");
+        cout << "=================================BETTING================================" << endl << endl;
+        cout << "Now " << player.getName() << " is betting, you only have " << player.money << endl;
+        cout << "1. Calling" << endl;
+        cout << "2. Raising" << endl;
+        cout << "3. Fold" << endl;
+        if (check) cout << "4. Check" << endl << endl;
+        cout << "Input the option that you want ot select: ";
+        int option;
+        cin >> option;
+        if (option == 1) {
+            calling(player);
+        }
+        if (option == 2) {
+            raising(player);
+        }
+        if (option == 3) {
+            folding(player);
+        }
+        if (option == 4) {
+            checking(player);
+        }
+        if (option < 4)check = false;
+
+
     }
 
     void getCardScore(vector<Card> &Cards) {
@@ -235,7 +269,7 @@ public:
         return 0;
     }
 
-}
+};
 
 
 #endif //POKER_DECK_H
