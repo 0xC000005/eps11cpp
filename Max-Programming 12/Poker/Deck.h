@@ -24,7 +24,6 @@ private:
 
 public:
     vector<Player> playerList;
-    vector<Card> deckCards;
     int highestBet{};
     bool check = true;
 

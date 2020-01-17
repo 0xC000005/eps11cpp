@@ -16,7 +16,9 @@ int main() {
     Game.assignCards();
     for(auto &player:Game.playerList)
     {
-
+        Game.betting(player);
     }
+
+
     return 0;
 }
