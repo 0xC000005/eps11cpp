@@ -25,7 +25,7 @@ private:
 public:
     vector<Player> playerList;
     vector<Card> deckCards;
-    int hightestBet;
+    int highestBet{};
     bool check = true;
 
     Deck() {
@@ -167,41 +167,58 @@ public:
         cin >> ante;
         for (auto element: playerList) {
 
-            hightestBet = ante;
+            highestBet = ante;
         }
 
 
     }
 
-    int tranfer(Player element, int money) {
+    int transfer(Player element, int money) {
         if (element.getMoney() < money) {
             cout << element.getName() << " doesn't have enough money, " << element.getName() << " only have "
                  << element.getMoney() << "$." << endl;
             return -1;
         }
 
+        if (money > highestBet) {
+            highestBet = money;
+            cout << "Now the new highest bet is " << highestBet << endl;
+        }
+
         cout << element.getName() << " has paid ante. Now " << element.getName() << " only has "
              << element.getMoney() << "$" << endl;
         element.money -= money;
-        element
+        element.bet = money;
 
     }
 
 
-    void calling(Player player) {
+    void calling(Player &player) {
+        cout << player.getName() << " called. " << endl << endl;
+        if (transfer(player, highestBet) == -1) {
+            calling(player);
+        }
+    }
+
+    void raising(Player &player) {
+        cout << player.getName() << " raised. " << endl << endl;
+        cout << "The current bet is " << highestBet << endl;
+        cout << "How much money do you want to raise to? ";
+        int raise;
+        cin >> raise;
+        if (raise < highestBet || transfer(player, raise) == -1) {
+            raising(player);
+        }
 
     }
 
-    void raising(Player player) {
-
-    }
-
-    void folding(Player &player) {
+    static void folding(Player &player) {
         player.fold = true;
+        cout << player.getName() << " has folded. " << endl << endl;
     }
 
-    void checking(Player player) {
-
+    static void checking(Player player) {
+        cout << player.getName() << " choose to check. " << endl << endl;
     }
 
     void betting(Player player) {
