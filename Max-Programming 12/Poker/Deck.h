@@ -142,20 +142,23 @@ public:
         return count;
     }
 
-    void discard(int num) {
+    void discard(Player &player) {
         system("cls");
         cout << "=================================DISCARD================================" << endl << endl;
-        cout << playerList[num].getName() << "'s cards: " << endl;
-        int range = showPlayerCard(playerList[num]);
+        cout << player.getName() << "'s cards: " << endl;
+        int range = showPlayerCard(player);
         cout << "Input the number of the card that you want to discard, input 0 to exit: " << endl;
-        int ID;
-        cin >> ID;
-        if (ID < 0 || ID > range) {
-            cout << "ERROR: Can't find ID" << ID << endl;
-            discard(num);
-        } else if (ID) {
-            Card newCard = takeCard();
-            swap(playerList[num].playerCard[ID - 1], newCard);
+        while (true) {
+            int ID;
+            cin >> ID;
+            if (!ID)break;
+            if (ID < 0 || ID > range) {
+                cout << "ERROR: Can't find ID" << ID << endl;
+                discard(player);
+            } else if (ID) {
+                Card newCard = takeCard();
+                swap(player.playerCard[ID - 1], newCard);
+            }
         }
     }
 
@@ -220,7 +223,7 @@ public:
         cout << player.getName() << " choose to check. " << endl << endl;
     }
 
-    void betting(Player player) {
+    void betting(Player &player) {
         system("cls");
         cout << "=================================BETTING================================" << endl << endl;
         cout << "Now " << player.getName() << " is betting, you only have " << player.money << endl;
@@ -248,8 +251,8 @@ public:
 
     }
 
-    void getCardScore(vector<Card> &Cards) {
-        bool straight = true, flush = true, fourOfAKind = false, threeOfAKind = false, onePairs = false, twoPairs = false;
+    static vector<int> getCardScore(vector<Card> &Cards) {
+        bool straightFlush = false, straight = true, flush = true, fourOfAKind = false, fullHouse = false, threeOfAKind = false, onePairs = false, twoPairs = false, highCard = false;
         int values[13];
         for (int i = 0; i < Cards.size(); i++) {
             Card element = Cards[i];
@@ -266,6 +269,27 @@ public:
             if (i == 2)onePairs = true;
             if (onePairs && i == 2) twoPairs = true;
         }
+
+        if (straight && flush) straightFlush = true;
+        if (threeOfAKind && onePairs) fullHouse = true;
+
+        int sum = 0;
+        for (auto card:Cards) {
+            sum += card.getValue();
+        }
+
+        int level = 0;
+        if (straightFlush) level = 8;
+        if (fourOfAKind) level = 7;
+        if (fullHouse) level = 6;
+        if (flush) level = 5;
+        if (straight) level = 4;
+        if (threeOfAKind) level = 3;
+        if (twoPairs) level = 2;
+        if (onePairs) level = 1;
+
+        vector<int> result = {sum, level};
+        return result;
     }
 
 

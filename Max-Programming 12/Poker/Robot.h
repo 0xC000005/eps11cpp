@@ -16,7 +16,7 @@ private:
     string name;
 
 public:
-    Robot()= default;
+    Robot() = default;
 
     int money = 100;
     bool fold = false, dealer = false;
