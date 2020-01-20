@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.xbzSbndgyR/Card.h
+iostream
+-
+string
+-
+utility
+-
+
+/tmp/tmp.xbzSbndgyR/Deck.h
+iostream
+-
+string
+-
+vector
+-
+algorithm
+-
+Card.h
+/tmp/tmp.xbzSbndgyR/Card.h
+Player.h
+/tmp/tmp.xbzSbndgyR/Player.h
+
+/tmp/tmp.xbzSbndgyR/main.cpp
+Deck.h
+/tmp/tmp.xbzSbndgyR/Deck.h
+Player.h
+/tmp/tmp.xbzSbndgyR/Player.h
+
