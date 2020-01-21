@@ -11,17 +11,33 @@ int main() {
     for (int i = 0; i < num; i++) {
         Game.addNewPlayer();
     }
+    continueGame:
     Game.setAnte();
     Game.assignCards();
     for (auto &player:Game.playerList) {
+        if (player.fold) {
+            cout << player.getName() << " has folded, skip." << endl;
+            system("pause");
+            continue;
+        }
         Game.betting(player);
     }
     for (auto &player:Game.playerList) {
+        if (player.fold) {
+            cout << player.getName() << " has folded, skip." << endl;
+            system("pause");
+            continue;
+        }
         Game.discard(player);
     }
-    for (auto &player:Game.playerList)
-    {
-        Game.getCardScore(player.playerCard);
+    for (auto &player:Game.playerList) {
+        if (player.fold) {
+            cout << player.getName() << " has folded, skip." << endl;
+            system("pause");
+            continue;
+        }
+
+        player.setResult(Game.getCardScore(player.playerCard));
     }
 
 

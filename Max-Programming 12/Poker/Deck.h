@@ -191,6 +191,14 @@ public:
              << element.getMoney() << "$" << endl;
         element.money -= money;
         element.bet = money;
+        return 0;
+    }
+
+    void getResultWithWeight(vector<int> &result) {
+
+    }
+
+    void sorting(vector<Player> playerList) {
 
     }
 
@@ -247,12 +255,10 @@ public:
             checking(player);
         }
         if (option < 4)check = false;
-
-
     }
 
     static vector<int> getCardScore(vector<Card> &Cards) {
-        bool straightFlush = false, straight = true, flush = true, fourOfAKind = false, fullHouse = false, threeOfAKind = false, onePairs = false, twoPairs = false, highCard = false;
+        bool fiveOfAKind = false, straightFlush = false, straight = true, flush = true, fourOfAKind = false, fullHouse = false, threeOfAKind = false, onePairs = false, twoPairs = false, highCard = false;
         int values[13];
         for (int i = 0; i < Cards.size(); i++) {
             Card element = Cards[i];
@@ -264,6 +270,7 @@ public:
         }
 
         for (int i: values) {
+            if (i == 5)fiveOfAKind = true;
             if (i == 4)fourOfAKind = true;
             if (i == 3)threeOfAKind = true;
             if (i == 2)onePairs = true;
@@ -279,7 +286,8 @@ public:
         }
 
         int level = 0;
-        if (straightFlush) level = 8;
+        if (straightFlush) level = 9;
+        if (fiveOfAKind) level = 8;
         if (fourOfAKind) level = 7;
         if (fullHouse) level = 6;
         if (flush) level = 5;
@@ -293,21 +301,39 @@ public:
     }
 
 
-    static int getCardPoints() {
-        cout << "High card" << endl;
-
-        cout << "One pair" << endl;
-        cout << "Two pair" << endl;
-        cout << "Three of a kind" << endl;
-        cout << "Straight" << endl;
-        cout << "Flush" << endl;
-        cout << "Full house" << endl;
-        cout << "Four of a Kind" << endl;
-        cout << "Straight Flush" << endl;
-        cout << "Royal Flush" << endl;
-        cout << "Five of a kind " << endl;
-        return 0;
+    void getCardDescription(int level) {
+        if (level == 0) {
+            cout << "High card" << endl;
+        }
+        if (level == 1) {
+            cout << "One pair" << endl;
+        }
+        if (level == 2) {
+            cout << "Two pair" << endl;
+        }
+        if (level == 3) {
+            cout << "Three of a kind" << endl;
+        }
+        if (level == 4) {
+            cout << "Straight" << endl;
+        }
+        if (level == 5) {
+            cout << "Flush" << endl;
+        }
+        if (level == 6) {
+            cout << "Full house" << endl;
+        }
+        if (level == 7) {
+            cout << "Four of a Kind" << endl;
+        }
+        if (level == 8) {
+            cout << "Five of a kind " << endl;
+        }
+        if (level == 9) {
+            cout << "Straight Flush" << endl;
+        }
     }
+
 
 };
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/tmp/tmp.xbzSbndgyR/Card.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Card.h
 iostream
 -
 string
@@ -14,7 +14,7 @@ string
 utility
 -
 
-/tmp/tmp.xbzSbndgyR/Deck.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Deck.h
 iostream
 -
 string
@@ -24,13 +24,25 @@ vector
 algorithm
 -
 Card.h
-/tmp/tmp.xbzSbndgyR/Card.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Card.h
 Player.h
-/tmp/tmp.xbzSbndgyR/Player.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Player.h
 
-/tmp/tmp.xbzSbndgyR/main.cpp
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Player.h
+string
+-
+iostream
+-
+utility
+-
+vector
+-
+Card.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Card.h
+
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/main.cpp
 Deck.h
-/tmp/tmp.xbzSbndgyR/Deck.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Deck.h
 Player.h
-/tmp/tmp.xbzSbndgyR/Player.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Player.h
 

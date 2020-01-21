@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 set(SOURCE_FILES main.cpp func.cpp)
 set(CMAKE_EXE_LINKER_FLAGS ${CMAKE_EXE_LINKER_FLAGS} "-static")
 
-add_executable(Poker main.cpp Card.h Deck.h Player.h Robot.h)
+add_executable(Poker main.cpp Card.h Deck.h Player.h Robot.h Result.h)
