@@ -36,8 +36,7 @@ int main() {
             system("pause");
             continue;
         }
-
-        player.setResult(Game.getCardScore(player.playerCard));
+        Game.setPlayerScore(player);
     }
 
 

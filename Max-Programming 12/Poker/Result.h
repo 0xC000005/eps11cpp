@@ -16,6 +16,7 @@ private:
     int level = 0;
     int sum = 0;
     int resultWithWeight = 0;
+    string description;
 public:
     Result() = default;
 
@@ -45,6 +46,19 @@ public:
         return resultWithWeight;
     }
 
+    void setDescription(string _description) {
+        description = std::move(_description);
+    }
+
+    string getDescription() {
+        return description;
+    }
+
+    void init() {
+        setLevel(0);
+        setSum(0);
+        setResultWithWeight();
+    }
 };
 
 

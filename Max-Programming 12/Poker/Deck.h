@@ -11,6 +11,7 @@
 #include<algorithm>
 #include "Card.h"
 #include "Player.h"
+#include "Result.h"
 
 using namespace std;
 
@@ -68,6 +69,7 @@ public:
         getline(cin, name);
         if (name.empty())getline(cin, name);
         Player temp;
+        temp.setName(name);
         playerList.push_back(temp);
     }
 
@@ -194,12 +196,14 @@ public:
         return 0;
     }
 
-    void getResultWithWeight(vector<int> &result) {
-
-    }
-
     void sorting(vector<Player> playerList) {
-
+        vector<int> ranking;
+        ranking.reserve(playerList.size());
+        for (auto &player:playerList) {
+            ranking.push_back(player.playerResult.getResultWithWeight());
+        }
+        int size = ranking.size();
+        sort(ranking.begin(), ranking.end());
     }
 
 
@@ -301,39 +305,42 @@ public:
     }
 
 
-    void getCardDescription(int level) {
+    string getCardDescription(int level) {
         if (level == 0) {
-            cout << "High card" << endl;
+            return "High card";
         }
         if (level == 1) {
-            cout << "One pair" << endl;
+            return "One pair";
         }
         if (level == 2) {
-            cout << "Two pair" << endl;
+            return "Two pair";
         }
         if (level == 3) {
-            cout << "Three of a kind" << endl;
+            return "Three of a kind";
         }
         if (level == 4) {
-            cout << "Straight" << endl;
+            return "Straight";
         }
         if (level == 5) {
-            cout << "Flush" << endl;
+            return "Flush";
         }
         if (level == 6) {
-            cout << "Full house" << endl;
+            return "Full house";
         }
         if (level == 7) {
-            cout << "Four of a Kind" << endl;
+            return "Four of a Kind";
         }
         if (level == 8) {
-            cout << "Five of a kind " << endl;
+            return "Five of a kind ";
         }
         if (level == 9) {
-            cout << "Straight Flush" << endl;
+            return "Straight Flush";
         }
     }
 
+    void setPlayerScore(Player &player) {
+        player.setResult(getCardScore(player.playerCard), getCardDescription(getCardScore(player.playerCard)[0]));
+    }
 
 };
 

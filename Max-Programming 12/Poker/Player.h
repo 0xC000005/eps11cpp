@@ -9,6 +9,7 @@
 #include <iostream>
 #include <utility>
 #include <vector>
+#include "Result.h"
 #include "Card.h"
 
 using namespace std;
@@ -23,21 +24,18 @@ public:
     int money = 100, bet;
     bool fold = false, dealer = false;
     vector<Card> playerCard;
-    vector<int> result = {0, 0, 0};
+    Result playerResult;
 
     void setName(string _name) {
         name = std::move(_name);
     }
 
-    void initResult() {
-        for (auto &element:result) {
-            element = 0;
-        }
-    }
 
-    void setResult(vector<int> _result) {
-        initResult();
-        result = std::move(_result);
+    void setResult(vector<int> _result, const string &description) {
+        playerResult.setSum(_result[0]);
+        playerResult.setLevel(_result[1]);
+        playerResult.setResultWithWeight();
+        playerResult.setDescription(description);
     }
 
     string getName() {
