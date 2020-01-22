@@ -195,10 +195,16 @@ public:
         vector<int> ranking;
         ranking.reserve(playerList.size());
         for (auto &player:playerList) {
+            cout << player.playerResult.getSum() << endl;
+            cout << player.playerResult.getLevel() << endl;
+            cout << player.playerResult.getResultWithWeight() << endl;
             ranking.push_back(player.playerResult.getResultWithWeight());
         }
         int size = ranking.size();
         sort(ranking.begin(), ranking.end());
+
+        cout << endl;
+
         for (int resultWithWeight:ranking) {
             for (int i = 0; i < playerList.size(); i++) {
                 Player &player = playerList[i];
@@ -223,9 +229,14 @@ public:
     }
 
     void checkOut() {
+        sorting();
+        displayPlayerScore();
         for (int i = 0; i < playerList.size(); i++) {
             Player &player = playerList[i];
-            if (!i)player.money += bet;
+            if (i == playerList.size() - 1) {
+                cout << player.getName() << " wins." << endl;
+                player.money += bet;
+            }
             player.reset();
         }
     }
@@ -323,16 +334,16 @@ public:
             sum += card.getValue();
         }
 
-        int level = 0;
-        if (straightFlush) level = 9;
-        if (fiveOfAKind) level = 8;
-        if (fourOfAKind) level = 7;
-        if (fullHouse) level = 6;
-        if (flush) level = 5;
-        if (straight) level = 4;
-        if (threeOfAKind) level = 3;
-        if (twoPairs) level = 2;
-        if (onePairs) level = 1;
+        int level = 1;
+        if (straightFlush) level = 10;
+        if (fiveOfAKind) level = 9;
+        if (fourOfAKind) level = 8;
+        if (fullHouse) level = 7;
+        if (flush) level = 6;
+        if (straight) level = 5;
+        if (threeOfAKind) level = 4;
+        if (twoPairs) level = 3;
+        if (onePairs) level = 2;
 
         vector<int> result = {sum, level};
         return result;
@@ -340,34 +351,34 @@ public:
 
 
     static string getCardDescription(int level) {
-        if (level == 0) {
+        if (level == 1) {
             return "High card";
         }
-        if (level == 1) {
+        if (level == 2) {
             return "One pair";
         }
-        if (level == 2) {
+        if (level == 3) {
             return "Two pair";
         }
-        if (level == 3) {
+        if (level == 4) {
             return "Three of a kind";
         }
-        if (level == 4) {
+        if (level == 5) {
             return "Straight";
         }
-        if (level == 5) {
+        if (level == 6) {
             return "Flush";
         }
-        if (level == 6) {
+        if (level == 7) {
             return "Full house";
         }
-        if (level == 7) {
+        if (level == 8) {
             return "Four of a Kind";
         }
-        if (level == 8) {
+        if (level == 9) {
             return "Five of a kind ";
         }
-        if (level == 9) {
+        if (level == 10) {
             return "Straight Flush";
         }
         return std::__cxx11::string();

@@ -34,8 +34,6 @@ int main() {
         }
         Deck::setPlayerScore(player);
     }
-    Game.sorting();
-    Game.displayPlayerScore();
     Game.checkOut();
     cout << endl << endl;
     cout << "1. Continue this game." << endl;
