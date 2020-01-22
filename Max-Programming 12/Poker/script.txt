@@ -50,7 +50,7 @@ int ante() {
         }
     }
 
-    void showPlayerCard() {
+    void displayPlayerCard() {
         cout << name << "'s cards: " << endl;
         int count = 0;
         for (auto element : playerCard) {

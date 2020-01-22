@@ -21,8 +21,8 @@ private:
 public:
     Player() = default;
 
-    int money = 100, bet;
-    bool fold = false, dealer = false;
+    int money = 100, bet{};
+    bool fold = false;
     vector<Card> playerCard;
     Result playerResult;
 
@@ -44,6 +44,13 @@ public:
 
     int getMoney() {
         return money;
+    }
+
+    void reset() {
+        bet = 0;
+        fold = false;
+        playerCard.clear();
+        playerResult.init();
     }
 
 

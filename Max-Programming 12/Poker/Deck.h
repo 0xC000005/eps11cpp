@@ -18,7 +18,7 @@ using namespace std;
 class Deck {
 private:
     vector<Card> deck;
-    int SHUFFLE{};
+    int SHUFFLE{}, bet{};
     string SUITS[4];
     string DESC[13];
     int VALUE[13] = {11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
@@ -135,12 +135,14 @@ public:
         }
     }
 
-    static int showPlayerCard(const Player &temp) {
+    static int displayPlayerCard(Player &player) {
+        cout << player.getName() << "'s cards: " << endl;
         int count = 0;
-        for (auto element : temp.playerCard) {
+        for (auto element : player.playerCard) {
             count++;
             cout << count << ". " << element.getDescription() << " of " << element.getSuit() << endl;
         }
+        cout << endl;
         return count;
     }
 
@@ -148,7 +150,7 @@ public:
         system("cls");
         cout << "=================================DISCARD================================" << endl << endl;
         cout << player.getName() << "'s cards: " << endl;
-        int range = showPlayerCard(player);
+        int range = displayPlayerCard(player);
         cout << "Input the number of the card that you want to discard, input 0 to exit: " << endl;
         while (true) {
             int ID;
@@ -169,34 +171,34 @@ public:
         bool allGood = false;
         cout << "Input Antes: " << endl;
         cin >> ante;
-        for (auto element: playerList) {
-
-            highestBet = ante;
+        for (auto player: playerList) {
+            if (!transfer(player, ante)) {
+                setAnte();
+            }
         }
-
-
     }
 
-    int transfer(Player element, int money) {
-        if (element.getMoney() < money) {
-            cout << element.getName() << " doesn't have enough money, " << element.getName() << " only have "
-                 << element.getMoney() << "$." << endl;
-            return -1;
+    int transfer(Player &player, int playerBet) {
+        if (player.getMoney() < playerBet) {
+            cout << player.getName() << " doesn't have enough playerBet, " << player.getName() << " only have "
+                 << player.getMoney() << "$." << endl;
+            return 0;
         }
 
-        if (money > highestBet) {
-            highestBet = money;
-            cout << "Now the new highest bet is " << highestBet << endl;
+        if (playerBet > highestBet) {
+            highestBet = playerBet;
+            cout << "Now the new highest playerBet is " << highestBet << endl;
         }
 
-        cout << element.getName() << " has paid ante. Now " << element.getName() << " only has "
-             << element.getMoney() << "$" << endl;
-        element.money -= money;
-        element.bet = money;
-        return 0;
+        cout << player.getName() << " has paid ante. Now " << player.getName() << " only has "
+             << player.getMoney() << "$" << endl;
+        player.money -= playerBet;
+        player.bet = playerBet;
+        bet += playerBet;
+        return 1;
     }
 
-    void sorting(vector<Player> playerList) {
+    void sorting() {
         vector<int> ranking;
         ranking.reserve(playerList.size());
         for (auto &player:playerList) {
@@ -204,12 +206,40 @@ public:
         }
         int size = ranking.size();
         sort(ranking.begin(), ranking.end());
+        for (int resultWithWeight:ranking) {
+            for (int i = 0; i < playerList.size(); i++) {
+                Player &player = playerList[i];
+                if (resultWithWeight == player.playerResult.getResultWithWeight()) {
+                    playerList.push_back(player);
+                    playerList.erase(playerList.begin() + i);
+                }
+            }
+        }
     }
 
+    void displayPlayerScore() {
+        for (auto player:playerList) {
+            if (player.fold) {
+                cout << player.getName() << " has folded. " << endl << endl;
+                continue;
+            }
+            displayPlayerCard(player);
+            cout << player.getName() << "'s cards: " << player.playerResult.getDescription() << " with "
+                 << player.playerResult.getSum() << " points." << endl;
+        }
+    }
+
+    void checkOut() {
+        for (int i = 0; i < playerList.size(); i++) {
+            Player &player = playerList[i];
+            if (!i)player.money += bet;
+            player.reset();
+        }
+    }
 
     void calling(Player &player) {
         cout << player.getName() << " called. " << endl << endl;
-        if (transfer(player, highestBet) == -1) {
+        if (!transfer(player, highestBet)) {
             calling(player);
         }
     }
@@ -220,7 +250,7 @@ public:
         cout << "How much money do you want to raise to? ";
         int raise;
         cin >> raise;
-        if (raise < highestBet || transfer(player, raise) == -1) {
+        if (raise < highestBet || !transfer(player, raise)) {
             raising(player);
         }
 
@@ -305,7 +335,7 @@ public:
     }
 
 
-    string getCardDescription(int level) {
+    static string getCardDescription(int level) {
         if (level == 0) {
             return "High card";
         }
@@ -336,9 +366,10 @@ public:
         if (level == 9) {
             return "Straight Flush";
         }
+        return std::__cxx11::string();
     }
 
-    void setPlayerScore(Player &player) {
+    static void setPlayerScore(Player &player) {
         player.setResult(getCardScore(player.playerCard), getCardDescription(getCardScore(player.playerCard)[0]));
     }
 
