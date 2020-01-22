@@ -15,14 +15,9 @@ int main() {
     continueGame:
     Game.setAnte();
     Game.assignCards();
-    for (auto &player:Game.playerList) {
-        if (player.fold) {
-            cout << player.getName() << " has folded, skip." << endl;
-            system("pause");
-            continue;
-        }
-        Game.betting(player);
-    }
+    Game.betting();
+
+
     for (auto &player:Game.playerList) {
         if (player.fold) {
             cout << player.getName() << " has folded, skip." << endl;
@@ -42,7 +37,7 @@ int main() {
     Game.sorting();
     Game.displayPlayerScore();
     Game.checkOut();
-
+    cout << endl << endl;
     cout << "1. Continue this game." << endl;
     cout << "2. Load a new game" << endl;
     cout << "3. Exit" << endl;

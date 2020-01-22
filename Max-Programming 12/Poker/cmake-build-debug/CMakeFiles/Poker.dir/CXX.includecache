@@ -23,12 +23,30 @@ vector
 -
 algorithm
 -
+random
+-
 Card.h
 C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Card.h
 Player.h
 C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Player.h
+Result.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Result.h
 
 C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Player.h
+string
+-
+iostream
+-
+utility
+-
+vector
+-
+Result.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Result.h
+Card.h
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Card.h
+
+C:/Users/heckn/Documents/GitHub/eps11cpp/Max-Programming 12/Poker/Result.h
 string
 -
 iostream

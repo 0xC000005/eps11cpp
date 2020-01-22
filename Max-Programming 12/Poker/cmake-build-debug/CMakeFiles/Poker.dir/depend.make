@@ -4,5 +4,6 @@
 CMakeFiles/Poker.dir/main.cpp.obj: ../Card.h
 CMakeFiles/Poker.dir/main.cpp.obj: ../Deck.h
 CMakeFiles/Poker.dir/main.cpp.obj: ../Player.h
+CMakeFiles/Poker.dir/main.cpp.obj: ../Result.h
 CMakeFiles/Poker.dir/main.cpp.obj: ../main.cpp
 
