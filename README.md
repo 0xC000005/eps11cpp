@@ -1,2 +1,2 @@
 # eps11cpp
-DO NOT COPY ORIGINAL CODE FROM THIS PROJECT
+CPP archive for ESP11 ComSci Course
